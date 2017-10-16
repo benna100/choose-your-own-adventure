@@ -1,0 +1,58 @@
+{
+    "title":  "De to enker",
+    "author": "Samuel Dalsgaard Hughes",
+    "story": {
+        "text": "Du står i en mørk skov og ser dig omkring.",
+        "choices": [
+            {
+                "buttonText": "Kig op",
+                 "text": "Du kigger op og ser en lodden mand.",
+                 "choices": [
+                    {
+                        "buttonText": "Sig hej",
+                        "text": "HEJ siger du sikkert.",
+                        "choices": [
+                            {
+                                "buttonText": "Sig hej2",
+                                "text": "HEJ siger du sikkert.",
+                                "choices": "undefined"
+                            },
+                            {
+                                "buttonText": "Sig hej2",
+                                "text": "HEJ siger du sikkert.",
+                                "choices": [
+                                    {
+                                        "buttonText": "Sig hej2",
+                                        "text": "HEJ siger du sikkert.",
+                                        "choices": "undefined"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "buttonText": "Løb væk",
+                        "text": "Den lodne mand indhenter dig og spiser dig levende.",
+                        "choices": "undefined"
+                    }
+                ]
+            },
+            {
+                "buttonText": "Kom ud af skoven",
+                "text": "Du når hurtigt men sikkert ud af skoven, men ser en kage.",
+                "choices": [
+                    {
+                        "buttonText": "Spis kagen",
+                        "text": "Du spiser kagen og omkommer af forstoppelse.",
+                        "choices": "undefined"
+                    },
+                    {
+                        "buttonText": "Tag et lille stykke",
+                        "text": "Du spiser et lille stykke af kagen og omkommer af forstoppelse.",
+                        "choices": "undefined"
+                    }
+                ]
+            }
+        ]
+    }
+}
