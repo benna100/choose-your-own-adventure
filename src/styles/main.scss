@@ -1,5 +1,5 @@
 body {
-    background: white;
+    background: #f1f1f1;
 }
 
 .clearfix:after {
@@ -13,6 +13,10 @@ body {
 
 * html .clearfix {
     zoom: 1;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 
@@ -29,15 +33,21 @@ header {
 
 }
 
+.app-container {
+    padding: 4%;
+}
+
 main {
     font-size: 1.6em;
 
     section {
+        border-radius: 2px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        background-color: white;
         line-height: 1.6em;
-        padding: 10px;
-        width: 500px;
+        max-width: 700px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 5% 5%;
         
         h1 {
             font-size: 1.5em;
@@ -55,21 +65,34 @@ main {
         nav {
 
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
 
             button {
-                border: 1px solid black;
+                outline: none;
+                background-color: #f3f3f3;
+                border: none;
                 font-size: 1.2rem;
                 border-radius: 4px;
                 padding: 10px;
-                background-color: transparent;
                 margin-right: 10px;
                 cursor: pointer;
                 flex-grow: 1;
+                box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+                -webkit-tap-highlight-color: transparent;
+                max-width: 200px;
+                transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 
                 &:hover {
-                    background-color: black;
-                    color: white;
+                    background-color: #fafafa;
+                    transform: translateY(-1px);
+                    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+                    
+                }
+
+                &:active {
+                    transform: translateY(1px);
+                    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+                    background-color: #e8e8e8;
                 }
             }
         }
