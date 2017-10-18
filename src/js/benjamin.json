@@ -10,23 +10,17 @@
                  "choices": [
                     {
                         "buttonText": "Sig hej",
-                        "text": "HEJ siger du sikkert.",
+                        "text": "Hej siger du sikkert. Den lodne mand kigger op på dig med et sørgmodigt blik.",
                         "choices": [
                             {
-                                "buttonText": "Sig hej2",
-                                "text": "HEJ siger du sikkert.",
+                                "buttonText": "Trøst den lodne mand",
+                                "text": "Så så, det hele skal nok gå.",
                                 "choices": "undefined"
                             },
                             {
-                                "buttonText": "Sig hej2",
-                                "text": "HEJ siger du sikkert.",
-                                "choices": [
-                                    {
-                                        "buttonText": "Sig hej2",
-                                        "text": "HEJ siger du sikkert.",
-                                        "choices": "undefined"
-                                    }
-                                ]
+                                "buttonText": "Smil tilbage til ham",
+                                "text": "Den lodne mand virker lidt gladere.",
+                                "choices": "undefined"
                             }
                         ]
                     },
