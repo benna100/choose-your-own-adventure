@@ -2,15 +2,15 @@ import React from 'react';
 
 const ResponsiveTable = React.createClass({
     getInitialState() {
-        return {buttonDisabled: false};
+        return { buttonDisabled: false };
     },
-    handleChange(){
-        this.setState({buttonDisabled: true});
+    handleChange() {
+        this.setState({ buttonDisabled: true });
     },
-    renderRow(weatherDate, i){
+    renderRow(weatherDate, i) {
         let weatherCondition = weatherDate.weatherCondition;
-        if(weatherCondition == undefined){
-            weatherCondition = 'Ukendt'
+        if (weatherCondition == undefined) {
+            weatherCondition = 'Ukendt';
         }
         if (weatherDate.date !== undefined) {
             let style = {
@@ -22,39 +22,35 @@ const ResponsiveTable = React.createClass({
                 };
             }
             return (
-                <tr key={i} style={style}>
-                    <td>{weatherDate.date.getFullYear()}</td>
-                    <td><a target="_blank" href={weatherDate.weatherLink}>{weatherCondition} <i className={weatherDate.weatherIcon}></i></a></td>
-                  
-                </tr>
-            )
+              <tr key={i} style={style}>
+                <td>{weatherDate.date.getFullYear()}</td>
+                <td><a target="_blank" href={weatherDate.weatherLink}>{weatherCondition} <i className={weatherDate.weatherIcon} /></a></td>
+
+              </tr>
+            );
         }
     },
-    render(){
+    render() {
         return (
-            <div>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>År</th>
-                        <th>Solskin/ikke solskin</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>År</th>
+                  <th>Solskin/ikke solskin</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
                         this.props.rows.map(this.renderRow)
                     }
-                    </tbody>
-                </table>
-            </div>
-        )
-    }
+              </tbody>
+            </table>
+          </div>
+        );
+    },
 });
 
 
 export default ResponsiveTable;
-
-
-
-
 

@@ -60,10 +60,35 @@ main {
         
         .subStories {
             margin: 20px 0 40px;
+
+            span.choice {
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 10px;
+                transition: opacity 1s 0.1s;
+                display: block;
+                opacity: 0;
+
+                &.hidden {
+                    opacity: 0;
+                }
+
+                &.visible {
+                    opacity: 1;
+                }
+            }
+
+            p {
+                transition: opacity 1s 0.1s;
+                opacity: 0;
+
+                &.visible {
+                    opacity: 1;
+                }
+            }
         }
 
         nav {
-
             display: flex;
             justify-content: space-around;
 
@@ -94,7 +119,13 @@ main {
                     box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
                     background-color: #e8e8e8;
                 }
+
+                &.hidden {
+                    opacity: 0;
+                    transition: opacity 0.6s 0.25s;
+                }
             }
+
         }
     }
 }
