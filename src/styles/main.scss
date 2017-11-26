@@ -38,7 +38,7 @@ header {
 }
 
 main {
-    font-size: 1.6em;
+    font-size: 1.4em;
 
     section {
         border-radius: 2px;
@@ -50,7 +50,7 @@ main {
         padding: 5% 5%;
         
         h1 {
-            font-size: 1.5em;
+            font-size: 1.6em;
             margin-bottom: 20px;
         }
         
@@ -63,7 +63,6 @@ main {
 
             span.choice {
                 font-weight: bold;
-                text-align: center;
                 margin-bottom: 10px;
                 transition: opacity 1s 0.1s;
                 display: block;
@@ -79,7 +78,8 @@ main {
             }
 
             p {
-                transition: opacity 1s 0.1s;
+                white-space: pre-line;
+                transition: opacity 1s;
                 opacity: 0;
 
                 &.visible {

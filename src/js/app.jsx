@@ -33,7 +33,7 @@ const Navigation = React.createClass({
 
             setTimeout(() => {
                 resolve();
-            }, 875);
+            }, 800);
 
             setTimeout(() => {
                 this.setState({ buttonVisibility: 'visible' });
