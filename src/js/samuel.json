@@ -7,11 +7,11 @@
       "choices": [
         {
           "partId": 2,
-          "buttonText": "Åben dine øjne og se hvem det er der står foran dig"
+          "buttonText": "Du åbner dine øjne og se hvem det er der står foran dig"
         },
         {
           "partId": 3,
-          "buttonText": "Hold dine øjne lukket og find din lommekniv frem"
+          "buttonText": "Du holder dine øjne lukket og find din lommekniv frem"
         }
       ]
     },
@@ -19,11 +19,11 @@
     "text": "Lyset falder ind gennem de store vinduer på togperronen, du er omringet af mennesker, men der er ingen der bevæger sig, alle står som frosset til stedet, undtagen dig selv og en mand der står og spiser et æble, mens han stirrer roligt på dig. 'Hvem er du' Spørger du manden.'Jeg er kommet fra fortiden, du kender mig ikke, men jeg kender dig. Du tror du er en almindelig teen ager, men det er du langt fra, du er den eneste der kan redde jorden fra hende. '  Du kigger forvirret på de frosne mennekser der står rundt om dig.  'Hende? ' spørger du.'Ja, hende. Hun er ren ondskab, jeg kendte hende engang, jeg elskede hende engang. ' Manden tager et bid af sit grønne æble, der knaser sprødt. 'Hvad skete der med hende? ' Manden ser på dig. 'Jeg er ikke sikker, men det har noget med tidsmaskinen vi opfandt sammen. Hun rejste for langt væk, noget gik galt, hun forandrede sig, blev til en anden, hun må have set noget som ændrede hende, som gjorde hende ond.  Det eneste hun vil nu er udslette alle mennesker på jorden, og du er den eneste der kan stoppe hende!'  Mandens øjne er blanke, du holder en lille pause inden du så spørger igen,   'Er du fra fortiden?' 'Det er en kompliceret sag, ser du, fra fortiden kan vi forstå nutiden og ved hjælp af nutiden kan vi fortolke fremtiden, mens vi fra fremtiden kan forandre fortiden, alt hænger sammen i et evigt kosmisk hjul, det ene påvirker det andet i en uendelighed, jeg ved ikke hvor jeg er fra, men jeg ved i hvert fald at jeg er.'Du kigger ned  på dine sko 'Øhh, okay, men hvordan kan jeg stoppe hende og hvorfor lige mig?'Manden går tættere på dig, 'fordi du er blevet valgt, ikke af mig og ikke af hende. Jeg ved ikke hvordan du stopper hende, men jeg ved hun altid har sin stok med sig, det er sådan du kan genkende hende. Hun befinder sig i fremtiden, der skal du fange hende og stoppe hende. Det kan ske hun har nogen der hjælper hende, så pas med at stole på nogen! Det er en meget farlig og krævende rejse du skal ud på, men du er den eneste der kan redde os.  Er du klar?'",
     "choices": [
       {
-        "partId": 4,
+        "partId": 5,
         "buttonText":"Du siger ja til den gamle mand"
       },
       {
-        "partId": 5,
+        "partId": 4,
         "buttonText":"Du siger nej til den gamle mand"
       }
     ]
@@ -46,7 +46,7 @@
     "choices": [
       {
         "partId": 1,
-        "buttonText": ""
+        "buttonText": "Vend tilbage til start"
       }
     ]
   },
@@ -55,7 +55,7 @@
     "choices": [
       {
         "partId": 6,
-        "buttonText": ""
+        "buttonText": "Gå til kapitel 6"
       }
     ]
   },
@@ -77,7 +77,7 @@
     "choices": [
       {
         "partId": 9,
-        "buttonText": "Du siger ja til den kvinden med stokken"
+        "buttonText": "Gå til kapitel 9"
       }
     ]
   },
@@ -94,25 +94,25 @@
     ]
   },
   "10": {
-    "text": "Du trækker dit sværd og går til angreb på manden med æblet – Du råber så højt du kan, mens du stormer frem mod manden, med dit sværd hævet over hovedet.  Da du er en meter fra ham og slår dit sværd ned mod hans hoved, bliver dit sværd pareret af en kæmpe stor ridderen i en sort rustning, der selv har trukket sit sværd. Du spidder spidsen af dit sværd frem mod den sorte ridders mave, men du bliver pareret igen og sværene slår gnister op fra hvor de mødes.  I baggrunden kan du hører en mand grine og kigger dig om mod manden med æblet, og mærker så en kold følelse gennem din mave, du kigger ned ad dig selv og ser et sort sværd stikke gennem din mave og ser dit blod der vælter ned på den mudrede jord. Manden med æblet kommer over til dig, tager din tidsmaskine ud af din lomme, trykker noget ind på den, og giver den tilbage til dig, mens han ryster på hovedet. Den grønne diamant lyser op, og du kan mærke jorden under dig forsvinde. Det mærker det som om, at du bliver trukket gennem et nøglehul og bagefter springes i luften. Du kan mærke jord under dine fødder og du begynder at se hvor du er.",
+    "text": "Du råber så højt du kan, mens du stormer frem mod manden, med dit sværd hævet over hovedet.  Da du er en meter fra ham og slår dit sværd ned mod hans hoved, bliver dit sværd pareret af en kæmpe stor ridderen i en sort rustning, der selv har trukket sit sværd. Du spidder spidsen af dit sværd frem mod den sorte ridders mave, men du bliver pareret igen og sværene slår gnister op fra hvor de mødes.  I baggrunden kan du hører en mand grine og kigger dig om mod manden med æblet, og mærker så en kold følelse gennem din mave, du kigger ned ad dig selv og ser et sort sværd stikke gennem din mave og ser dit blod der vælter ned på den mudrede jord. Manden med æblet kommer over til dig, tager din tidsmaskine ud af din lomme, trykker noget ind på den, og giver den tilbage til dig, mens han ryster på hovedet. Den grønne diamant lyser op, og du kan mærke jorden under dig forsvinde. Det mærker det som om, at du bliver trukket gennem et nøglehul og bagefter springes i luften. Du kan mærke jord under dine fødder og du begynder at se hvor du er.",
     "choices": [
       {
         "partId": 4,
-        "buttonText": ""
+        "buttonText": "Gå til kapitel 4"
       }
     ]
   },
   "12": {
-    "text": "Du trækker din spejlrevolver, sigter og skyder efter kvinden med stokken – Din spejlrevolver suger al lys til sig fra togperronen, der bliver helt mørkt omkring dig, og du kan mærke revolverens håndgreb blive varmere i den hånd. Du trykker aftrækker i bund, og din spejlrevolver sender et langt, lysende skud ud fra enden. Skuddet flyver gennem luften mod kvinden, men lige før skuddet rammer hende, flyver et slimet væsen ned og blokere skuddet, med et skjold der suger skuddet til sig og sender det lige tilbage mod dig. Du hopper til siden og undgår med nød og næppe skuddet, der springer i luften lige bag dig. Du trykker aftrækkeren på din revolver ned igen, og spejlene suger igen lys til sig, men inden du kan nå at affyre skuddet, svæver det slimede væsen lige over dig og slår skjoldet ned i hovedet på dig.  Du bliver fanget i en elektrisk strøm, det bliver ved med at pulsere gennem din krop og du kan ikke rører dig. Du åbner dine øjne og ser kvinden stå over dig med sin stok i sin hånd. Hun rækker ned i din lomme og trækker din tidsmaskine ud, trykker noget ind på den og kaster den derefter ned på dit bryst. Den grønne diamant lyder op og du kan mærke jorden under dig forsvinde, du kan mærke din krop blive pulveriseret og samler sig igen, og det mærkes som om du bliver kastet gennem en vild rutsjebane med bind for øjnene. Du mærker jorden under dig og begynder at kunne se hvor du er. ",
+    "text": "Din spejlrevolver suger al lys til sig fra togperronen, der bliver helt mørkt omkring dig, og du kan mærke revolverens håndgreb blive varmere i den hånd. Du trykker aftrækker i bund, og din spejlrevolver sender et langt, lysende skud ud fra enden. Skuddet flyver gennem luften mod kvinden, men lige før skuddet rammer hende, flyver et slimet væsen ned og blokere skuddet, med et skjold der suger skuddet til sig og sender det lige tilbage mod dig. Du hopper til siden og undgår med nød og næppe skuddet, der springer i luften lige bag dig. Du trykker aftrækkeren på din revolver ned igen, og spejlene suger igen lys til sig, men inden du kan nå at affyre skuddet, svæver det slimede væsen lige over dig og slår skjoldet ned i hovedet på dig.  Du bliver fanget i en elektrisk strøm, det bliver ved med at pulsere gennem din krop og du kan ikke rører dig. Du åbner dine øjne og ser kvinden stå over dig med sin stok i sin hånd. Hun rækker ned i din lomme og trækker din tidsmaskine ud, trykker noget ind på den og kaster den derefter ned på dit bryst. Den grønne diamant lyder op og du kan mærke jorden under dig forsvinde, du kan mærke din krop blive pulveriseret og samler sig igen, og det mærkes som om du bliver kastet gennem en vild rutsjebane med bind for øjnene. Du mærker jorden under dig og begynder at kunne se hvor du er. ",
     "choices": [
       {
         "partId": 4,
-        "buttonText": ""
+        "buttonText": "Gå til kapitel 4"
       }
     ]
   },
   "13": {
-    "text": "Du tager fat i dit sværd, men tøver og går mod udgang af markedet for at finde tiggerkonen Grete – \nUdenfor an markedet ser du Ida stå krumrygget, mens hun læner sig op ad en gammel træ stok. Du går op til hende, men inden du når hende, begynder hun at gå hurtigt ned ad gaden. Du følger efter Ida gennem et par plørede gader, lyde og larm kommer ud fra de små butikker i går forbi.  Grønthandleren råber, en savende lyd kommer fra et værksted og en hamrende lyd kommer inde fra en smed af. Ida går ind ad en smal sidegade, og du følger efter. I stopper op foran en dør og Grete banke tre gange med sin stok på døren, uden at sige noget. Det bliver åbent og en mand med et stort fuldskæg og røde kinder åbner døren på klem. Han ser et kort øjeblik på jer, og lader jer så komme ind. Inde i kroen er der højt humør, der er folk der råber og klirrer deres glas mod hinanden, ovre fra et hjørne kan du høre en fløjte spille og en tromme der buldre en sløset takt. Du følger Ida op ad en trappe og ind på et stille kammer. ”Giv mig den? ” Siger IDa grisk. ”Giv dig hvad? ” svarer du henne. ” Det tror jeg godt du ved, tidsmaskinen, jeg ved du har den, det er dig jeg har ventet på alle disse år, jeg vil hjælpe dig, men det kan jeg kun hvis du giver mig tidsmaskinen! ” ”Jeg giver dig ikke noget, før du svarer mig på mine spørgsmål! For det første, hvem er du? ” Du kigger bestemt på Ida og med et begynder hun at græde. ”Jeg er som dig, jeg blev sendt hertil ved hjælp af en tidsmaskine, og jeg ved at du har snakket med den gamle dame med stokken, det er et farligt spil det her, åh ja så farligt, stol på damen med stokken, hun er den gode og han er den onde. He, he, he, du skal finde manden med æblet, dræbe ham, jeg ved hvor han er, fortid og fremtid, alle steder nej, nej, nej, hun ved, sammen med mennesket der er halv robot. Men jeg, stakkels jeg, min familie, min ungdom, ak, ak, ak. Giv mig så tidsmaskinen, så vi kan komme væk herfra, vi har ikke lang tid tilbage! ” Med et griber Ida desperat ud efter dig, men du er hurtig og trækker dit sværd.\n",
+    "text": "Udenfor an markedet ser du Ida stå krumrygget, mens hun læner sig op ad en gammel træ stok. Du går op til hende, men inden du når hende, begynder hun at gå hurtigt ned ad gaden. Du følger efter Ida gennem et par plørede gader, lyde og larm kommer ud fra de små butikker i går forbi.  Grønthandleren råber, en savende lyd kommer fra et værksted og en hamrende lyd kommer inde fra en smed af. Ida går ind ad en smal sidegade, og du følger efter. I stopper op foran en dør og Grete banke tre gange med sin stok på døren, uden at sige noget. Det bliver åbent og en mand med et stort fuldskæg og røde kinder åbner døren på klem. Han ser et kort øjeblik på jer, og lader jer så komme ind. Inde i kroen er der højt humør, der er folk der råber og klirrer deres glas mod hinanden, ovre fra et hjørne kan du høre en fløjte spille og en tromme der buldre en sløset takt. Du følger Ida op ad en trappe og ind på et stille kammer. ”Giv mig den? ” Siger IDa grisk. ”Giv dig hvad? ” svarer du henne. ” Det tror jeg godt du ved, tidsmaskinen, jeg ved du har den, det er dig jeg har ventet på alle disse år, jeg vil hjælpe dig, men det kan jeg kun hvis du giver mig tidsmaskinen! ” ”Jeg giver dig ikke noget, før du svarer mig på mine spørgsmål! For det første, hvem er du? ” Du kigger bestemt på Ida og med et begynder hun at græde. ”Jeg er som dig, jeg blev sendt hertil ved hjælp af en tidsmaskine, og jeg ved at du har snakket med den gamle dame med stokken, det er et farligt spil det her, åh ja så farligt, stol på damen med stokken, hun er den gode og han er den onde. He, he, he, du skal finde manden med æblet, dræbe ham, jeg ved hvor han er, fortid og fremtid, alle steder nej, nej, nej, hun ved, sammen med mennesket der er halv robot. Men jeg, stakkels jeg, min familie, min ungdom, ak, ak, ak. Giv mig så tidsmaskinen, så vi kan komme væk herfra, vi har ikke lang tid tilbage! ” Med et griber Ida desperat ud efter dig, men du er hurtig og trækker dit sværd.\n",
     "choices": [
       {
         "partId": 18,
@@ -125,7 +125,7 @@
     ]
   },
   "14": {
-    "text": "Du tager fat i din spejlrevolver, men tøver, sætter den ned i dine busker og går ud for at mødes med RB89\nUde foran togstationen ser du RB89 stå. Rundt omkring togstationen, står der høje bygninger, der lyser i alle mulige forskellige farver, du kigger op, og ser at du ikke kan se toppen af de fleste af bygningerne. Du går over til RB89, han siger ingenting, men stikker sin ene robotarm ud i luften, og ned fra himlen flyver en gul taxi, som lander lige foran jer. RB89 hopper ind og du følger efter.  ”Har du tidsmaskinen?” Spørger RB89 dig. ”Ja, den er i min lomme” Svarer du. ”Godt, hold den der, der ingen der må se at de stadig findes.” Du kigger ud gennem dit vindue, og under dig folder byen sig, i lys og damp. I er så højt oppe at du ikke kan se jorden mere, men bygningerne omkring taxi bliver ved med at stige. ”Hvem er du og hvor tager du mig hen? ” spørger du RB89 ”Jeg er som dig, jeg blev sendt hertil ved hjælp af en tidsmaskine. Du er endt her, der vil betyde at manden med æblet ikke er lykkes endnu.” siger RB89. ”Manden med æblet? Jeg er kommet for at stoppe kvinden med stokken!?” Du kigger forvirret på RB89, ” Ahh, jeg ser, han har nået dig inden hun gjorde. Manden med æblet har snydt dig, kvinden med stokken er god, jeg kender hende, jeg stoler på hende. Det er hende der prøver at stoppe ham, stol på mig. Manden med æblet er meget farlig og meget snedig, jeg var så dum at stole på ham engang, det er derfor jeg ser ud som jeg gør, fanget her i fremtiden. ” \nTaxien stopper op og den ene dør skyder automatisk op og du følger RB89 ind i gennem en beskidt, tyk jerndør. På den anden side af døren, bliver i mødt af et væsen, der er lige så bredt som han er høj, og som har et stort gult øje, i midten af kroppen. Det gule øje går fra RB89 til dig, og lader jer så gå forbi ham. Du kan se et dunkelt lys komme nede af gangen af, og du begynder at kunne hører latter, råb, glas der bliver klirret mod hinanden og noget mærkeligt musik det buldre frem mod jer. Inden i når lokalet, drejer RB89 til siden og i står i et mørkt, lille rum. ”Stoler du på mig?” spørger RB89 ”For så skal du give mig tidsmaskinen, jeg ved at du er blevet fortalt at du ikke må give den væk, men du bliver nød til at komme væk herfra, du skal tilbage i tiden, der vil du bliver opsøgt af en gammel kvinde der hedder Grete, du skal give hende, hvad hun vil have, hun kan hjælpe os. Er du med? ”\n",
+    "text": "Ude foran togstationen ser du RB89 stå. Rundt omkring togstationen, står der høje bygninger, der lyser i alle mulige forskellige farver, du kigger op, og ser at du ikke kan se toppen af de fleste af bygningerne. Du går over til RB89, han siger ingenting, men stikker sin ene robotarm ud i luften, og ned fra himlen flyver en gul taxi, som lander lige foran jer. RB89 hopper ind og du følger efter.  ”Har du tidsmaskinen?” Spørger RB89 dig. ”Ja, den er i min lomme” Svarer du. ”Godt, hold den der, der ingen der må se at de stadig findes.” Du kigger ud gennem dit vindue, og under dig folder byen sig, i lys og damp. I er så højt oppe at du ikke kan se jorden mere, men bygningerne omkring taxi bliver ved med at stige. ”Hvem er du og hvor tager du mig hen? ” spørger du RB89 ”Jeg er som dig, jeg blev sendt hertil ved hjælp af en tidsmaskine. Du er endt her, der vil betyde at manden med æblet ikke er lykkes endnu.” siger RB89. ”Manden med æblet? Jeg er kommet for at stoppe kvinden med stokken!?” Du kigger forvirret på RB89, ” Ahh, jeg ser, han har nået dig inden hun gjorde. Manden med æblet har snydt dig, kvinden med stokken er god, jeg kender hende, jeg stoler på hende. Det er hende der prøver at stoppe ham, stol på mig. Manden med æblet er meget farlig og meget snedig, jeg var så dum at stole på ham engang, det er derfor jeg ser ud som jeg gør, fanget her i fremtiden. ” \nTaxien stopper op og den ene dør skyder automatisk op og du følger RB89 ind i gennem en beskidt, tyk jerndør. På den anden side af døren, bliver i mødt af et væsen, der er lige så bredt som han er høj, og som har et stort gult øje, i midten af kroppen. Det gule øje går fra RB89 til dig, og lader jer så gå forbi ham. Du kan se et dunkelt lys komme nede af gangen af, og du begynder at kunne hører latter, råb, glas der bliver klirret mod hinanden og noget mærkeligt musik det buldre frem mod jer. Inden i når lokalet, drejer RB89 til siden og i står i et mørkt, lille rum. ”Stoler du på mig?” spørger RB89 ”For så skal du give mig tidsmaskinen, jeg ved at du er blevet fortalt at du ikke må give den væk, men du bliver nød til at komme væk herfra, du skal tilbage i tiden, der vil du bliver opsøgt af en gammel kvinde der hedder Grete, du skal give hende, hvad hun vil have, hun kan hjælpe os. Er du med? ”\n",
     "choices": [
       {
         "partId": 15,
@@ -138,16 +138,16 @@
     ]
   },
   "15": {
-    "text": "Du stoler på RB89, finder tidsmaskinen frem og giver den til ham – RB89 kigger ned på tidsmaskinen i sine hænder, hans øjne er store og du kan se han smiler. RB89 vender så sit blik mod dig, pifter en enkelt gang og inden du ved af det, er døren indtil rummet sprunget op og væsnet med det gule øje kommer ind og griber fat i dig, med hans store arme. ”Hold ham stille” Siger RB89,  ”tidsmaskinen skal have nyt benzin.” En mekanisk latter kommer fra RB89. ”Alle du kender kommer til at dø, ved du godt det? Vi kommer snart til at kontrollere alt. Har du nogensinde tænkt på, hvad der var før os, før jorden, før universet, eller hvad der er efter alt er slut, når solen er døet ud og menneskeheden er gået tabt? Fortid, fremtid og nutid, herrer over tid, herre over universet og alt levende og dødt. Vi vil altid være der, husk det, snart, meget snart er vi guder. Vi mangler blot manden, forband ham, men med dig ude af spillet, ha ha ha. ” RB89 finder en laserkniv frem og du mærker et stød mod din mave og en smerte der jager op gennem dig. RB89 åbner et lille hul i tidsmaskinen og lader lidt af dit blod flyde ned i hullet. ”Vi har hvad vi skal have, jeg sætter dig af, hvor det hele begynder, så kan du selv opleve det, dommedag”. RB89 taster noget ind på tidsmaskinen og tager fat i dig. Den grønne diamant lyser op og jorden under dig og RB89 forsvinder. Du mærker kraften fra universet rive dig op og sætte dig sammen igen, du ser alverdens farver i en lysende tunnel og på et tidspunkt giver RB89 slip i dig og du begynder at kunne se hvor du er.",
+    "text": "RB89 kigger ned på tidsmaskinen i sine hænder, hans øjne er store og du kan se han smiler. RB89 vender så sit blik mod dig, pifter en enkelt gang og inden du ved af det, er døren indtil rummet sprunget op og væsnet med det gule øje kommer ind og griber fat i dig, med hans store arme. ”Hold ham stille” Siger RB89,  ”tidsmaskinen skal have nyt benzin.” En mekanisk latter kommer fra RB89. ”Alle du kender kommer til at dø, ved du godt det? Vi kommer snart til at kontrollere alt. Har du nogensinde tænkt på, hvad der var før os, før jorden, før universet, eller hvad der er efter alt er slut, når solen er døet ud og menneskeheden er gået tabt? Fortid, fremtid og nutid, herrer over tid, herre over universet og alt levende og dødt. Vi vil altid være der, husk det, snart, meget snart er vi guder. Vi mangler blot manden, forband ham, men med dig ude af spillet, ha ha ha. ” RB89 finder en laserkniv frem og du mærker et stød mod din mave og en smerte der jager op gennem dig. RB89 åbner et lille hul i tidsmaskinen og lader lidt af dit blod flyde ned i hullet. ”Vi har hvad vi skal have, jeg sætter dig af, hvor det hele begynder, så kan du selv opleve det, dommedag”. RB89 taster noget ind på tidsmaskinen og tager fat i dig. Den grønne diamant lyser op og jorden under dig og RB89 forsvinder. Du mærker kraften fra universet rive dig op og sætte dig sammen igen, du ser alverdens farver i en lysende tunnel og på et tidspunkt giver RB89 slip i dig og du begynder at kunne se hvor du er.",
     "choices": [
       {
         "partId": 4,
-        "buttonText": ""
+        "buttonText": "Gå til kapitel 4"
       }
     ]
   },
   "16":{
-    "text": "Du stoler ikke på RB89, så du hiver din spejlreflektor frem og skyder ham – Strålen fra revolveren har levet et stort hul i RB89’s robot krop og der løber sort olie ud af hullet og hans mund. Med det samme bliver døren sprunget op og væsnet med det gule øje springer ind i rummet og brøler. Du er hurtig og trækker i aftrækkeren igen. Spejlene suger lyset til sig ude fra gangen og du skyder et skud afsted der rammer lige i det gule øje. Væsnet falder ned, død. Bag dig kan du hører RB89 sprutte mekaniske lyde og du går tilbage til ham. ”Hvorfor har du lagt et baghold? Hvor er manden med æblet?” RB89 ene øje lyser op og han begynder at snakke sløset og langsomt. ”Hvad var det før mennesket? Hvad var der før universet og hvad er der efter, fortid, fremtid og nutid, du kan være herre over det hele, se alt, opleve ting igen og igen, du kan ændre historien, du har muligheden lige der i din hånd. ” RB89 peger mod tidsmaskinen. ”Jeg vil stoppe ham, stoppe manden med æblet, hvor er han?” råber du til RB89.  ”Du er ikke så dum en da, du vil finde ondskab, ha ha, men du kommer aldrig til at stoppe den.  Jeg vil hjælpe dig, se om du lykkes, men hvis du gør så lov mig at komme tilbage og red mig.  Jeg ved vor manden med æblet er, men du kan ikke få al, du skal vælge. Du kan vælge at jeg sender dig tilbage i tiden hvor du igen har muligheden for at stoppe manden med æblet, redde din familie, men se dig selv dø, eller du kan redde dig selv, beholde tidsmaskinen og bliver herre over tid. Hvad vælger du? ”",
+    "text": "Strålen fra revolveren har levet et stort hul i RB89’s robot krop og der løber sort olie ud af hullet og hans mund. Med det samme bliver døren sprunget op og væsnet med det gule øje springer ind i rummet og brøler. Du er hurtig og trækker i aftrækkeren igen. Spejlene suger lyset til sig ude fra gangen og du skyder et skud afsted der rammer lige i det gule øje. Væsnet falder ned, død. Bag dig kan du hører RB89 sprutte mekaniske lyde og du går tilbage til ham. ”Hvorfor har du lagt et baghold? Hvor er manden med æblet?” RB89 ene øje lyser op og han begynder at snakke sløset og langsomt. ”Hvad var det før mennesket? Hvad var der før universet og hvad er der efter, fortid, fremtid og nutid, du kan være herre over det hele, se alt, opleve ting igen og igen, du kan ændre historien, du har muligheden lige der i din hånd. ” RB89 peger mod tidsmaskinen. ”Jeg vil stoppe ham, stoppe manden med æblet, hvor er han?” råber du til RB89.  ”Du er ikke så dum en da, du vil finde ondskab, ha ha, men du kommer aldrig til at stoppe den.  Jeg vil hjælpe dig, se om du lykkes, men hvis du gør så lov mig at komme tilbage og red mig.  Jeg ved vor manden med æblet er, men du kan ikke få al, du skal vælge. Du kan vælge at jeg sender dig tilbage i tiden hvor du igen har muligheden for at stoppe manden med æblet, redde din familie, men se dig selv dø, eller du kan redde dig selv, beholde tidsmaskinen og bliver herre over tid. Hvad vælger du? ”",
     "choices": [
       {
         "partId": 17,
@@ -160,16 +160,16 @@
     ]
   },
   "17": {
-    "text": "Du vælger at redde dig selv og beholde tidsmaskinen – Du behersker tiden, ejer tiden og med den forandre du verden. Du rejser tilbage til universets start og frem til jordens undergang. Du møder dine største idoler, ser dinosaurer gå rundt på jorden og ser fremmede livsarter ankomme til jorden. Men du er alene og du er ensom og mens du rejser i tid og rum, begynder du at glemme hvem du er og hvor du kommer fra. Du vil tilbage til starten, se familie, men alt er væk. Du er hersker over tiden, men tid har en pris. Du bliver gammel og kan til sidst ikke rejse mere, og ender et mørkt sted mellem tiderne, hvor du langsomt synker hen og dør. ",
+    "text": "Du behersker tiden, ejer tiden og med den forandre du verden. Du rejser tilbage til universets start og frem til jordens undergang. Du møder dine største idoler, ser dinosaurer gå rundt på jorden og ser fremmede livsarter ankomme til jorden. Men du er alene og du er ensom og mens du rejser i tid og rum, begynder du at glemme hvem du er og hvor du kommer fra. Du vil tilbage til starten, se familie, men alt er væk. Du er hersker over tiden, men tid har en pris. Du bliver gammel og kan til sidst ikke rejse mere, og ender et mørkt sted mellem tiderne, hvor du langsomt synker hen og dør. ",
     "choices": [
       {
         "partId": 1,
-        "buttonText": ""
+        "buttonText": "Gå til kapitel 1"
       }
     ]
   },
   "18":{
-    "text": "Du stoler ikke på Ida og slår hende ihjel med dit sværd – I det du spidder Ida, forandre hendes ansigt sig, hendes rynker synker ind, hendes grå hår bliver blond og hendes ryg strækker sig ud og du begynder at kunne genkende hende, for foran dig, spiddet på dit sværd står din mor.  ”Undskyld min skat, undskyld at jeg har fået dig rodet ind i det her. Du må stoppe ondskaben, det er kompliceret, rejs enten frem i tiden til året 2567, eller tilbage til togstationen for at advarer dig selv. Stol ikke på nogen og når du er færdig, så lov mig at ødelægge tidsmaskinen, lov mig det… de er nøglen, husk det, og glem aldrig hvem du er, eller hvor du kommer fra. ” hun puster ud, hendes øjne bliver blanke og du slipper dit tag i sværdet. Du ryster, mens du finder tidsmaskinen frem fra din lomme, men hvor rejser du hen?",
+    "text": "I det du spidder Ida, forandre hendes ansigt sig, hendes rynker synker ind, hendes grå hår bliver blond og hendes ryg strækker sig ud og du begynder at kunne genkende hende, for foran dig, spiddet på dit sværd står din mor.  ”Undskyld min skat, undskyld at jeg har fået dig rodet ind i det her. Du må stoppe ondskaben, det er kompliceret, rejs enten frem i tiden til året 2567, eller tilbage til togstationen for at advarer dig selv. Stol ikke på nogen og når du er færdig, så lov mig at ødelægge tidsmaskinen, lov mig det… de er nøglen, husk det, og glem aldrig hvem du er, eller hvor du kommer fra. ” hun puster ud, hendes øjne bliver blanke og du slipper dit tag i sværdet. Du ryster, mens du finder tidsmaskinen frem fra din lomme, men hvor rejser du hen?",
     "choices": [
       {
         "partId": 6,
@@ -177,12 +177,12 @@
       },
       {
         "partId": 1,
-        "buttonText": "Du vælger at rejse tilbage i tiden "
+        "buttonText": "Du vælger at rejse tilbage i tiden"
       }
     ]
   },
   "19": {
-    "text": "Du tror på IDa og sænker dit sværd – Du finder tidsmaskinen frem fra din lomme og giver til IDa. Hun ser på instrumentet med store øjne, ”Du stoler på mig.” siger hun med tårer i øjnene, vi skal skynde os, vi har ikke meget tid, vi kan stadig nå at stoppe manden med æblet, tag dit sværd med, du får brug for det. ” I løber udenfor og over mod den store domkirke. Kirkeklokkerne ringer og folk er på vej ind til messe. Inde i den enorme domkirke, kan du dufte røgelsen der fylder kirken og du kan hører munkekoret messe i takt. Kirken er pakket med mennesker, der er mørkt og røgen fra røgelsen er tykt og kvalmende, så du mister IDa af syne og står nu alene i den store folkemængde, på vej ind i kirkens skib. Pludselig mærker du en stor hånd på din skulder, du tager fat i dit sværd, mens du bliver hevet ind i en lille trang skriftestol. En stor, skaldet munk kigger ned på dig og lægger en finger over hans læber. ”Jeg ved hvem du er” Hvisker han. ”Jeg kan hjælpe dig. Har du tidsmaskinen?”. Du mærker efter i dine lommer, de er tomme, Ida tog tidsmaskinen, da i løb ud af kroen. Du ryster dit hoved, munken rynker sine øjenbryn, ”Vi må stoppe hende, hun vil gøre alt for at rejse tilbage, følg efter mig.”",
+    "text": "Du finder tidsmaskinen frem fra din lomme og giver til IDa. Hun ser på instrumentet med store øjne, ”Du stoler på mig.” siger hun med tårer i øjnene, vi skal skynde os, vi har ikke meget tid, vi kan stadig nå at stoppe manden med æblet, tag dit sværd med, du får brug for det. ” I løber udenfor og over mod den store domkirke. Kirkeklokkerne ringer og folk er på vej ind til messe. Inde i den enorme domkirke, kan du dufte røgelsen der fylder kirken og du kan hører munkekoret messe i takt. Kirken er pakket med mennesker, der er mørkt og røgen fra røgelsen er tykt og kvalmende, så du mister IDa af syne og står nu alene i den store folkemængde, på vej ind i kirkens skib. Pludselig mærker du en stor hånd på din skulder, du tager fat i dit sværd, mens du bliver hevet ind i en lille trang skriftestol. En stor, skaldet munk kigger ned på dig og lægger en finger over hans læber. ”Jeg ved hvem du er” Hvisker han. ”Jeg kan hjælpe dig. Har du tidsmaskinen?”. Du mærker efter i dine lommer, de er tomme, Ida tog tidsmaskinen, da i løb ud af kroen. Du ryster dit hoved, munken rynker sine øjenbryn, ”Vi må stoppe hende, hun vil gøre alt for at rejse tilbage, følg efter mig.”",
     "choices": [
       {
         "partId": 20,
@@ -195,7 +195,7 @@
     ]
   },
   "20": {
-    "text": "Du følger efter munken – Munken går så hurtigt at du har svært ved at følge med ham. Han åbner en tung træ dør og i går sammen op ad nogle stejle trapper. I bevæger jer langt op, under dig kan du hører messen der er gået i gang. ”Hvor tager du mig hen? ” Men munken svarer ikke og bliver ved med at går op ad. I når til sidst en lille lem, som munken åbner, han kravler op igennem den og du følger efter. Du står helt oppe i kirketårnet, ved siden af dig hænger den store klokke og du kigger ud over byen. Da du vender dig om ser du manden med æblet stå og stirrer på dig. Du trækker dit sværd, men munken er hurtigere end du er og tager sværdet ud af din hånd. Manden med æblet nikker til munken og han kravler ned gennem lemmen igen. ”Du tror det er mig som er ond, mig som du skal stoppe, men du tager fejl” han går over mod dig, mens han tager et bid af æblet ”Du er blevet snydt, kvinden med stokken er ond, og IDa hjælper hende. De vil have dig til at dræbe mig, for de ved at kun vi to sammen, kan stoppe dem og nu skal vi være hurtige. For du har en chance til, jeg har også en tidsmaskine, og kan sende dig frem i tiden, til hvor du kan stoppe hende, men kun hvis du stoler på mig.” Mens manden snakker, har du stukket din hånd ned i din ene bukselomme og fundet din røde, nye lommekniv, du havde glemt alt om. ”Du er den eneste der kan redde os, du er vores eneste håb. ” slutter manden af med at sige, mens du knuger din lomme kniv i din hånd.",
+    "text": "Munken går så hurtigt at du har svært ved at følge med ham. Han åbner en tung træ dør og i går sammen op ad nogle stejle trapper. I bevæger jer langt op, under dig kan du hører messen der er gået i gang. ”Hvor tager du mig hen? ” Men munken svarer ikke og bliver ved med at går op ad. I når til sidst en lille lem, som munken åbner, han kravler op igennem den og du følger efter. Du står helt oppe i kirketårnet, ved siden af dig hænger den store klokke og du kigger ud over byen. Da du vender dig om ser du manden med æblet stå og stirrer på dig. Du trækker dit sværd, men munken er hurtigere end du er og tager sværdet ud af din hånd. Manden med æblet nikker til munken og han kravler ned gennem lemmen igen. ”Du tror det er mig som er ond, mig som du skal stoppe, men du tager fejl” han går over mod dig, mens han tager et bid af æblet ”Du er blevet snydt, kvinden med stokken er ond, og IDa hjælper hende. De vil have dig til at dræbe mig, for de ved at kun vi to sammen, kan stoppe dem og nu skal vi være hurtige. For du har en chance til, jeg har også en tidsmaskine, og kan sende dig frem i tiden, til hvor du kan stoppe hende, men kun hvis du stoler på mig.” Mens manden snakker, har du stukket din hånd ned i din ene bukselomme og fundet din røde, nye lommekniv, du havde glemt alt om. ”Du er den eneste der kan redde os, du er vores eneste håb. ” slutter manden af med at sige, mens du knuger din lomme kniv i din hånd.",
     "choices": [
       {
         "partId": 22,
@@ -208,20 +208,20 @@
     ]
   },
   "21": {
-    "text": "Du vælger at blive ved med at stole på Ida og løber hurtigt væk fra munken og ud i menneskemængden igen – Du sparker hårdt munken over skinnebenet og løber ud i menneskemængden igen, du råber hendes navn og prøver at spotte hende. Med et ser du et glimt af hende stok, på vej ned ad nogle trapper, du skynder dig derhen og løber ned af trapperne. Du står blandt en masse tunge, udhuggede marmorkister, der er mørkt i kælderen, udover de får stearinlys der blaffer stille. Du kan hører messen ovenover dig gå i gang. Du hvisker Idas navn og ser en flis af hendes kappe bevæge sig bag en af kisterne. Du går derhen og bliver overrasket over at se at IDa ikke er alene, ved siden af hende står en ung kvinde med lyst hår der læner sig op af en stok. Den unge kvinde ser dig og smiler, og så trækker en spejlrevolver, lyset fra stearinlysene bliver suget til den og du mærker en brændende varm stråle gå igennem din mave. Det sidste du ser er de to skikkelser der står over dig, og den grønne diamant der lyser op og med et er de væk, og du dør alene på gulvet i kælder af domkirken.",
+    "text": "Du sparker hårdt munken over skinnebenet og løber ud i menneskemængden igen, du råber hendes navn og prøver at spotte hende. Med et ser du et glimt af hende stok, på vej ned ad nogle trapper, du skynder dig derhen og løber ned af trapperne. Du står blandt en masse tunge, udhuggede marmorkister, der er mørkt i kælderen, udover de får stearinlys der blaffer stille. Du kan hører messen ovenover dig gå i gang. Du hvisker Idas navn og ser en flis af hendes kappe bevæge sig bag en af kisterne. Du går derhen og bliver overrasket over at se at IDa ikke er alene, ved siden af hende står en ung kvinde med lyst hår der læner sig op af en stok. Den unge kvinde ser dig og smiler, og så trækker en spejlrevolver, lyset fra stearinlysene bliver suget til den og du mærker en brændende varm stråle gå igennem din mave. Det sidste du ser er de to skikkelser der står over dig, og den grønne diamant der lyser op og med et er de væk, og du dør alene på gulvet i kælder af domkirken.",
     "choices": [
       {
         "partId": 1,
-        "buttonText": ""
+        "buttonText": "Gå til kapitel 1"
       }
     ]
   },
   "22": {
-    "text": "Du vælger at stole på manden med æblet, tager hans tidsmaskine og rejser til fremtiden for at stoppe kvinden med stokken – Du ser diamanten lyse op og du mærker jorden under dig forsvinde, lys strømmer gennem din krop, du bliver trukket gennem mure af is og vand, med en enorm hastighed, indtil du igen kan mærke jord under dig. Du står på en mørk, lang gang, i baggrunden kan du hører folk der råber og griner og glas der bliver klirret sammen. Foran dig længere henne af gangen står et stort væsen, der er lige så bredt som det er langt, med et stort gult øje der står og lytter til en dør. Du har stadig dit sværd ved siden og griber fat i det, da du ser en stor, skallet person, i den anden ene af gangen, trække et stort sølv våben frem, du hører et højt zap og væsnet med det gule øje falder død til jorden. Du trækker dit sværd og går tættere på for at se hvem der er og du genkender manden, det er munken fra fortiden. Du kan knap nok kende ham, han ser anderledes ud, han har en munk dragt på der lyser i alle mulige farver og begge hans øjne er blevet erstatte af to gule lysende huller. Du står ude foran døren og du kan hører to stemme snakke, og det er som om du kan genkende den ene, og du har en følelse af, at du skal derind. Du lægger din ene hånd på håndtaget, men inden du når at åbne døren, lægger munken sin store hånd oven på din ”Jeg er her for at hjælpe dig, du må ikke gå ind i rummet, stol på mig, jeg ved hvor kvinden med æblet er og hun er ikke derinde, så følg med mig.”",
+    "text": "Du ser diamanten lyse op og du mærker jorden under dig forsvinde, lys strømmer gennem din krop, du bliver trukket gennem mure af is og vand, med en enorm hastighed, indtil du igen kan mærke jord under dig. Du står på en mørk, lang gang, i baggrunden kan du hører folk der råber og griner og glas der bliver klirret sammen. Foran dig længere henne af gangen står et stort væsen, der er lige så bredt som det er langt, med et stort gult øje der står og lytter til en dør. Du har stadig dit sværd ved siden og griber fat i det, da du ser en stor, skallet person, i den anden ene af gangen, trække et stort sølv våben frem, du hører et højt zap og væsnet med det gule øje falder død til jorden. Du trækker dit sværd og går tættere på for at se hvem der er og du genkender manden, det er munken fra fortiden. Du kan knap nok kende ham, han ser anderledes ud, han har en munk dragt på der lyser i alle mulige farver og begge hans øjne er blevet erstatte af to gule lysende huller. Du står ude foran døren og du kan hører to stemme snakke, og det er som om du kan genkende den ene, og du har en følelse af, at du skal derind. Du lægger din ene hånd på håndtaget, men inden du når at åbne døren, lægger munken sin store hånd oven på din ”Jeg er her for at hjælpe dig, du må ikke gå ind i rummet, stol på mig, jeg ved hvor kvinden med æblet er og hun er ikke derinde, så følg med mig.”",
     "choices": [
       {
         "partId": 25,
-        "buttonText": "Du følger med munken fra fremtiden "
+        "buttonText": "Du følger med munken fra fremtiden"
       },
       {
         "partId": 24,
@@ -230,11 +230,11 @@
     ]
   },
   "23": {
-    "text": "Du vælger ikke at stole på manden med æblet og trækker din lommekniv, stikker din i manden og tager hans tidsmaskine – Mens du løber mod manden med æblet, folder du din lommekniv ud og inden manden når at reagere, har du stukket kniv ind i hans mave. Du tager hurtigt hans tidsmaskine fra ham, og mens manden vakler væk fra dig, forandre hans ansigt sig, rynker kommer frem fra hans ansigtsfolder og hans hår bliver gråt. Du kender den gamle mand der står foran dig, det er din morfar. Inden du kan nå at hjælpe ham, tumler han ud over skrænten på kirketårnet og nede under dig hører du en lyd og nogle mennesker der skriger. Du kigger ned på tidsmaskinen, ”Hvor skal du rejse hen? Hvem skal du stoppe?” tænker du til dig selv, men inden du kan nå at bestemme dig, ser du røg stige op ude fra horisonten af, og med et mærker du et kraftigt jordskælv, der får kirketårnet til at svinge frem og tilbage. Du taber tidsmaskinen og noget brækker af den, du kigger op på himlen som er blevet mørk, og oppe fra den, kan du se en stærk lysstråle komme hurtigt ned mod jorden. Du skynder dig at prøve at taste et årstal ind i tidsmaskinen, men den virker ikke og det sidst du kan hører inden strålen rammer jorden, er folk der skriger under dig. ",
+    "text": "Mens du løber mod manden med æblet, folder du din lommekniv ud og inden manden når at reagere, har du stukket kniv ind i hans mave. Du tager hurtigt hans tidsmaskine fra ham, og mens manden vakler væk fra dig, forandre hans ansigt sig, rynker kommer frem fra hans ansigtsfolder og hans hår bliver gråt. Du kender den gamle mand der står foran dig, det er din morfar. Inden du kan nå at hjælpe ham, tumler han ud over skrænten på kirketårnet og nede under dig hører du en lyd og nogle mennesker der skriger. Du kigger ned på tidsmaskinen, ”Hvor skal du rejse hen? Hvem skal du stoppe?” tænker du til dig selv, men inden du kan nå at bestemme dig, ser du røg stige op ude fra horisonten af, og med et mærker du et kraftigt jordskælv, der får kirketårnet til at svinge frem og tilbage. Du taber tidsmaskinen og noget brækker af den, du kigger op på himlen som er blevet mørk, og oppe fra den, kan du se en stærk lysstråle komme hurtigt ned mod jorden. Du skynder dig at prøve at taste et årstal ind i tidsmaskinen, men den virker ikke og det sidst du kan hører inden strålen rammer jorden, er folk der skriger under dig. ",
     "choices": [
       {
         "partId": 1,
-        "buttonText": ""
+        "buttonText": "Gå til kapitel 1"
       }
     ]
   },
@@ -244,16 +244,16 @@
     "choices": [
       {
         "partId": 1,
-        "buttonText": ""
+        "buttonText": "Gå til kapitel 1"
       }
     ]
   },
   "25": {
-    "text": "Du følger med munken fra fremtiden – i bevæger jer hurtigt ud af bygningen og op på taget af bygningen. Du har aldrig været så højt oppe i dit liv. Himlen er mørk og lydløse lyn slår frem og tilbage over jer. ”Hvem var der inde i rummet? ” spørger du munken. ”Det var du” svarer han, ”tid er en forunder ting, som en hvirvelvind suger den dimensioner, universer og skæbner til sig, men hvad kommer ud på den anden side? Du var inde i rummet, men det er nu en anden tid og vi er nu et andet sted, din chance kommer, eller også kommer den ikke, alt er forbundet, men du er her nu og jeg vil hjælpe dig.” Han tager dig i hånden og før du ved af det, har i sammen kastet jer ud fra bygningens tag. I suser ned gennem luften, forbi alle mulige køretøjer  der dytter af jer, mens de flyer i luften, i svæver ned mod lyset under jer. På et tidspunkt griber munken ud med den ene arm og får fat i taget af en stor flyvende lastbil. ”Den her er på rette vej” råber munken til dig. Da lastbilen holder stille, hopper i af taget og i står nu igen ved tog stationen. ”her tag den her” Munken rækker dig hans store sølv våben. ”Hvis du ser hende så skyder du, og tænk ikke på mig” siger han med et stort, tandløst smil.",
+    "text": "I bevæger jer hurtigt ud af bygningen og op på taget af bygningen. Du har aldrig været så højt oppe i dit liv. Himlen er mørk og lydløse lyn slår frem og tilbage over jer. ”Hvem var der inde i rummet? ” spørger du munken. ”Det var du” svarer han, ”tid er en forunder ting, som en hvirvelvind suger den dimensioner, universer og skæbner til sig, men hvad kommer ud på den anden side? Du var inde i rummet, men det er nu en anden tid og vi er nu et andet sted, din chance kommer, eller også kommer den ikke, alt er forbundet, men du er her nu og jeg vil hjælpe dig.” Han tager dig i hånden og før du ved af det, har i sammen kastet jer ud fra bygningens tag. I suser ned gennem luften, forbi alle mulige køretøjer  der dytter af jer, mens de flyer i luften, i svæver ned mod lyset under jer. På et tidspunkt griber munken ud med den ene arm og får fat i taget af en stor flyvende lastbil. ”Den her er på rette vej” råber munken til dig. Da lastbilen holder stille, hopper i af taget og i står nu igen ved tog stationen. ”her tag den her” Munken rækker dig hans store sølv våben. ”Hvis du ser hende så skyder du, og tænk ikke på mig” siger han med et stort, tandløst smil.",
     "choices": [
       {
         "partId": 26,
-        "buttonText": ""
+        "buttonText": "Gå til kapitel 26"
       }
     ]
   },
@@ -262,7 +262,7 @@
       "choices": [
         {
           "partId": 26,
-          "buttonText": ""
+          "buttonText": "Slut"
         }
       ]
     }
