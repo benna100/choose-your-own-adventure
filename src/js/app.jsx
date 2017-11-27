@@ -63,6 +63,9 @@ const Navigation = React.createClass({
     },
 });
 
+
+const audio = new Audio('data/train-station.mp3');
+
 const App = React.createClass({
     getInitialState() {
         const firstStory = this.props.story.parts['1'];
@@ -75,6 +78,8 @@ const App = React.createClass({
                 buttonVisibility: 'hidden',
             }],
             choices: firstStory.choices,
+            soundPlaying: false,
+            soundButtonText: 'Lyd til',
         };
     },
     showSelectedText(selectedSubstories) {
@@ -126,19 +131,35 @@ const App = React.createClass({
                 </div>)
             );
     },
+    toggleSound() {
+        console.log(this.state.soundPlaying);
+        if (this.state.soundPlaying === false) {
+            audio.play();
+
+            this.setState({ soundButtonText: 'Lyd fra' });
+            this.setState({ soundPlaying: true });
+        } else {
+            console.log(4);
+            audio.pause();
+            this.setState({ soundButtonText: 'Lyd til' });
+            this.setState({ soundPlaying: false });
+        }
+
+    },
     render() {
         return (
-          <main>
-            <section>
-              <h1>
-                {this.props.story.title}
-              </h1>
-              <span>
-                  Af <a rel="author">{this.props.story.author}</a>
-              </span>
-              <div className="subStories">{this.renderStory()}</div>
-              <Navigation updateContent={this.updateContent} choices={this.state.choices} />
-            </section>
+            <main>
+                <section>
+                    <h1>
+                        {this.props.story.title}
+                    </h1>
+                    <span>
+                        Af <a rel="author">{this.props.story.author}</a>
+                    </span>
+                    <button className="sound" onClick={() => { this.toggleSound(); }}>{this.state.soundButtonText}</button>
+                    <div className="subStories">{this.renderStory()}</div>
+                    <Navigation updateContent={this.updateContent} choices={this.state.choices} />
+                </section>
           </main>
         );
     },
@@ -160,4 +181,5 @@ render(<Loader />, document.getElementsByClassName('app-container')[0]);
 getStoryData()
     .then((story) => {
         render(<App story={story} />, document.getElementsByClassName('app-container')[0]);
+
     });
