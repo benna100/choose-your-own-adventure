@@ -1,13 +1,19 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { Clip } from 'phonograph';
 
 import '../styles/index.scss';
-import '../styles/weather-fonts/css/weather-icons.min.css';
-import moveToImport from 'moveTo';
 
-const moveTo = new moveToImport();
 
-window.moveTo = moveTo;
+const clip = new Clip({
+    url: './data/train-station.mp3',
+    volume: 0.3,
+});
+
+clip.buffer().then(() => {
+    //clip.play();
+    //clip.pause();
+});
 
 
 function getStoryData() {
@@ -63,33 +69,7 @@ const Navigation = React.createClass({
     },
 });
 
-/*
-const maudio = document.getElementById('myaudio');
 
-const soundSprite = [
-    {start: 0, end: 3000},
-    {start: 3500, end: 6789},
-];
-
-element.addEventListener('touchstart', (ev) => {
-    maudio.play();
-    playSoundFile(0);
-});
-
-function playSoundFile(idx) {
-    maudio.currentPosition = soundSprite[idx].start;
-    var x = setInterval(function() {
-        if(maudio.currentPosition >= soundSprite[idx].end) {
-            maudio.pause(); // There is no stop() in HTML5
-            clearInterval(x);
-        }
-    }, 50);
-}
-
-<button className="sound" onClick={() => { this.toggleSound(); }}>{this.state.soundButtonText}</button>
-
-const audio = new Audio('data/train-station.mp3');
-*/
 const App = React.createClass({
     getInitialState() {
         const firstStory = this.props.story.parts['1'];
@@ -217,5 +197,4 @@ render(<Loader />, document.getElementsByClassName('app-container')[0]);
 getStoryData()
     .then((story) => {
         render(<App story={story} />, document.getElementsByClassName('app-container')[0]);
-
     });
