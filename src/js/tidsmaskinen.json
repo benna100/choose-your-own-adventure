@@ -7,11 +7,13 @@
       "choices": [
         {
           "partId": 2,
-          "buttonText": "Du åbner dine øjne og se hvem det er der står foran dig"
+          "choiceText": "Du åbner dine øjne og se hvem det er der står foran dig",
+          "buttonText": "Åben dine øjne og se hvem det er der står foran dig"
         },
         {
           "partId": 3,
-          "buttonText": "Du holder dine øjne lukket og find din lommekniv frem"
+          "choiceText": "Du holder dine øjne lukket og find din lommekniv frem",
+          "buttonText": "Hold dine øjne lukket og find din lommekniv frem"
         }
       ]
     },
@@ -20,11 +22,13 @@
     "choices": [
       {
         "partId": 5,
-        "buttonText":"Du siger ja til den gamle mand"
+        "choiceText": "Du siger ja til den gamle mand",
+        "buttonText": "Sig ja til den gamle mand"
       },
       {
         "partId": 4,
-        "buttonText":"Du siger nej til den gamle mand"
+        "choiceText": "Du siger nej til den gamle mand",
+        "buttonText": "Sig nej til den gamle mand"
       }
     ]
   },
@@ -33,10 +37,12 @@
     "choices": [
       {
         "partId": 7,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du siger ja til den kvinden med stokken"
       },
       {
         "partId": 4,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du siger nej til den kvinden med stokken"
       }
     ]
@@ -46,6 +52,7 @@
     "choices": [
       {
         "partId": 1,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Vend tilbage til start"
       }
     ]
@@ -55,19 +62,22 @@
     "choices": [
       {
         "partId": 6,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Gå til kapitel 6"
       }
     ]
   },
   "6": {
-    "text": "Din mave snurrer og du begynder at kunne se hvor du er. Du står på præcis det samme sted som du forlod, men perronen er ikke som da du efterlod den. Rundt omkring dig går og svæver der væsner i mærkelige dragter, nogle er dobbelt så høje som dig og andre går dig kun til knæet. Toget der holder foran an dig, svæver over de lysende skinner. Der er robotter der ligner mennesker og mennesker der ligner robotter og over dit hoved flyver små maskiner, nogle løfter på sjove små pakker, andre har kameraer der sender livlige reklame ud i luften. Larmen fra toget, væsnerne og alle de flyvende maskiner gør, at du ikke kan høre hvad du selv tænker. Pludselig mærker du noget prikke dig på skulderen og du vender dig rundt. Det står et mærkeligt væsen foran dig, halvt robot, halvt menneske, den er sat sammen af dele der ikke burde blive sat sammen, den ene arm er længere end dan anden og fra dens næse løber der sort olie ud. Han åbner sin mund siger surt til dig. ”Jeg ved hvem du er, vi har ikke tid til dine spørgsmål, men du skal vide at jeg har ventet på dig. Vi kan ikke blive set sammen her, det er for farligt, de holder øje, men tage den her og mød mig ude foran stationen. Mit navn er RB89. ” RB89 rækker en menneskehånd ind under sin jakke, og hiver noget ud, der måske engang har været en revolver. Der er en aftrækker og et patronhjul, men løbet er lavet af små spejle og små røde lys lyser pulsende op fra hånd grebet. Du tager imod den og gemmer den nede i dine bukser. Skabningen vender sig om og går hurtigt gennem mængden af væsner på perronen. Du kigger efter ham ”Hvem er han og hvordan ved han hvem jeg er? ” Du går væk fra perronen og over mod udgangen af stationen, der er mange der sender dig mærkelige blikke, midt i stationen under det store ",
+    "text": "Din mave snurrer og du begynder at kunne se hvor du er. Du står på præcis det samme sted som du forlod, men perronen er ikke som da du efterlod den. Rundt omkring dig går og svæver der væsner i mærkelige dragter, nogle er dobbelt så høje som dig og andre går dig kun til knæet. Toget der holder foran an dig, svæver over de lysende skinner. Der er robotter der ligner mennesker og mennesker der ligner robotter og over dit hoved flyver små maskiner, nogle løfter på sjove små pakker, andre har kameraer der sender livlige reklame ud i luften. Larmen fra toget, væsnerne og alle de flyvende maskiner gør, at du ikke kan høre hvad du selv tænker. Pludselig mærker du noget prikke dig på skulderen og du vender dig rundt. Det står et mærkeligt væsen foran dig, halvt robot, halvt menneske, den er sat sammen af dele der ikke burde blive sat sammen, den ene arm er længere end dan anden og fra dens næse løber der sort olie ud. Han åbner sin mund siger surt til dig. ”Jeg ved hvem du er, vi har ikke tid til dine spørgsmål, men du skal vide at jeg har ventet på dig. Vi kan ikke blive set sammen her, det er for farligt, de holder øje, men tage den her og mød mig ude foran stationen. Mit navn er RB89. ” RB89 rækker en menneskehånd ind under sin jakke, og hiver noget ud, der måske engang har været en revolver. Der er en aftrækker og et patronhjul, men løbet er lavet af små spejle og små røde lys lyser pulsende op fra hånd grebet. Du tager imod den og gemmer den nede i dine bukser. Skabningen vender sig om og går hurtigt gennem mængden af væsner på perronen. Du kigger efter ham ”Hvem er han og hvordan ved han hvem jeg er? ” Du går væk fra perronen og over mod udgangen af stationen, der er mange der sender dig mærkelige blikke, midt i stationen under det store svævende ur, går du i stå, du har svært ved at finde udgangen. Lidt fra dig ser du en kvinde gå, hun er menneske og har blond hår. Hun går gennem menneskemængden med sin stok, hun løfter noget op i sin hånd op du kan genkende den grønne diamant. Det er en tidsmaskine, det er hende, kvinden med stokken!",
     "choices": [
       {
         "partId": 12,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du trækker din spejlrevolver, sigter og skyder efter kvinden med stokken"
       },
       {
         "partId": 14,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du tager fat i din spejlrevolver, men tøver, sætter den ned i dine busker igen og går ud for at mødes med RB89"
       }
     ]
@@ -77,6 +87,7 @@
     "choices": [
       {
         "partId": 9,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Gå til kapitel 9"
       }
     ]
@@ -86,9 +97,11 @@
     "choices": [
       {
         "partId": 10,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du trækker dit sværd og går til angreb på manden med æblet"
       },{
         "partId": 13,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du tager fat i dit sværd, men tøver og går mod udgang af markedet for at finde tiggerkonen Ida"
       }
     ]
@@ -98,6 +111,7 @@
     "choices": [
       {
         "partId": 4,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Gå til kapitel 4"
       }
     ]
@@ -107,6 +121,7 @@
     "choices": [
       {
         "partId": 4,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Gå til kapitel 4"
       }
     ]
@@ -116,10 +131,12 @@
     "choices": [
       {
         "partId": 18,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du stoler ikke på IDa og slår hende ihjel med dit sværd "
       },
       {
         "partId": 19,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du tror på Ida og sænker dit sværd "
       }
     ]
@@ -129,10 +146,12 @@
     "choices": [
       {
         "partId": 15,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du stoler på RB89, finder tidsmaskinen frem og giver tidsmaskinen til ham"
       },
       {
         "partId": 16,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du stoler ikke på RB89, så du hiver din spejlrevolver frem og skyder ham"
       }
     ]
@@ -142,6 +161,7 @@
     "choices": [
       {
         "partId": 4,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Gå til kapitel 4"
       }
     ]
@@ -151,10 +171,12 @@
     "choices": [
       {
         "partId": 17,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du vælger at redde dig selv og beholde tidsmaskinen "
       },
       {
         "partId": 1,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du vælger at stoppe manden med æblet, redde din familie, men se dig selv dø "
       }
     ]
@@ -164,6 +186,7 @@
     "choices": [
       {
         "partId": 1,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Gå til kapitel 1"
       }
     ]
@@ -173,10 +196,12 @@
     "choices": [
       {
         "partId": 6,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du vælger at rejse frem i tiden til år 2567 "
       },
       {
         "partId": 1,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du vælger at rejse tilbage i tiden"
       }
     ]
@@ -186,10 +211,12 @@
     "choices": [
       {
         "partId": 20,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du følger efter munken "
       },
       {
         "partId": 21,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du vælger at blive ved med at stole på Grete og løber hurtigt væk fra munken og ud i menneskemængden igen "
       }
     ]
@@ -199,10 +226,12 @@
     "choices": [
       {
         "partId": 22,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du vælger at stole på manden med æblet, tager hans tidsmaskine og rejser til fremtiden for at stoppe kvinden med stokken"
       },
       {
         "partId": 23,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du vælger ikke at stole på manden med æblet og trækker di lommekniv, stikker din i manden og tager hans tidsmaskine"
       }
     ]
@@ -212,6 +241,7 @@
     "choices": [
       {
         "partId": 1,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Gå til kapitel 1"
       }
     ]
@@ -221,10 +251,12 @@
     "choices": [
       {
         "partId": 25,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du følger med munken fra fremtiden"
       },
       {
         "partId": 24,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Du følger dit instinkt og går ind i rummet"
       }
     ]
@@ -234,6 +266,7 @@
     "choices": [
       {
         "partId": 1,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Gå til kapitel 1"
       }
     ]
@@ -244,6 +277,7 @@
     "choices": [
       {
         "partId": 1,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Gå til kapitel 1"
       }
     ]
@@ -253,6 +287,7 @@
     "choices": [
       {
         "partId": 26,
+        "choiceText": "Du siger nej til den gamle mand",
         "buttonText": "Gå til kapitel 26"
       }
     ]
@@ -262,6 +297,7 @@
       "choices": [
         {
           "partId": 26,
+          "choiceText": "Du siger nej til den gamle mand",
           "buttonText": "Slut"
         }
       ]
