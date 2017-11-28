@@ -12,7 +12,7 @@ window.moveTo = moveTo;
 
 function getStoryData() {
     return new Promise((resolve) => {
-        require(['./samuel.json'], (story) => {
+        require(['./tidsmaskinen.json'], (story) => {
             resolve(story);
         });
     });
@@ -43,7 +43,7 @@ const Navigation = React.createClass({
     choiceSelected(choice) {
         this.animateChoice()
             .then(() => {
-                this.props.updateContent(choice.partId, choice.buttonText);
+                this.props.updateContent(choice.partId, choice.choiceText);
             });
     },
     render() {
@@ -63,9 +63,33 @@ const Navigation = React.createClass({
     },
 });
 
+/*
+const maudio = document.getElementById('myaudio');
+
+const soundSprite = [
+    {start: 0, end: 3000},
+    {start: 3500, end: 6789},
+];
+
+element.addEventListener('touchstart', (ev) => {
+    maudio.play();
+    playSoundFile(0);
+});
+
+function playSoundFile(idx) {
+    maudio.currentPosition = soundSprite[idx].start;
+    var x = setInterval(function() {
+        if(maudio.currentPosition >= soundSprite[idx].end) {
+            maudio.pause(); // There is no stop() in HTML5
+            clearInterval(x);
+        }
+    }, 50);
+}
+
+<button className="sound" onClick={() => { this.toggleSound(); }}>{this.state.soundButtonText}</button>
 
 const audio = new Audio('data/train-station.mp3');
-
+*/
 const App = React.createClass({
     getInitialState() {
         const firstStory = this.props.story.parts['1'];
@@ -144,22 +168,34 @@ const App = React.createClass({
             this.setState({ soundButtonText: 'Lyd til' });
             this.setState({ soundPlaying: false });
         }
-
     },
     render() {
         return (
             <main>
-                <section>
-                    <h1>
-                        {this.props.story.title}
-                    </h1>
-                    <span>
+                <section className="story">
+                    <div className="intro">
+                        <h1 className="warning">ADVARSEL!</h1>
+                        <br></br>
+                        <p>
+                            Denne bog er anderledes end andre bøger.<br></br>Dig og KUN dig alene har ansvaret for hvad der sker i denne historie.<br></br><br></br>Der er farer, valg, eventyr og konsekvenser. DU må bruge alle dine talenter og hele din enorme intelligens hvid du vil stå en chance.<br></br>Den forkerte beslutning kan ende forfærdeligt – Ja, med sleve døden,<br></br>MEN bare rolig, du kan til enhver tid gå tilbage og tage et andet valg og ændre din skæbne.<br></br><br></br>Velkommen til
+                        </p>
+                        <br></br>
+                        <h1 className="title">
+                            {this.props.story.title}
+                        </h1>
+                        <br></br>
+                        <span>
                         Af <a rel="author">{this.props.story.author}</a>
                     </span>
-                    <button className="sound" onClick={() => { this.toggleSound(); }}>{this.state.soundButtonText}</button>
+                    </div>
+                    <br></br>
+                    <hr></hr>
+                    <br></br>
+
                     <div className="subStories">{this.renderStory()}</div>
                     <Navigation updateContent={this.updateContent} choices={this.state.choices} />
                 </section>
+
           </main>
         );
     },

@@ -37,8 +37,39 @@ header {
     padding: 4%;
 }
 
+
+hr {
+  border: 0;
+  border-bottom: solid 1px;
+}
+
 main {
     font-size: 1.4em;
+
+    button {
+        outline: none;
+        border: none;
+        font-size: 1.2rem;
+        border-radius: 4px;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .intro {
+        text-align: center;
+        line-height: 1.6em;
+
+        h1 {
+          &.warning {
+            font-size: 2em;
+            text-decoration: underline;
+          }
+
+          &.title {
+            font-weight: bolder;
+          }
+        }
+    }
 
     section {
         border-radius: 2px;
@@ -52,20 +83,10 @@ main {
         
         h1 {
             font-size: 1.6em;
-            margin-bottom: 20px;
-        }
-        
-        span a {
-            font-weight: bold;
         }
 
         button.sound {
-            outline: none;
             background-color: #f3f3f3;
-            border: none;
-            font-size: 1.2rem;
-            border-radius: 4px;
-            padding: 10px;
             position: absolute;
             top: 10px;
             right: 10px;
@@ -122,12 +143,7 @@ main {
             justify-content: space-around;
 
             button {
-                outline: none;
                 background-color: #f3f3f3;
-                border: none;
-                font-size: 1.2rem;
-                border-radius: 4px;
-                padding: 10px;
                 margin-right: 10px;
                 cursor: pointer;
                 flex-grow: 1;

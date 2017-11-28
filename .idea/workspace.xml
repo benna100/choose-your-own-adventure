@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b0b667d-35d2-4403-a8d7-cebcdf01587c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/0.bundle.7cf0c54e1a0a2775ca1c.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/bundle.7cf0c54e1a0a2775ca1c.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.jsx" afterPath="$PROJECT_DIR$/src/js/app.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/samuel.json" afterPath="$PROJECT_DIR$/src/js/samuel.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/main.scss" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/samuel.json" afterPath="$PROJECT_DIR$/src/js/tidsmaskinen.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,30 +20,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.jsx" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/app.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="158" column="44" lean-forward="false" selection-start-line="158" selection-start-column="44" selection-end-line="158" selection-end-column="44" />
+            <state relative-caret-position="-770">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1511813777155" expanded="true" signature="1576:1621" ph="..." />
-                <marker date="1511813777155" expanded="true" signature="4391:4988" ph="..." />
-                <marker date="1511813777155" expanded="true" signature="4417:4970" ph="..." />
-                <marker date="1511813777155" expanded="true" signature="4442:4517" ph="..." />
-                <marker date="1511813777155" expanded="true" signature="4544:4645" ph="..." />
-                <marker date="1511813777155" expanded="true" signature="5114:5156" ph="..." />
+                <marker date="1511890876759" expanded="true" signature="1582:1627" ph="..." />
+                <marker date="1511890876759" expanded="true" signature="5030:6446" ph="..." />
+                <marker date="1511890876759" expanded="true" signature="6226:6427" ph="..." />
+                <marker date="1511890876759" expanded="true" signature="6572:6614" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -46,28 +39,18 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="246">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="samuel.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/samuel.json">
+      <file leaf-file-name="tidsmaskinen.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/tidsmaskinen.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
-              <caret line="18" column="1945" lean-forward="false" selection-start-line="18" selection-start-column="1945" selection-end-line="18" selection-end-column="1945" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="benjamin.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/benjamin.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+              <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -91,12 +74,15 @@
       <find>hr</find>
       <find>&lt;br&gt;</find>
       <find>font-size</find>
+      <find>updateContent</find>
+      <find>under det stor</find>
     </findStrings>
     <replaceStrings>
       <replace>partId</replace>
       <replace>storyParts</replace>
       <replace>selectedButtonText</replace>
       <replace>\n</replace>
+      <replace>&lt;br&gt;&lt;/br&gt;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -109,9 +95,11 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/js/responsiveTable.jsx" />
         <option value="$PROJECT_DIR$/.eslintrc.json" />
-        <option value="$PROJECT_DIR$/src/js/app.jsx" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/styles/main.scss" />
+        <option value="$PROJECT_DIR$/src/js/app.jsx" />
         <option value="$PROJECT_DIR$/src/js/samuel.json" />
+        <option value="$PROJECT_DIR$/src/js/tidsmaskinen.json" />
       </list>
     </option>
   </component>
@@ -127,9 +115,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="746" />
-    <option name="y" value="-16" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="376" />
+    <option name="y" value="-18" />
     <option name="width" value="1400" />
     <option name="height" value="990" />
   </component>
@@ -221,7 +209,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="F:\git-projekter\choose-your-own-adventure\node_modules\eslint" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -245,15 +233,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511627019961</updated>
-      <workItem from="1511627022121" duration="24848000" />
+      <workItem from="1511627022121" duration="31528000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24848000" />
+    <option name="totallyTimeSpent" value="31528000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -372,6 +360,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1028">
+          <caret line="97" column="26" lean-forward="false" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/benjamin.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -380,43 +384,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/src/js/tidsmaskinen.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="264">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/app.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="158" column="44" lean-forward="false" selection-start-line="158" selection-start-column="44" selection-end-line="158" selection-end-column="44" />
+        <state relative-caret-position="-770">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1511813777155" expanded="true" signature="1576:1621" ph="..." />
-            <marker date="1511813777155" expanded="true" signature="4391:4988" ph="..." />
-            <marker date="1511813777155" expanded="true" signature="4417:4970" ph="..." />
-            <marker date="1511813777155" expanded="true" signature="4442:4517" ph="..." />
-            <marker date="1511813777155" expanded="true" signature="4544:4645" ph="..." />
-            <marker date="1511813777155" expanded="true" signature="5114:5156" ph="..." />
+            <marker date="1511890876759" expanded="true" signature="1582:1627" ph="..." />
+            <marker date="1511890876759" expanded="true" signature="5030:6446" ph="..." />
+            <marker date="1511890876759" expanded="true" signature="6226:6427" ph="..." />
+            <marker date="1511890876759" expanded="true" signature="6572:6614" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/samuel.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="1945" lean-forward="false" selection-start-line="18" selection-start-column="1945" selection-end-line="18" selection-end-column="1945" />
-          <folding />
         </state>
       </provider>
     </entry>
