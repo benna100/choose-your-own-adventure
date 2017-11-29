@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Clip } from 'phonograph';
 
-import '../styles/index.scss';
+import '../styles/main.scss';
 
 
 const clip = new Clip({
