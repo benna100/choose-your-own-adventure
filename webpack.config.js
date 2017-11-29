@@ -61,6 +61,7 @@ module.exports = {
     ],
     devtool: 'source-map',
     devServer: {
+        host: '0.0.0.0',
         historyApiFallback: true,
         inline: true,
         hot: true,
