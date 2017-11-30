@@ -151,7 +151,7 @@ const App = React.createClass({
     },
     render() {
         return (
-            <main>
+            <main className="adventure">
                 <section className="story">
                     <div className="intro">
                         <h1 className="warning">ADVARSEL!</h1>

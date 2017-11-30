@@ -1,6 +1,5 @@
 body {
     background: #f1f1f1;
-    padding: 4%;
 }
 
 .clearfix:after {
@@ -70,7 +69,19 @@ input[type=submit]{
   }
 }
 
+
 main {
+  padding: 4%;
+}
+
+a.about {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  float: right;
+}
+
+
+main.adventure {
     font-size: 1.4em;
     margin-bottom: 60px;
 
@@ -210,6 +221,7 @@ section.newsletter {
     padding: 5% 5%;
     margin-bottom: 50px;
     text-align: center;
+    display: block;
 
     h1 {
       margin-bottom: 10px;
@@ -243,4 +255,8 @@ section.newsletter {
         background-color: #3ecf8e;
         padding: 20px;
     }
+}
+
+a.about {
+  display: block;
 }
