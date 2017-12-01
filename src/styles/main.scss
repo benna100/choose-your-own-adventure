@@ -81,8 +81,8 @@ a.about {
 }
 
 
-main.adventure {
-    font-size: 1.4em;
+section.adventure {
+    font-size: 1.2em;
     margin-bottom: 60px;
 
     .intro {
@@ -100,7 +100,7 @@ main.adventure {
         }
     }
 
-    section {
+    > div {
         border-radius: 2px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         background-color: white;

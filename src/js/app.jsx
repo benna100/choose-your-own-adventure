@@ -1,31 +1,29 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Clip } from 'phonograph';
+import renderHTML from 'react-render-html';
+import InlineSound from './inline-sound';
 
 import '../styles/main.scss';
 
+const createReactClass = require('create-react-class');
 
-const clip = new Clip({
-    url: './data/train-station.mp3',
-    volume: 0.3,
-});
-
-clip.buffer().then(() => {
-    //clip.play();
-    //clip.pause();
-});
-
+const inlineSound = new InlineSound();
+let initialStoryHasRendered = false;
+const storyUpdated = () => {
+    inlineSound.textHasChanged(document.querySelectorAll('.subStories p .sound'));
+};
 
 function getStoryData() {
     return new Promise((resolve) => {
-        require(['./tidsmaskinen.json'], (story) => {
+        require(['../data/tidsmaskinen.json'], (story) => {
             resolve(story);
         });
     });
 }
 
 
-const Navigation = React.createClass({
+
+const Navigation = createReactClass({
     getInitialState() {
         return {
             buttonVisibility: 'visible',
@@ -51,6 +49,8 @@ const Navigation = React.createClass({
             .then(() => {
                 this.props.updateContent(choice.partId, choice.choiceText);
             });
+
+        inlineSound.playSound('./data/page-turn.mp3', 300);
     },
     render() {
         if (this.props.choices === 'undefined') {
@@ -63,14 +63,14 @@ const Navigation = React.createClass({
 
         return (
             <nav>
-                {buttons}
-            </nav>
+            {buttons}
+          </nav>
         );
     },
 });
 
 
-const App = React.createClass({
+const App = createReactClass({
     getInitialState() {
         const firstStory = this.props.story.parts['1'];
 
@@ -102,6 +102,11 @@ const App = React.createClass({
                 selectedSubstories[selectedSubstories.length - 1].textVisible = 'visible';
                 this.setState({ storyParts: selectedSubstories });
             }, 1000);
+
+
+            setTimeout(() => {
+                storyUpdated();
+            }, 0);
         });
     },
     updateContent(partId, buttonText) {
@@ -115,10 +120,6 @@ const App = React.createClass({
             buttonVisibility: 'hidden',
         });
 
-        this.setState({ storyParts: selectedSubstories });
-
-        this.setState(this.state.storyParts);
-
         this.setState({
             choices: selectedSubstory.choices,
         });
@@ -126,20 +127,27 @@ const App = React.createClass({
         this.showSelectedText(selectedSubstories);
     },
     renderStory() {
-        return (this.state.storyParts.map(
-            (subStory, i) =>
-                <div>
-                    <span className={`choice ${subStory.buttonVisibility}`}>{subStory.selectedButtonText}</span>
-                    <p className={subStory.textVisible} key={i}>{subStory.text}</p>
-                    <hr></hr>
-                </div>)
-            );
+        const storyToRender = (this.state.storyParts.map((subStory, i) =>
+            <div>
+                <span className={`choice ${subStory.buttonVisibility}`}>{subStory.selectedButtonText}</span>
+                <p className={subStory.textVisible} key={i}>{renderHTML(subStory.text)}</p>
+            <hr />
+          </div>)
+        );
+
+        if (!initialStoryHasRendered) {
+            setTimeout(() => {
+                storyUpdated();
+            });
+
+            initialStoryHasRendered = true;
+        }
+
+        return storyToRender;
     },
     toggleSound() {
         console.log(this.state.soundPlaying);
         if (this.state.soundPlaying === false) {
-            audio.play();
-
             this.setState({ soundButtonText: 'Lyd fra' });
             this.setState({ soundPlaying: true });
         } else {
@@ -151,38 +159,35 @@ const App = React.createClass({
     },
     render() {
         return (
-            <main className="adventure">
-                <section className="story">
-                    <div className="intro">
-                        <h1 className="warning">ADVARSEL!</h1>
-                        <br></br>
-                        <p>
-                            Denne bog er anderledes end andre bøger.<br></br>Dig og KUN dig alene har ansvaret for hvad der sker i denne historie.<br></br><br></br>Der er farer, valg, eventyr og konsekvenser. DU må bruge alle dine talenter og hele din enorme intelligens hvid du vil stå en chance.<br></br>Den forkerte beslutning kan ende forfærdeligt – Ja, med sleve døden,<br></br>MEN bare rolig, du kan til enhver tid gå tilbage og tage et andet valg og ændre din skæbne.<br></br><br></br>Velkommen til
-                        </p>
-                        <br></br>
-                        <h1 className="title">
-                            {this.props.story.title}
-                        </h1>
-                        <br></br>
-                        <span>
+            <div>
+                <div className="intro">
+                <h1 className="warning">ADVARSEL!</h1>
+                    <br />
+                    <p>
+                            Denne bog er anderledes end andre bøger.<br />Dig og KUN dig alene har ansvaret for hvad der sker i denne historie.<br /><br />Der er farer, valg, eventyr og konsekvenser. DU må bruge alle dine talenter og hele din enorme intelligens hvid du vil stå en chance.<br />Den forkerte beslutning kan ende forfærdeligt – Ja, med sleve døden,<br />MEN bare rolig, du kan til enhver tid gå tilbage og tage et andet valg og ændre din skæbne.<br /><br />Velkommen til
+                  </p>
+                    <br />
+                <h1 className="title">
+                      {this.props.story.title}
+                    </h1>
+                    <br />
+                    <span>
                         Af <a rel="author">{this.props.story.author}</a>
-                    </span>
-                    </div>
-                    <br></br>
-                    <hr></hr>
-                    <br></br>
+                  </span>
+              </div>
+            <br />
+            <hr />
+            <br />
 
-                    <div className="subStories">{this.renderStory()}</div>
-                    <Navigation updateContent={this.updateContent} choices={this.state.choices} />
-                </section>
-
-          </main>
+            <div className="subStories">{this.renderStory()}</div>
+            <Navigation updateContent={this.updateContent} choices={this.state.choices} />
+          </div>
         );
     },
 });
 
 
-const Loader = React.createClass({
+const Loader = createReactClass({
     render() {
         return (
           <div className="loader">
@@ -192,9 +197,9 @@ const Loader = React.createClass({
     },
 });
 
-render(<Loader />, document.getElementsByClassName('app-container')[0]);
+render(<Loader />, document.querySelector('section.adventure'));
 
 getStoryData()
     .then((story) => {
-        render(<App story={story} />, document.getElementsByClassName('app-container')[0]);
+        render(<App story={story} />, document.querySelector('section.adventure'));
     });
