@@ -10,7 +10,10 @@ const createReactClass = require('create-react-class');
 const inlineSound = new InlineSound();
 let initialStoryHasRendered = false;
 const storyUpdated = () => {
-    inlineSound.textHasChanged(document.querySelectorAll('.subStories p .sound'));
+    if (inlineSound.soundOn === true) {
+        console.log(4);
+        inlineSound.textHasChanged(document.querySelectorAll('.subStories p .sound'));
+    }
 };
 
 function getStoryData() {
@@ -21,14 +24,10 @@ function getStoryData() {
     });
 }
 
-
-
 const Navigation = createReactClass({
     getInitialState() {
         return {
             buttonVisibility: 'visible',
-            selectedButtonText: '',
-            selectedButtonTextVisibility: 'hidden',
         };
     },
     animateChoice() {
@@ -50,12 +49,14 @@ const Navigation = createReactClass({
                 this.props.updateContent(choice.partId, choice.choiceText);
             });
 
-        inlineSound.playSound('./data/page-turn.mp3', 300);
+        if (inlineSound.soundOn === true) {
+            inlineSound.playSound('./data/page-turn.mp3', 300);
+        }
     },
     render() {
         if (this.props.choices === 'undefined') {
             return (
-              <div />
+                <div>hello</div>
             );
         }
         // console.log(this.props.choices);
@@ -63,8 +64,8 @@ const Navigation = createReactClass({
 
         return (
             <nav>
-            {buttons}
-          </nav>
+                {buttons}
+            </nav>
         );
     },
 });
@@ -82,8 +83,10 @@ const App = createReactClass({
                 buttonVisibility: 'hidden',
             }],
             choices: firstStory.choices,
-            soundPlaying: false,
+            soundPlaying: true,
             soundButtonText: 'Lyd til',
+            soundClass: 'sound on',
+            adventureFinished: 'hidden',
         };
     },
     showSelectedText(selectedSubstories) {
@@ -120,19 +123,47 @@ const App = createReactClass({
             buttonVisibility: 'hidden',
         });
 
-        this.setState({
-            choices: selectedSubstory.choices,
-        });
+        console.log(selectedSubstory.choices);
+
+        if (selectedSubstory.choices !== undefined) {
+            this.setState({
+                choices: selectedSubstory.choices,
+            });
+        } else {
+            this.setState({
+                adventureFinished: 'visible',
+                choices: [],
+            });
+        }
 
         this.showSelectedText(selectedSubstories);
+    },
+    toggleSound() {
+        console.log(this.state.soundPlaying);
+        if (this.state.soundPlaying === true) {
+            this.setState({
+                soundButtonText: 'Lyd fra',
+                soundPlaying: false,
+                soundClass: 'sound off',
+            });
+            inlineSound.disableSounds();
+            inlineSound.soundOn = false;
+        } else {
+            this.setState({
+                soundButtonText: 'Lyd til',
+                soundPlaying: true,
+                soundClass: 'sound on',
+            });
+            inlineSound.soundOn = true;
+        }
     },
     renderStory() {
         const storyToRender = (this.state.storyParts.map((subStory, i) =>
             <div>
                 <span className={`choice ${subStory.buttonVisibility}`}>{subStory.selectedButtonText}</span>
                 <p className={subStory.textVisible} key={i}>{renderHTML(subStory.text)}</p>
-            <hr />
-          </div>)
+                <hr />
+            </div>)
         );
 
         if (!initialStoryHasRendered) {
@@ -145,43 +176,40 @@ const App = createReactClass({
 
         return storyToRender;
     },
-    toggleSound() {
-        console.log(this.state.soundPlaying);
-        if (this.state.soundPlaying === false) {
-            this.setState({ soundButtonText: 'Lyd fra' });
-            this.setState({ soundPlaying: true });
-        } else {
-            console.log(4);
-            audio.pause();
-            this.setState({ soundButtonText: 'Lyd til' });
-            this.setState({ soundPlaying: false });
-        }
-    },
     render() {
         return (
             <div>
                 <div className="intro">
-                <h1 className="warning">ADVARSEL!</h1>
+                    <h1 className="warning">ADVARSEL!</h1>
                     <br />
                     <p>
                             Denne bog er anderledes end andre bøger.<br />Dig og KUN dig alene har ansvaret for hvad der sker i denne historie.<br /><br />Der er farer, valg, eventyr og konsekvenser. DU må bruge alle dine talenter og hele din enorme intelligens hvid du vil stå en chance.<br />Den forkerte beslutning kan ende forfærdeligt – Ja, med sleve døden,<br />MEN bare rolig, du kan til enhver tid gå tilbage og tage et andet valg og ændre din skæbne.<br /><br />Velkommen til
-                  </p>
+                    </p>
                     <br />
-                <h1 className="title">
-                      {this.props.story.title}
+                    <h1 className="title">
+                        {this.props.story.title}
                     </h1>
                     <br />
                     <span>
-                        Af <a rel="author">{this.props.story.author}</a>
-                  </span>
-              </div>
-            <br />
-            <hr />
-            <br />
+                        Af <a href="http://www.lol.dk" rel="author">{this.props.story.author}</a>
+                    </span>
+                    <br />
+                    <button className={this.state.soundClass} onClick={() => { this.toggleSound(); }} data-sound={this.state.soundButtonText} />
+                    <br />
+                    <span className={this.state.soundClass}>Slå lyden til for en forbedret oplevelse</span>
+                </div>
+                <br />
+                <hr />
+                <br />
 
-            <div className="subStories">{this.renderStory()}</div>
-            <Navigation updateContent={this.updateContent} choices={this.state.choices} />
-          </div>
+                <div className="subStories">{this.renderStory()}</div>
+                <Navigation updateContent={this.updateContent} choices={this.state.choices} />
+                <div className={`result ${this.state.adventureFinished}`}>
+                    <h1>Dit eventyr er færdigt</h1>
+                    <p>Du oplevede 1 eventyr ud af 12. </p>
+                    <button>prøv igen?</button>
+                </div>
+            </div>
         );
     },
 });
@@ -190,7 +218,7 @@ const App = createReactClass({
 const Loader = createReactClass({
     render() {
         return (
-          <div className="loader">
+            <div className="loader">
                Loading
             </div>
         );

@@ -10,7 +10,8 @@ const controller = new ScrollMagic.Controller();
 class InlineSound {
     constructor() {
         this.sounds = {};
-        this.soundInterval;
+        this.soundIntervals = {};
+        this.soundOn = true;
     }
 
     playSound(fileName, offset = 0) {
@@ -45,7 +46,7 @@ class InlineSound {
                     clip,
                     clipEnd,
                     easeIn,
-                    clipToEnd
+                    clipToEnd,
                 };
             }
         });
@@ -63,41 +64,58 @@ class InlineSound {
                 scene.triggerHook(0.9);
                 let turnSoundUpInterval;
                 scene.on('enter', () => {
-                    if (!this.sounds[soundId].clipEnd) {
-                        this.sounds[soundId].clip.buffer()
-                            .then(() => {
-                                this.sounds[soundId].isPlaying = true;
-                                this.sounds[soundId].clip.volume = 0;
-                                this.sounds[soundId].clip.play();
+                    if (this.soundOn === true) {
+                        if (!this.sounds[soundId].clipEnd) {
+                            this.sounds[soundId].clip.buffer()
+                                .then(() => {
+                                    this.sounds[soundId].isPlaying = true;
+                                    this.sounds[soundId].clip.volume = 0;
+                                    this.sounds[soundId].clip.loop = true;
+                                    this.sounds[soundId].clip.play();
 
-                                this.easeInClip(this.sounds[soundId].clip, 0, sound.volume, 4000, 20);
-                            });
-                    } else {
-                        clearInterval(turnSoundUpInterval);
-                        this.sounds[soundId].isPlaying = true;
-                        this.easeInClip(this.sounds[this.sounds[soundId].clipToEnd].clip, sound.volume, 0, 2000, 20);
+                                    this.easeInClip(soundId, 0, sound.volume, 4000, 20);
+                                });
+                        } else {
+                            clearInterval(turnSoundUpInterval);
+                            this.sounds[soundId].isPlaying = true;
+                            this.easeInClip(this.sounds[soundId].clipToEnd, sound.volume, 0, 2000, 20);
+                        }
                     }
                 });
             }
         }
     }
 
-    easeInClip(clip, startVolume, endVolume, duration, frequency) {
-        clearInterval(this.soundInterval);
+
+    disableSounds() {
+        for (const [soundId] of Object.entries(this.sounds)) {
+            this.sounds[soundId].clip.pause();
+        }
+    }
+
+
+    easeInClip(clipId, startVolume, endVolume, duration, frequency) {
+        const clip = this.sounds[clipId].clip;
+        clearInterval(this.soundIntervals[clipId]);
         const timeInterval = duration / frequency;
         let volume = startVolume;
         const volumeInterval = endVolume - startVolume;
         const volumeIncrement = volumeInterval / frequency;
-        this.soundInterval = setInterval(() => {
+        this.soundIntervals[clipId] = setInterval(() => {
             if (volumeInterval > 0) {
                 volume += volumeIncrement;
                 if (volume < endVolume) {
                     clip.volume = volume;
+                } else {
+                    clearInterval(this.soundIntervals[clipId]);
                 }
             } else {
                 volume += volumeIncrement;
                 if (volume > endVolume) {
                     clip.volume = volume;
+                } else {
+                    clip.pause();
+                    clearInterval(this.soundIntervals[clipId]);
                 }
             }
         }, timeInterval);
@@ -105,10 +123,3 @@ class InlineSound {
 }
 
 export default InlineSound;
-
-
-// export default k = 12; // in file test.js
-//
-// import m from './test' // note that we got the freedom to use import m instead of import k, because k was default export
-//
-// console.log(m);        // will log 12
