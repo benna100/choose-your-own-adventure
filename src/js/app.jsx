@@ -87,6 +87,7 @@ const App = createReactClass({
             soundButtonText: 'Lyd til',
             soundClass: 'sound on',
             adventureFinished: 'hidden',
+            introVisibility: 'visible',
         };
     },
     showSelectedText(selectedSubstories) {
@@ -157,14 +158,16 @@ const App = createReactClass({
             inlineSound.soundOn = true;
         }
     },
+    closeIntro() {
+        this.setState({ introVisibility: 'hidden' });
+    },
     renderStory() {
-        const storyToRender = (this.state.storyParts.map((subStory, i) =>
+        const storyToRender = (this.state.storyParts.map((subStory, i) => (
             <div>
                 <span className={`choice ${subStory.buttonVisibility}`}>{subStory.selectedButtonText}</span>
                 <p className={subStory.textVisible} key={i}>{renderHTML(subStory.text)}</p>
                 <hr />
-            </div>)
-        );
+            </div>)));
 
         if (!initialStoryHasRendered) {
             setTimeout(() => {
@@ -179,37 +182,62 @@ const App = createReactClass({
     render() {
         return (
             <div>
-                <div className="intro">
-                    <h1 className="warning">ADVARSEL!</h1>
-                    <br />
-                    <p>
-                            Denne bog er anderledes end andre bøger.<br />Dig og KUN dig alene har ansvaret for hvad der sker i denne historie.<br /><br />Der er farer, valg, eventyr og konsekvenser. DU må bruge alle dine talenter og hele din enorme intelligens hvid du vil stå en chance.<br />Den forkerte beslutning kan ende forfærdeligt – Ja, med sleve døden,<br />MEN bare rolig, du kan til enhver tid gå tilbage og tage et andet valg og ændre din skæbne.<br /><br />Velkommen til
-                    </p>
-                    <br />
+                <section className={`intro ${this.state.introVisibility}`}>
+                    <div className="wrapper">
+                        <h1 className="warning">ADVARSEL!</h1>
+                        <br />
+                        <p>
+                            Denne bog er anderledes end andre bøger.Dig og KUN dig alene har ansvaret for hvad der sker i denne historie.<br /><br />Der er farer, valg, eventyr og konsekvenser. DU må bruge alle dine talenter og hele din enorme intelligens hvid du vil stå en chance.<br />Den forkerte beslutning kan ende forfærdeligt – Ja, med sleve døden,<br />MEN bare rolig, du kan til enhver tid gå tilbage og tage et andet valg og ændre din skæbne.
+                        </p>
+                        <button className={this.state.soundClass} onClick={() => { this.toggleSound(); }} data-sound={this.state.soundButtonText} />
+                        <span className={this.state.soundClass}>Slå lyden til for en forbedret oplevelse</span>
+                        <button className="begin" onClick={() => { this.closeIntro(); }}>Start eventyret</button>
+                    </div>
+                </section>
+                <div className={`overlay ${this.state.introVisibility}`} />
+                <section className="adventure">
                     <h1 className="title">
                         {this.props.story.title}
                     </h1>
-                    <br />
                     <span>
                         Af <a href="http://www.lol.dk" rel="author">{this.props.story.author}</a>
                     </span>
-                    <br />
-                    <button className={this.state.soundClass} onClick={() => { this.toggleSound(); }} data-sound={this.state.soundButtonText} />
-                    <br />
-                    <span className={this.state.soundClass}>Slå lyden til for en forbedret oplevelse</span>
-                </div>
-                <br />
-                <hr />
-                <br />
+                    <div className="subStories">{this.renderStory()}</div>
+                    <Navigation updateContent={this.updateContent} choices={this.state.choices} />
+                    <div className={`result ${this.state.adventureFinished}`}>
+                        <h1>Dit eventyr er færdigt</h1>
+                        <p>Du oplevede 1 eventyr ud af 12. </p>
+                        <button>prøv igen?</button>
+                    </div>
+                </section>
+                <section className="author">
+                    <img alt="Author" src="images/samuel.svg" />
+                    <p>asjkdblkas asdklnmlas d asd a sd klas dla sd  askld las dlk  asl dl aslkd lka sdl asld laks dlk asdlk laks dlkas dlks dlk</p>
+                </section>
+                <section className="newsletter">
+                    <h1>Lige en sidste ting!</h1>
+                    <p>Hvis du har lyst til at skrive en historie, i det her format, så send mig en mail på <a href="mailto:benjamin.dals.hughes@gmail.com">benjamin.dals.hughes@gmail.com</a></p>
+                    <p>Hvis du vil holdes opdateret når der kommer nye historier, så skrive din mail, så skal jeg nok give besked når der kommer nyt :)</p>
+                    <div id="mc_embed_signup">
+                        <form action="https://github.us17.list-manage.com/subscribe/post?u=0286749bd5e9f7614d3653c4f&amp;id=e22dfd19bf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+                            <div id="mc_embed_signup_scroll">
 
-                <div className="subStories">{this.renderStory()}</div>
-                <Navigation updateContent={this.updateContent} choices={this.state.choices} />
-                <div className={`result ${this.state.adventureFinished}`}>
-                    <h1>Dit eventyr er færdigt</h1>
-                    <p>Du oplevede 1 eventyr ud af 12. </p>
-                    <button>prøv igen?</button>
-                </div>
+                                <div className="mc-field-group">
+                                    <label htmlFor="mce-EMAIL">Skriv din mail her</label>
+                                    <input type="email" value="" placeholder="Min email er" name="EMAIL" className="required email" id="mce-EMAIL" />
+                                </div>
+                                <div id="mce-responses" className="clear">
+                                    <div className="response" id="mce-error-response"></div>
+                                    <div className="response" id="mce-success-response"></div>
+                                </div>
+                                <div aria-hidden="true"><input type="text" name="b_0286749bd5e9f7614d3653c4f_e22dfd19bf" tabIndex="-1" value="" /></div>
+                                <div className="clear"><input type="submit" value="Hold mig opdateret" name="subscribe" id="mc-embedded-subscribe" className="button" /></div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
             </div>
+
         );
     },
 });
@@ -225,9 +253,9 @@ const Loader = createReactClass({
     },
 });
 
-render(<Loader />, document.querySelector('section.adventure'));
+render(<Loader />, document.querySelector('main'));
 
 getStoryData()
     .then((story) => {
-        render(<App story={story} />, document.querySelector('section.adventure'));
+        render(<App story={story} />, document.querySelector('main'));
     });

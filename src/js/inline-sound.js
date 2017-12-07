@@ -11,7 +11,7 @@ class InlineSound {
     constructor() {
         this.sounds = {};
         this.soundIntervals = {};
-        this.soundOn = true;
+        this.soundOn = false;
     }
 
     playSound(fileName, offset = 0) {
@@ -61,7 +61,7 @@ class InlineSound {
                 const scene = new ScrollMagic.Scene({
                     triggerElement: `div[data-id=${soundId}]`,
                 }).addTo(controller);
-                scene.triggerHook(0.9);
+                scene.triggerHook(0.5);
                 let turnSoundUpInterval;
                 scene.on('enter', () => {
                     if (this.soundOn === true) {
