@@ -215,15 +215,15 @@ const App = createReactClass({
                 </section>
                 <section className="newsletter">
                     <h1>Lige en sidste ting!</h1>
-                    <p>Hvis du har lyst til at skrive en historie, i det her format, så send mig en mail på <a href="mailto:benjamin.dals.hughes@gmail.com">benjamin.dals.hughes@gmail.com</a></p>
-                    <p>Hvis du vil holdes opdateret når der kommer nye historier, så skrive din mail, så skal jeg nok give besked når der kommer nyt :)</p>
+                    <p>Hvis du har lyst til at <b>skrive en historie</b>, i det her format, så send mig en mail på <a href="mailto:benjamin.dals.hughes@gmail.com">benjamin.dals.hughes@gmail.com</a></p>
+                    <p>Hvis du vil <b>holdes opdateret når der kommer nye historier</b>, så skriv din mail her. No spam!</p>
                     <div id="mc_embed_signup">
                         <form action="https://github.us17.list-manage.com/subscribe/post?u=0286749bd5e9f7614d3653c4f&amp;id=e22dfd19bf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                             <div id="mc_embed_signup_scroll">
 
                                 <div className="mc-field-group">
                                     <label htmlFor="mce-EMAIL">Skriv din mail her</label>
-                                    <input type="email" value="" placeholder="Min email er" name="EMAIL" className="required email" id="mce-EMAIL" />
+                                    <input type="email" name="EMAIL" placeholder="Email" className="required email" id="mce-EMAIL" />
                                 </div>
                                 <div id="mce-responses" className="clear">
                                     <div className="response" id="mce-error-response"></div>
