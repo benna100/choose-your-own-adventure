@@ -166,7 +166,6 @@ const App = createReactClass({
             <div>
                 <span className={`choice ${subStory.buttonVisibility}`}>{subStory.selectedButtonText}</span>
                 <p className={subStory.textVisible} key={i}>{renderHTML(subStory.text)}</p>
-                <hr />
             </div>)));
 
         if (!initialStoryHasRendered) {
@@ -187,7 +186,7 @@ const App = createReactClass({
                         <h1 className="warning">ADVARSEL!</h1>
                         <br />
                         <p>
-                            Denne bog er anderledes end andre bøger.Dig og KUN dig alene har ansvaret for hvad der sker i denne historie.<br /><br />Der er farer, valg, eventyr og konsekvenser. DU må bruge alle dine talenter og hele din enorme intelligens hvid du vil stå en chance.<br />Den forkerte beslutning kan ende forfærdeligt – Ja, med sleve døden,<br />MEN bare rolig, du kan til enhver tid gå tilbage og tage et andet valg og ændre din skæbne.
+                            Dig og KUN dig alene har ansvaret for hvad der sker i denne historie.<br />Der er farer, valg, eventyr og konsekvenser. DU må bruge alle dine talenter og hele din enorme intelligens hvis du vil stå en chance.<br />Den forkerte beslutning kan ende forfærdeligt – Ja, med selve døden
                         </p>
                         <button className={this.state.soundClass} onClick={() => { this.toggleSound(); }} data-sound={this.state.soundButtonText} />
                         <span className={this.state.soundClass}>Slå lyden til for en forbedret oplevelse</span>
@@ -212,7 +211,7 @@ const App = createReactClass({
                 </section>
                 <section className="author">
                     <img alt="Author" src="images/samuel.svg" />
-                    <p>asjkdblkas asdklnmlas d asd a sd klas dla sd  askld las dlk  asl dl aslkd lka sdl asld laks dlk asdlk laks dlkas dlks dlk</p>
+                    <p>Samuel D. Hughes er 28 år og bor i København, hvor han til daglig arbejder som lærer. </p>
                 </section>
                 <section className="newsletter">
                     <h1>Lige en sidste ting!</h1>
