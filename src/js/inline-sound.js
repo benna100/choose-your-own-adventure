@@ -11,7 +11,7 @@ class InlineSound {
     constructor() {
         this.sounds = {};
         this.soundIntervals = {};
-        this.soundOn = false;
+        this.soundOn = true;
     }
 
     playSound(fileName, offset = 0) {
@@ -28,6 +28,7 @@ class InlineSound {
     processHtmlToSounds(soundClipElements) {
         soundClipElements.forEach((soundClipElement) => {
             const soundClipId = soundClipElement.getAttribute('data-id');
+
             if (!(soundClipId in this.sounds)) {
                 const src = soundClipElement.getAttribute('data-src');
                 const volume = parseFloat(soundClipElement.getAttribute('data-volume'));
@@ -95,8 +96,10 @@ class InlineSound {
     easeInClip(clipId, startVolume, endVolume, duration, frequency) {
         const clip = this.sounds[clipId].clip;
         clearInterval(this.soundIntervals[clipId]);
+
         const timeInterval = duration / frequency;
         let volume = startVolume;
+
         const volumeInterval = endVolume - startVolume;
         const volumeIncrement = volumeInterval / frequency;
         this.soundIntervals[clipId] = setInterval(() => {

@@ -9,6 +9,8 @@ const createReactClass = require('create-react-class');
 
 const inlineSound = new InlineSound();
 let initialStoryHasRendered = false;
+inlineSound.soundOn = false;
+
 const storyUpdated = () => {
     if (inlineSound.soundOn === true) {
         inlineSound.textHasChanged(document.querySelectorAll('.subStories p .sound'));
@@ -106,7 +108,6 @@ const App = createReactClass({
                 this.setState({ storyParts: selectedSubstories });
             }, 1000);
 
-
             setTimeout(() => {
                 storyUpdated();
             }, 0);
@@ -144,17 +145,19 @@ const App = createReactClass({
                 soundClass: 'sound off',
             });
             inlineSound.disableSounds();
-            // inlineSound.soundOn = false;
+            inlineSound.soundOn = false;
         } else {
             this.setState({
                 soundButtonText: 'Lyd til',
                 soundPlaying: true,
                 soundClass: 'sound on',
             });
-            // inlineSound.soundOn = true;
+            inlineSound.soundOn = true;
         }
     },
     closeIntro() {
+        inlineSound.soundOn = this.state.soundPlaying;
+        storyUpdated();
         this.setState({ introVisibility: 'hidden' });
     },
     restartAdventure() {
@@ -180,13 +183,14 @@ const App = createReactClass({
                 <span className={`choice ${subStory.buttonVisibility}`}>{subStory.selectedButtonText}</span>
                 <p className={subStory.textVisible} key={i}>{renderHTML(subStory.text)}</p>
             </div>)));
-
+        console.log(4);
         if (!initialStoryHasRendered) {
+            console.log(5);
+            initialStoryHasRendered = true;
+
             setTimeout(() => {
                 storyUpdated();
             });
-
-            initialStoryHasRendered = true;
         }
 
         return storyToRender;
