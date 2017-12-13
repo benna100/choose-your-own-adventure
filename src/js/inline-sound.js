@@ -27,7 +27,6 @@ class InlineSound {
 
     processHtmlToSounds(soundClipElements) {
         soundClipElements.forEach((soundClipElement) => {
-            // console.log(soundClipElement);
             const soundClipId = soundClipElement.getAttribute('data-id');
             if (!(soundClipId in this.sounds)) {
                 const src = soundClipElement.getAttribute('data-src');
@@ -57,11 +56,10 @@ class InlineSound {
 
         for (const [soundId, sound] of Object.entries(this.sounds)) {
             if (!this.sounds[soundId].isPlaying) {
-                console.log(this.sounds[soundId]);
                 const scene = new ScrollMagic.Scene({
                     triggerElement: `div[data-id=${soundId}]`,
                 }).addTo(controller);
-                scene.triggerHook(0.5);
+                scene.triggerHook(0.3);
                 let turnSoundUpInterval;
                 scene.on('enter', () => {
                     if (this.soundOn === true) {

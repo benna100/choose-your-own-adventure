@@ -3,7 +3,7 @@
     "author": "Samuel Dalsgaard Hughes",
     "parts": {
         "1": {
-            "text": "<span>T</span>oget holder foran jer på perronen. Folk er i gang med at stige ombord, mens du står og leger med din nye, røde lommekniv. Din irriterende lillebror og dine forældre, står og snakker med en kontrollør. Toget larmer, mennesker snakker sammen og en fløjte bliver piftet i. Lydene blander sig med duften af varm kaffe og lune pølsehorn, fra kiosken på perronen. \n I skal besøge jeres mormor og morfar. Bedste bliver 100 år gammel, det er derfor i skal afsted. De bor langt væk, og du gider ikke rigtig afsted. 'Pjat! Man ved aldrig hvor lang tid mormor har tilbage. Bedste har vist også noget meget specielt, hun gerne vil give til dig!' Sagde din mor i bilen. Dine forældre stiger ombord på toget, og du slæber din taske hen over de blanke fliser på perronen. Bag dig kan du pludselig høre din lillebror falde og slå sig.\n Du stopper op og kigger tilbage på ham. Han er begyndt at græde. Du ved, at hvis du sætter i løb nu, kan du tage den gode plads ved vinduet, lige foran næsen på ham. Du står og tænker, men tager en dyb indånding, og i det du skal til, at vende dig om, på vej over for at hjælpe din lillebror, sker der noget. Du bliver kold over hele kroppen. Din puls slår hurtigt, og dit blod suser gennem dine årer. Du skynder dig at lukke øjnene, alt bliver mørkt omkring dig. Lydene af mennesker der snakker, toget der larmer og din lillebror der græder forsvinder. Det er som om nogen har slukket for lyden på togperronen. Du er bange og tør ikke bevæge dig. Det eneste du kan høre, er lyden af et åndedræt, der puster ind og ud, ind og ud. Det kommer fra en person, der står lige over for dig.",
+            "text": "<span>T</span>oget holder foran jer på perronen. <div class='sound' data-src='train-station.mp3' data-volume='0.3' data-id='train-station' data-ease-in='true'></div> Folk er i gang med at stige ombord, mens du står og leger med din nye, røde lommekniv. Din irriterende lillebror og dine forældre, står og snakker med en kontrollør. Toget larmer, mennesker snakker sammen og en fløjte bliver piftet i. Lydene blander sig med duften af varm kaffe og lune pølsehorn, fra kiosken på perronen. \n I skal besøge jeres mormor og morfar. Bedste bliver 100 år gammel, det er derfor i skal afsted. De bor langt væk, og du gider ikke rigtig afsted. 'Pjat! Man ved aldrig hvor lang tid mormor har tilbage. Bedste har vist også noget meget specielt, hun gerne vil give til dig!' Sagde din mor i bilen. Dine forældre stiger ombord på toget, og du slæber din taske hen over de blanke fliser på perronen. Bag dig kan du pludselig høre din lillebror falde og slå sig.\n Du stopper op og kigger tilbage på ham. Han er begyndt at græde. Du ved, at hvis du sætter i løb nu, kan du tage den gode plads ved vinduet, lige foran næsen på ham. Du står og tænker, men tager en dyb indånding, og i det du skal til, at vende dig om, på vej over for at hjælpe din lillebror, sker der noget. Du bliver kold over hele kroppen. Din puls slår hurtigt, og dit blod suser gennem dine årer. <div class='sound' data-src='train-station.mp3' data-volume='0.3' data-id='train-station' data-ease-in='true'></div> Du skynder dig at lukke øjnene, alt bliver mørkt omkring dig. Lydene af mennesker der snakker, toget der larmer og din lillebror der græder forsvinder. Det er som om nogen har slukket for lyden på togperronen. Du er bange og tør ikke bevæge dig.<div class='sound' data-clip-to-end='train-station' data-volume='0.3' data-id='train-station-end' data-clip-end='true' data-ease-in='true'></div> Det eneste du kan høre, er lyden af et åndedræt, der puster ind og ud, ind og ud. Det kommer fra en person, der står lige over for dig.",
             "choices": [
                 {
                     "partId": 2,
@@ -48,21 +48,15 @@
             ]
         },
         "4": {
-            "text": "Du vågner op som fra en trance. Din mor og far står over dig og kigger ned på dig. 'Er du okay?' spørger far 'Du besvimede helt ud af det blå.' Du nikker og tager din fars hånd, og bliver hevet op på benene igen. Lydene fra togperronen er vendt tilbage og alle menneskerne bevæger sig igen. Inde i toget sætter du dig ved siden af din lillebror. Da toget begynder at rulle, kigger du tilbage ind på togperronen, der forsvinder bag toget. Du får en mærkelig fornemmelse i maven. Noget fra den drøm du lige havde, men inden du kan nå at tænke over det, får du en albue i siden fra din lillebror. Toget skyder gennem landskabet. Din lillebror er faldet i søvn ved siden af dig, og det går op for dig, at det er helt stille i kupeen. Du kigger dig om og ser, at din mor og far også sidder og sover, ja alle i kupeen er faktisk faldet i søvn. Du kigger ud af vinduet igen. Ude i horisonten ser du sort røg stige op. Røgen tager hurtigt til og fylder himlen. Med et begynder sirener at hyle og tude, og en skrattende stemme kommer fra togets højtalere 'Du skulle ikke have sagt nej. Nu er det hele forbi! Alle du holder af vil dø. Ha, ha, ha. ' Du bliver bange og løber over til din far, river ham i ærmet, men han vågner ikke. Du kigger på ham og mor, de trækker ikke vejret. Du sidste du høre et stort brag tæt på toget og folk der skriger i smerte. Du råber, men ingen kan høre dig og du dør en smertefuld død.",
-            "choices": [
-                {
-                    "partId": 1,
-                    "choiceText": "Du er død. Du tog det forkerte valg, men til dit held har du en chance til, ved at vende tilbage til start og prøve igen.",
-                    "buttonText": "Vend tilbage til start"
-                }
-            ]
+            "text": "Du vågner op som fra en trance. Din mor og far står over dig og kigger ned på dig. 'Er du okay?' spørger far 'Du besvimede helt ud af det blå.' Du nikker og tager din fars hånd, og bliver hevet op på benene igen. Lydene fra togperronen er vendt tilbage og alle menneskerne bevæger sig igen. Inde i toget sætter du dig ved siden af din lillebror. Da toget begynder at rulle, kigger du tilbage ind på togperronen, der forsvinder bag toget. Du får en mærkelig fornemmelse i maven. Noget fra den drøm du lige havde, men inden du kan nå at tænke over det, får du en albue i siden fra din lillebror. Toget skyder gennem landskabet. Din lillebror er faldet i søvn ved siden af dig, og det går op for dig, at det er helt stille i kupeen. Du kigger dig om og ser, at din mor og far også sidder og sover, ja alle i kupeen er faktisk faldet i søvn. Du kigger ud af vinduet igen. Ude i horisonten ser du sort røg stige op. Røgen tager hurtigt til og fylder himlen. Med et begynder sirener at hyle og tude, og en skrattende stemme kommer fra togets højtalere 'Du skulle ikke have sagt nej. Nu er det hele forbi! Alle du holder af vil dø. Ha, ha, ha. ' Du bliver bange og løber over til din far, river ham i ærmet, men han vågner ikke. Du kigger på ham og mor, de trækker ikke vejret. Du sidste du høre et stort brag tæt på toget og folk der skriger i smerte. Du råber, men ingen kan høre dig og du dør en smertefuld død. \n\n Du er død. Du tog det forkerte valg, men til dit held har du en chance til, ved at vende tilbage til start og prøve igen."
         },
         "5": {
-            "text": "Manden nikker og smiler på en måde, du ikke rigtig kan lide. Han tager sin ene hånd ned i lommen og fisker et mærkeligt udseende instrument op. Ud fra skærmen, løber der et par tynde slanger med en flyende, rød væske i. Et par små vægtklodser hænger ned i tynde snore, og bag skærmen drejer tynde tandhjul rundt. Inde i midten af instrumentet sidder en grøn, lysende diamant der pulserer stille. \n'Er det tidsmaskinen?', Spørger du manden med æblet. 'Ja, og det er din nu. Den er gammel og skrøbelig, så pas godt på den. Og husk, at tiden kan være en forvirrende ting, jo mere du rejser, jo sværere vil det blive for dig, at vende tilbage igen. Husk hvad din mission er! Find hende og stop hende. Tro ikke på hvad hun, eller hendes kumpaner siger, og giv dem for guds skyld ikke tidsmaskinen! Forstået?' Du nikker. \n'Godt, jeg sender dig til år 2567, til hvor jeg sidst så hende. Husk på hvem du er, og hvilket år du skal tilbage til. Held og lykke, jeg stoler på dig, min dreng. '\nManden med æblet giver dig tidsmaskinen, og den begynder at vibrere i din hånd. Du kan se væsken i slangerne løbe rundt, vægtklodserne begynder at svæve, og den grønne diamant lyser kraftigere, og kraftigere op. Du mærker gulvet under dig forsvinde. Du kan mærke tidens sus mod dit ansigt og ser lys skyde omkring dig. Med et kan du mærke jord under dine sko,mens lyset fra diamanten bliver svagere og svagere. \n",
+            "text": "Manden nikker og smiler på en måde, du ikke rigtig kan lide. Han tager sin ene hånd ned i lommen og fisker et mærkeligt udseende instrument op. Ud fra skærmen, løber der et par tynde slanger med en flyende, rød væske i. Et par små vægtklodser hænger ned i tynde snore, og bag skærmen drejer tynde tandhjul rundt. Inde i midten af instrumentet sidder en grøn, lysende diamant der pulserer stille. \n'Er det tidsmaskinen?', Spørger du manden med æblet. 'Ja, og det er din nu. Den er gammel og skrøbelig, så pas godt på den. Og husk, at tiden kan være en forvirrende ting, jo mere du rejser, jo sværere vil det blive for dig, at vende tilbage igen. Husk hvad din mission er! Find hende og stop hende. Tro ikke på hvad hun, eller hendes kumpaner siger, og giv dem for guds skyld ikke tidsmaskinen! Forstået?' Du nikker. \n'Godt, jeg sender dig til år 2567, til hvor jeg sidst så hende. Husk på hvem du er, og hvilket år du skal tilbage til. Held og lykke, jeg stoler på dig, min dreng. '\nManden med æblet giver dig tidsmaskinen, og den begynder at vibrere i din hånd. Du kan se væsken i slangerne løbe rundt, vægtklodserne begynder at svæve, og den grønne diamant lyser kraftigere, og kraftigere op. Du mærker gulvet under dig forsvinde. Du kan mærke tidens sus mod dit ansigt og ser lys skyde omkring dig. Med et kan du mærke jord under dine sko ,mens lyset fra diamanten bliver svagere og svagere.",
             "choices": [
                 {
                     "partId": 6,
-                    "buttonText": "Gå til kapitel 6"
+                    "choiceText": "Du begynder at kigge dig omrking",
+                    "buttonText": "Kig dig omkring"
                 }
             ]
         },
@@ -86,7 +80,8 @@
             "choices": [
                 {
                     "partId": 9,
-                    "buttonText": "Gå til kapitel 9"
+                    "choiceText": "Du begynder at kigge dig omrking",
+                    "buttonText": "Kig dig omkring"
                 }
             ]
         },
@@ -105,12 +100,12 @@
             ]
         },
         "10": {
-            "text": "DØØØØØØØ!' Du stormer frem mod manden, med dit sværd hævet over hovedet.  Da du er en meter fra ham, svinger du sværdet mod hans hoved, men bliver pareret af en stor skaldet munk. Munk løfter sin store kæp, og svinger det mod dig. Du undgår med nød og næppe slaget, og spidder spidsen af dit eget sværd, frem mod hans mave. Du bliver pareret igen. I baggrunden kan du høre manden med æblet grine. Du kigger hurtigt mod ham. Med et chok mærker enden af munkens kæp, i din mave. Slaget sender dig med en enorm kraft gennem luften. Du kan ikke trække vejret og vælter ned på den mudrede jord. Manden med æblet kommer over til dig, tager din tidsmaskine ud af din lomme, indstiller den, og kaster den tilbage på dit bryst. Han ryster på hovedet, 'en gang til!' Tidsmaskinens grønne diamant lyser op, og du kan mærke jorden forsvinde under dig.",
+            "text": "DØØØØØØØ!' Du stormer frem mod manden, med dit sværd hævet over hovedet. Da du er en meter fra ham, svinger du sværdet mod hans hoved, men bliver pareret af en stor skaldet munk. Munk løfter sin store kæp, og svinger det mod dig. Du undgår med nød og næppe slaget, og spidder spidsen af dit eget sværd, frem mod hans mave. Du bliver pareret igen. I baggrunden kan du høre manden med æblet grine. Du kigger hurtigt mod ham. Med et chok mærker enden af munkens kæp, i din mave. Slaget sender dig med en enorm kraft gennem luften. Du kan ikke trække vejret og vælter ned på den mudrede jord. Manden med æblet kommer over til dig, tager din tidsmaskine ud af din lomme, indstiller den, og kaster den tilbage på dit bryst. Han ryster på hovedet, 'en gang til!' Tidsmaskinens grønne diamant lyser op, og du kan mærke jorden forsvinde under dig.",
             "choices": [
                 {
                     "partId": 4,
                     "choiceText": "Du kan ikke røre dig og bliver sendt ufrivilligt frem i tiden",
-                    "buttonText": "Gå til kapitel 4"
+                    "buttonText": "Fortsæt ufrivilligt"
                 }
             ]
         },
@@ -119,8 +114,8 @@
             "choices": [
                 {
                     "partId": 4,
-                    "choiceText": " Du kan ikke røre dig og bliver sendt ufrivilligt tilbage i tiden ",
-                    "buttonText": "Gå til kapitel 4"
+                    "choiceText": " Du kan ikke røre dig og bliver sendt ufrivilligt tilbage i tiden",
+                    "buttonText": "Fortsæt ufrivilligt"
                 }
             ]
         },
@@ -160,7 +155,7 @@
                 {
                     "partId": 4,
                     "choiceText": "Du er rejst ufrivilligt med RB89, som har smidt dig af, et sted i tiden.",
-                    "buttonText": "Gå til kapitel 4"
+                    "buttonText": "Fortsæt ufrivilligt"
                 }
             ]
         },
@@ -180,14 +175,7 @@
             ]
         },
         "17": {
-            "text": "Du ejer tiden, bruger den som du vil. Du forandre verden. Du ændrer dine forkerte beslutninger, møder dine største idoler og ser dinosaurer gå rundt på jorden. Du rejser tilbage til universets begyndelse, og frem til Solen og Jordens undergang. Men efter lang tid, føler du dig alene og ensom. Mens du rejser i tid, begynder du at glemme hvem du er, og hvor du kommer fra. Du har mistet din opfattelse af tiden. Dit eneste ønske er at komme tilbage. Se din familie igen, ligge i din egen seng, men du kan ikke finde tilbage til starten. Alt er væk. Du er hersker over tiden, men tiden har en pris. Du bliver gammel og kan ikke rejse mere. Du ender dine dage et mørkt, tidløst sted, hvor du synker langsomt hen og dør ensom og alene. ",
-            "choices": [
-                {
-                    "partId": 1,
-                    "choiceText": "Du er død. Du fik tiden, men mistede alt andet.",
-                    "buttonText": "Gå til kapitel 1"
-                }
-            ]
+            "text": "Du ejer tiden, bruger den som du vil. Du forandre verden. Du ændrer dine forkerte beslutninger, møder dine største idoler og ser dinosaurer gå rundt på jorden. Du rejser tilbage til universets begyndelse, og frem til Solen og Jordens undergang. Men efter lang tid, føler du dig alene og ensom. Mens du rejser i tid, begynder du at glemme hvem du er, og hvor du kommer fra. Du har mistet din opfattelse af tiden. Dit eneste ønske er at komme tilbage. Se din familie igen, ligge i din egen seng, men du kan ikke finde tilbage til starten. Alt er væk. Du er hersker over tiden, men tiden har en pris. Du bliver gammel og kan ikke rejse mere. Du ender dine dage et mørkt, tidløst sted, hvor du synker langsomt hen og dør ensom og alene. \n\n Du er død. Du fik tiden, men mistede alt andet."
         },
         "18":{
             "text": "I det, du spidder Ida, forandre hendes ansigt sig. Hendes rynker synker ind og hendes grå hår bliver brunt. Du begynder at genkende kvinden, der hænger for enden af dit sværd. Det er din mor! Mens du kigger skræmt på hende, begynder hun at tale til dig. 'Undskyld min skat. Jeg har fået dig rodet ind i det her. Du må stoppe ondskaben, jeg var ikke stærk nok, men du kan, jeg ved det! Du skal bruge tidsmaskinen. Du må enten rejse frem i tiden, eller tage tilbage til togstationen, der hvor det hele startede. Stol ikke på nogen, og når du lykkes, skal du ødelægge tidsmaskinen. Lov mig det… Du er nøglen, husk det, og glem aldrig hvem du er. ' Din mor ånder ud, hendes krop bliver slap og synker til jorden. Du ryster, og finder fortvivlet tidsmaskinen frem. Hvor vil du rejse hen?",
@@ -196,11 +184,6 @@
                     "partId": 6,
                     "choiceText": "Fremtiden, det må være der han er! Du taster årstallet ind, og diamanten begynder at lyse op.",
                     "buttonText": "Du vælger at rejse frem i tiden til år 2567 "
-                },
-                {
-                    "partId": 1,
-                    "choiceText": "Tilbage til starten, der må du kunne ændre dine valg, tage de rigtige beslutninger og redde din mor. Du taster årstallet ind, og diamanten begynder at lyse op. ",
-                    "buttonText": "Du vælger at rejse tilbage til starten."
                 }
             ]
         },
@@ -235,14 +218,7 @@
             ]
         },
         "21": {
-            "text": "Du sparker munken over skinnebenet og løber ud i menneskemængden igen. Du råber efter Ida, mens du prøver at se hende. Du kniber øjnene sammen og ser et glimt af hende forklæde, på vej ned ad nogle trapper. Du løber efter hende, ned ad trappen, ned i det mørke kapel. Du står blandt tunge, udhuggede marmorkister. Et par få stearinlys blafrer stille i den tunge luft. Du kan høre præsten tale, messen er gået i gang. 'Ida' hvisker du og ser igen en flig af hendes forklæde, forsvinde bag en af kisterne. Du går derover og ser Ida stå med tidsmaskinen i sine hænder. Men hun er ikke alene. Ved siden af hende, står en ung kvinde, med lyst hår, mens hun læner sig op ad en stok. Hun ser dig og smiler, mens hun lydløst og hurtigt, trækker en spejlrevolver frem. Lyset fra stearinlysene bliver suget til revolveren. Du mærker noget varmt flænse din mave. Du falder om på gulvet og kigger op. To skikkelser står over dig, du prøver at råbe efter hjælp, men ingen kan høre dig hernede. Det sidste du ser, er et grønt lys, der lyser kapellet op, og Ida og kvinden med stokken der forsvinder ud i den blå luft.",
-            "choices": [
-                {
-                    "partId": 1,
-                    "choiceText": "Du er død. Men historien er ikke slut her. Vend tilbage til starten og prøv igen.",
-                    "buttonText": "Gå til kapitel 1"
-                }
-            ]
+            "text": "Du sparker munken over skinnebenet og løber ud i menneskemængden igen. Du råber efter Ida, mens du prøver at se hende. Du kniber øjnene sammen og ser et glimt af hende forklæde, på vej ned ad nogle trapper. Du løber efter hende, ned ad trappen, ned i det mørke kapel. Du står blandt tunge, udhuggede marmorkister. Et par få stearinlys blafrer stille i den tunge luft. Du kan høre præsten tale, messen er gået i gang. 'Ida' hvisker du og ser igen en flig af hendes forklæde, forsvinde bag en af kisterne. Du går derover og ser Ida stå med tidsmaskinen i sine hænder. Men hun er ikke alene. Ved siden af hende, står en ung kvinde, med lyst hår, mens hun læner sig op ad en stok. Hun ser dig og smiler, mens hun lydløst og hurtigt, trækker en spejlrevolver frem. Lyset fra stearinlysene bliver suget til revolveren. Du mærker noget varmt flænse din mave. Du falder om på gulvet og kigger op. To skikkelser står over dig, du prøver at råbe efter hjælp, men ingen kan høre dig hernede. Det sidste du ser, er et grønt lys, der lyser kapellet op, og Ida og kvinden med stokken der forsvinder ud i den blå luft. \n\n Du er død. Men historien er ikke slut her. Vend tilbage til starten og prøv igen."
         },
         "22": {
             "text": "Du ser den grønne diamant lyse op og mærker jorden forsvinde under dig. Lys strømmer gennem din krop, indtil du igen kan mærke jord under dine fødder. Du står i en lang, mørk gang. Fra et lokale bag dig, kan du høre folk råbe og grine, og glas der bliver klirret sammen. Længere henne ad gangen står et stort væsen og lytter ved en dør. Væsenet er ligeså bredt, som det er langt og i midten af dens krop, er et stort gult øje. Du skal til at gribe efter dit sværd, men du ser du en stor, skaldet person der trækker et stort, skinnende våben frem. Du hører et højt zap, og væsenet falder dødt til jorden. Du går tættere på personen med våbnet og ser hvem det er. Det er den store, skaldede munk fra domkirken! Han ser anderledes ud. Han har en munkedragt og nogle mærkelige træsko på, og begge hans øjne er blevet erstattet af to lysende huller. I står begge foran døren, som væsenet lyttede til. Du kan høre to stemmer snakke derindefra, du kan genkende den ene af stemmerne, og får en stærk trang til at gå ind i rummet. Du lægger din hånd på dørens håndtag, men inden du når at åbne døren, lægger munken sin store hånd oven på din. 'Jeg er her for at hjælpe dig. ' Siger han med en dyb alvorlig stemme, 'du må ikke gå ind i rummet, stol på mig. Du finder ingen svar derinde. Kom, følg med mig.'",
@@ -260,24 +236,10 @@
             ]
         },
         "23": {
-            "text": "Mens du løber mod manden med æblet, folder du din lommekniv ud. Inden manden når at reagere, har du stukket kniven ind i hans mave. Du tager hurtigt tidsmaskinen fra ham. Mens manden vakler væk fra dig, ændre hans ansigt sig. Rynker kommer frem fra hans ansigtsfolder, og hans hår bliver gråt. Du kender den gamle mand der vakler foran dig, det er din morfar. Inden du når at hjælpe ham, vælter han ud over kanten på kirketårnet. Du kigger ned på tidsmaskinen, 'Hvor skal jeg rejse hen? Hvem skal jeg stoppe?' spørger du dig selv forvirret. Men inden du kan nå at bestemme dig, stiger der røg op, nede fra byen. Med et mærker du et kraftigt jordskælv, der får kirketårnet til at ryste. Du taber tidsmaskinen, som lander hårdt på kirketårnets sten. Den grønne diamant falder ud af den. Du kigger op på himlen. Den er blevet mørk og oppe fra den, kommer en enorm lysstråle ned mod jorden. Du ved, at alt snart er slut, hvis ikke kommer når at komme væk. Du prøver at putte den grønne diamant ind i tidsmaskinen, du taster et årstal ind, men der sker ikke noget. Tidsmaskinen er gået i stykker. Det sidste du kan høre, inden strålen rammer jorden, er folk der skriger under dig.",
-            "choices": [
-                {
-                    "partId": 1,
-                    "choiceText": " Du er død. Men historien er ikke slut her. Vend tilbage til starten og prøv igen",
-                    "buttonText": "Gå til kapitel 1"
-                }
-            ]
+            "text": "Mens du løber mod manden med æblet, folder du din lommekniv ud. Inden manden når at reagere, har du stukket kniven ind i hans mave. Du tager hurtigt tidsmaskinen fra ham. Mens manden vakler væk fra dig, ændre hans ansigt sig. Rynker kommer frem fra hans ansigtsfolder, og hans hår bliver gråt. Du kender den gamle mand der vakler foran dig, det er din morfar. Inden du når at hjælpe ham, vælter han ud over kanten på kirketårnet. Du kigger ned på tidsmaskinen, 'Hvor skal jeg rejse hen? Hvem skal jeg stoppe?' spørger du dig selv forvirret. Men inden du kan nå at bestemme dig, stiger der røg op, nede fra byen. Med et mærker du et kraftigt jordskælv, der får kirketårnet til at ryste. Du taber tidsmaskinen, som lander hårdt på kirketårnets sten. Den grønne diamant falder ud af den. Du kigger op på himlen. Den er blevet mørk og oppe fra den, kommer en enorm lysstråle ned mod jorden. Du ved, at alt snart er slut, hvis ikke kommer når at komme væk. Du prøver at putte den grønne diamant ind i tidsmaskinen, du taster et årstal ind, men der sker ikke noget. Tidsmaskinen er gået i stykker. Det sidste du kan høre, inden strålen rammer jorden, er folk der skriger under dig. \n\n Du er død. Men historien er ikke slut her. Vend tilbage til starten og prøv igen"
         },
         "24": {
-            "text": "Du følger dit instinkt og går ind i rummet. I det, du åbner døren, stirrer du ind i øjnene på dig selv. En anden mærkelig person holder tidsmaskinen i sine hænder. Du bliver forvirret. Er der to af dig? 'Hvem er du?' råber din kopi til dig. En mekanisk stemme kommer fra personen med tidsmaskinen. 'Han er dig, og du er ham. I er den samme person, fanget i den samme tid. Tak for tidsmaskinen og farvel!' Den grønne diamant lyser op, og han forsvinder. Du står med dit sværd i hånden, og ved ikke hvad du skal gøre. 'Hvis du er mig, hvem er jeg så? Hvor kommer du fra og hvordan er du endt her?' spørger du din kopi. Han svarer dig ikke, men står som forstenet og stirrer på dig, med et tomt blik i øjnene. Tankerne vælter rundt i dit hoved. Du prøver at huske hvem du er, hvad du hedder, hvor du kommer fra. Men alle dine minder, bliver svagere og svagere. 'Hjælp mig' hvisker din kopi til dig. Men det er for sent.  Din krop bliver slap og du falder mod gulvet. Det begynder at sortne for dine øjne. Jeg må hjem, er det sidste, du når at tænke, inden din hjerne giver op. Du ligger bevidstløs på gulvet, og ser på dig selv dø.",
-            "choices": [
-                {
-                    "partId": 1,
-                    "choiceText": " Du er død. Men historien er ikke slut her. Vend tilbage til starten og prøv igen ",
-                    "buttonText": "Gå til kapitel 1"
-                }
-            ]
+            "text": "Du følger dit instinkt og går ind i rummet. I det, du åbner døren, stirrer du ind i øjnene på dig selv. En anden mærkelig person holder tidsmaskinen i sine hænder. Du bliver forvirret. Er der to af dig? 'Hvem er du?' råber din kopi til dig. En mekanisk stemme kommer fra personen med tidsmaskinen. 'Han er dig, og du er ham. I er den samme person, fanget i den samme tid. Tak for tidsmaskinen og farvel!' Den grønne diamant lyser op, og han forsvinder. Du står med dit sværd i hånden, og ved ikke hvad du skal gøre. 'Hvis du er mig, hvem er jeg så? Hvor kommer du fra og hvordan er du endt her?' spørger du din kopi. Han svarer dig ikke, men står som forstenet og stirrer på dig, med et tomt blik i øjnene. Tankerne vælter rundt i dit hoved. Du prøver at huske hvem du er, hvad du hedder, hvor du kommer fra. Men alle dine minder, bliver svagere og svagere. 'Hjælp mig' hvisker din kopi til dig. Men det er for sent.  Din krop bliver slap og du falder mod gulvet. Det begynder at sortne for dine øjne. Jeg må hjem, er det sidste, du når at tænke, inden din hjerne giver op. Du ligger bevidstløs på gulvet, og ser på dig selv dø. \n\n Du er død. Men historien er ikke slut her. Vend tilbage til starten og prøv igen"
         },
         "25": {
             "text": "I skynder jer ud på taget af bygningen. Himlen er mørk og lydløse lyn slår frem og tilbage over jer. 'Hvem var inde i rummet?' 'Det var du selv' svarer munken, mens han kigger ud over kanten på bygningen. 'Tid er en forunderlig størrelse. Som en hvirvelvind suger den dimensioner, universer og skæbner til sig. Du er her nu, et andet valg, en ny mulighed, en ny realitet.' Munken tager din hånden og kaster sig ud over kanten. I suser ned gennem luften, langs bygningens blanke facade. I svæver ned mod byen og lyset under jer. Der bliver dyttet af jer. Munken griber fat i taget af en stor bil. 'Den her er på rette vej' råber munken til dig. Du ved godt hvor i er på vej hen. I hopper af og står foran togstationen. 'Tag den her, du får brug for den!' Munken rækker dig sit sølvvåben. 'Lad os ende det her, engang for alle.'",

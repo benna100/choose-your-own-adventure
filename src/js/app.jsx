@@ -11,7 +11,6 @@ const inlineSound = new InlineSound();
 let initialStoryHasRendered = false;
 const storyUpdated = () => {
     if (inlineSound.soundOn === true) {
-        console.log(4);
         inlineSound.textHasChanged(document.querySelectorAll('.subStories p .sound'));
     }
 };
@@ -59,7 +58,7 @@ const Navigation = createReactClass({
                 <div>hello</div>
             );
         }
-        // console.log(this.props.choices);
+
         const buttons = this.props.choices.map((choice, i) => <button className={this.state.buttonVisibility} key={i} onClick={() => { this.choiceSelected(choice); }}>{choice.buttonText}</button>);
 
         return (
@@ -124,8 +123,6 @@ const App = createReactClass({
             buttonVisibility: 'hidden',
         });
 
-        console.log(selectedSubstory.choices);
-
         if (selectedSubstory.choices !== undefined) {
             this.setState({
                 choices: selectedSubstory.choices,
@@ -140,7 +137,6 @@ const App = createReactClass({
         this.showSelectedText(selectedSubstories);
     },
     toggleSound() {
-        console.log(this.state.soundPlaying);
         if (this.state.soundPlaying === true) {
             this.setState({
                 soundButtonText: 'Lyd fra',
@@ -148,18 +144,35 @@ const App = createReactClass({
                 soundClass: 'sound off',
             });
             inlineSound.disableSounds();
-            inlineSound.soundOn = false;
+            // inlineSound.soundOn = false;
         } else {
             this.setState({
                 soundButtonText: 'Lyd til',
                 soundPlaying: true,
                 soundClass: 'sound on',
             });
-            inlineSound.soundOn = true;
+            // inlineSound.soundOn = true;
         }
     },
     closeIntro() {
         this.setState({ introVisibility: 'hidden' });
+    },
+    restartAdventure() {
+        (function smoothscroll(){
+            const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            if (currentScroll > 0) {
+                window.requestAnimationFrame(smoothscroll);
+                window.scrollTo (0, currentScroll - (currentScroll/5));
+            }
+        })();
+
+        setTimeout(() => {
+            this.setState({
+                storyParts: [this.state.storyParts[0]],
+                adventureFinished: 'hidden',
+                choices: this.props.story.parts['1'].choices,
+            });
+        }, 100);
     },
     renderStory() {
         const storyToRender = (this.state.storyParts.map((subStory, i) => (
@@ -206,7 +219,7 @@ const App = createReactClass({
                     <div className={`result ${this.state.adventureFinished}`}>
                         <h1>Dit eventyr er færdigt</h1>
                         <p>Du oplevede 1 eventyr ud af 12. </p>
-                        <button>prøv igen?</button>
+                        <button onClick={() => { this.restartAdventure(); }}>prøv igen?</button>
                     </div>
                 </section>
                 <section className="author">
@@ -215,8 +228,8 @@ const App = createReactClass({
                 </section>
                 <section className="newsletter">
                     <h1>Lige en sidste ting!</h1>
-                    <p>Hvis du har lyst til at <b>skrive en historie</b>, i det her format, så send mig en mail på <a href="mailto:benjamin.dals.hughes@gmail.com">benjamin.dals.hughes@gmail.com</a></p>
-                    <p>Hvis du vil <b>holdes opdateret når der kommer nye historier</b>, så skriv din mail her. No spam!</p>
+                    <p>Hvis du har lyst til at skrive en historie, i det her format, så send mig en mail på <a href="mailto:benjamin.dals.hughes@gmail.com">benjamin.dals.hughes@gmail.com</a></p>
+                    <p>Hvis du vil holdes opdateret når der kommer nye historier, så skriv din mail her. No spam!</p>
                     <div id="mc_embed_signup">
                         <form action="https://github.us17.list-manage.com/subscribe/post?u=0286749bd5e9f7614d3653c4f&amp;id=e22dfd19bf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                             <div id="mc_embed_signup_scroll">
