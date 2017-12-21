@@ -183,9 +183,7 @@ const App = createReactClass({
                 <span className={`choice ${subStory.buttonVisibility}`}>{subStory.selectedButtonText}</span>
                 <p className={subStory.textVisible} key={i}>{renderHTML(subStory.text)}</p>
             </div>)));
-        console.log(4);
         if (!initialStoryHasRendered) {
-            console.log(5);
             initialStoryHasRendered = true;
 
             setTimeout(() => {
@@ -203,6 +201,7 @@ const App = createReactClass({
                         <h1 className="warning">ADVARSEL!</h1>
                         <br />
                         <p>
+
                             Dig og KUN dig alene har ansvaret for hvad der sker i denne historie.<br />Der er farer, valg, eventyr og konsekvenser. DU må bruge alle dine talenter og hele din enorme intelligens hvis du vil stå en chance.<br />Den forkerte beslutning kan ende forfærdeligt – Ja, med selve døden
                         </p>
                         <button className={this.state.soundClass} onClick={() => { this.toggleSound(); }} data-sound={this.state.soundButtonText} />
@@ -226,11 +225,11 @@ const App = createReactClass({
                         <button onClick={() => { this.restartAdventure(); }}>prøv igen?</button>
                     </div>
                 </section>
-                <section className="author">
+                <section className={`author ${this.state.adventureFinished}`} >
                     <img alt="Author" src="images/samuel.svg" />
-                    <p>Samuel D. Hughes er 28 år og bor i København, hvor han til daglig arbejder som lærer. </p>
+                    <p>Forfatteren Samuel D. Hughes er 28 år og bor i København, hvor han til daglig arbejder som lærer. </p>
                 </section>
-                <section className="newsletter">
+                <section className={`newsletter ${this.state.adventureFinished}`}>
                     <h1>Lige en sidste ting!</h1>
                     <p>Hvis du har lyst til at skrive en historie, i det her format, så send mig en mail på <a href="mailto:benjamin.dals.hughes@gmail.com">benjamin.dals.hughes@gmail.com</a></p>
                     <p>Hvis du vil holdes opdateret når der kommer nye historier, så skriv din mail her. No spam!</p>
