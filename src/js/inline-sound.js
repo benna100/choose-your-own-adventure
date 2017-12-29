@@ -3,13 +3,13 @@ import { Clip } from 'phonograph';
 
 const ScrollMagic = require('scrollmagic');
 
-
 // setup the instance, pass callback functions
 const controller = new ScrollMagic.Controller();
 
 class InlineSound {
     constructor() {
         this.sounds = {};
+        this.clips = {};
         this.soundIntervals = {};
         this.soundOn = true;
     }
@@ -25,64 +25,41 @@ class InlineSound {
         }, offset);
     }
 
-    processHtmlToSounds(soundClipElements) {
-        soundClipElements.forEach((soundClipElement) => {
-            const soundClipId = soundClipElement.getAttribute('data-id');
+    textHasChanged() {
+        Array.prototype.slice.call(document.querySelectorAll('div.sound:not([data-processed])')).forEach((element) => {
+            const scene = new ScrollMagic.Scene({
+                triggerElement: element,
+            }).addTo(controller);
+            scene.triggerHook(0.9);
+            scene.on('enter', (event) => {
+                const triggerElement = event.currentTarget.triggerElement();
+                const src = triggerElement.getAttribute('data-src');
+                const volume = parseFloat(triggerElement.getAttribute('data-volume'));
 
-            if (!(soundClipId in this.sounds)) {
-                const src = soundClipElement.getAttribute('data-src');
-                const volume = parseFloat(soundClipElement.getAttribute('data-volume'));
-                const clipEnd = soundClipElement.getAttribute('data-clip-end') === 'true';
-                const easeIn = soundClipElement.getAttribute('data-ease-in') === 'true';
-                const clipToEnd = soundClipElement.getAttribute('data-clip-to-end');
-                const clip = new Clip({
-                    url: `./data/${src}`,
-                    volume,
-                });
+                triggerElement.setAttribute('data-processed', true);
 
-                this.sounds[soundClipElement.getAttribute('data-id')] = {
-                    src,
-                    volume,
-                    clip,
-                    clipEnd,
-                    easeIn,
-                    clipToEnd,
-                };
-            }
+                if (!(src in this.clips)) {
+                    const clip = new Clip({
+                        url: `./data/${src}`,
+                        volume,
+                    });
+
+                    clip.buffer()
+                        .then(() => {
+                            clip.volume = 0;
+                            clip.play();
+                            this.easeInClip(clip, src, 0, volume, 4000, 20);
+                        });
+
+                    this.clips[src] = {
+                        clip,
+                        volume,
+                    };
+                } else {
+                    this.easeInClip(this.clips[src].clip, src, this.clips[src].volume, volume, 4000, 20);
+                }
+            });
         });
-    }
-
-    textHasChanged(htmlWithSoundClips) {
-        this.processHtmlToSounds(htmlWithSoundClips);
-
-        for (const [soundId, sound] of Object.entries(this.sounds)) {
-            if (!this.sounds[soundId].isPlaying) {
-                const scene = new ScrollMagic.Scene({
-                    triggerElement: `div[data-id=${soundId}]`,
-                }).addTo(controller);
-                scene.triggerHook(0.3);
-                let turnSoundUpInterval;
-                scene.on('enter', () => {
-                    if (this.soundOn === true) {
-                        if (!this.sounds[soundId].clipEnd) {
-                            this.sounds[soundId].clip.buffer()
-                                .then(() => {
-                                    this.sounds[soundId].isPlaying = true;
-                                    this.sounds[soundId].clip.volume = 0;
-                                    this.sounds[soundId].clip.loop = true;
-                                    this.sounds[soundId].clip.play();
-
-                                    this.easeInClip(soundId, 0, sound.volume, 4000, 20);
-                                });
-                        } else {
-                            clearInterval(turnSoundUpInterval);
-                            this.sounds[soundId].isPlaying = true;
-                            this.easeInClip(this.sounds[soundId].clipToEnd, sound.volume, 0, 2000, 20);
-                        }
-                    }
-                });
-            }
-        }
     }
 
 
@@ -93,22 +70,21 @@ class InlineSound {
     }
 
 
-    easeInClip(clipId, startVolume, endVolume, duration, frequency) {
-        const clip = this.sounds[clipId].clip;
-        clearInterval(this.soundIntervals[clipId]);
+    easeInClip(clip, clipSrc, startVolume, endVolume, duration, frequency) {
+        clearInterval(this.soundIntervals[clipSrc]);
 
         const timeInterval = duration / frequency;
         let volume = startVolume;
 
         const volumeInterval = endVolume - startVolume;
         const volumeIncrement = volumeInterval / frequency;
-        this.soundIntervals[clipId] = setInterval(() => {
+        this.soundIntervals[clipSrc] = setInterval(() => {
             if (volumeInterval > 0) {
                 volume += volumeIncrement;
                 if (volume < endVolume) {
                     clip.volume = volume;
                 } else {
-                    clearInterval(this.soundIntervals[clipId]);
+                    clearInterval(this.soundIntervals[clipSrc]);
                 }
             } else {
                 volume += volumeIncrement;
@@ -116,7 +92,7 @@ class InlineSound {
                     clip.volume = volume;
                 } else {
                     clip.pause();
-                    clearInterval(this.soundIntervals[clipId]);
+                    clearInterval(this.soundIntervals[clipSrc]);
                 }
             }
         }, timeInterval);

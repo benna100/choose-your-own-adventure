@@ -8,8 +8,8 @@ import '../styles/main.scss';
 const createReactClass = require('create-react-class');
 
 const inlineSound = new InlineSound();
-let initialStoryHasRendered = false;
-inlineSound.soundOn = false;
+let initialLoad = true;
+inlineSound.soundOn = true;
 
 const storyUpdated = () => {
     if (inlineSound.soundOn === true) {
@@ -183,13 +183,14 @@ const App = createReactClass({
                 <span className={`choice ${subStory.buttonVisibility}`}>{subStory.selectedButtonText}</span>
                 <p className={subStory.textVisible} key={i}>{renderHTML(subStory.text)}</p>
             </div>)));
-        if (!initialStoryHasRendered) {
-            initialStoryHasRendered = true;
 
+        if (!initialLoad) {
             setTimeout(() => {
                 storyUpdated();
             });
         }
+
+        initialLoad = false;
 
         return storyToRender;
     },
@@ -222,7 +223,7 @@ const App = createReactClass({
                     <div className={`result ${this.state.adventureFinished}`}>
                         <h1>Dit eventyr er færdigt</h1>
                         <p>Du oplevede 1 eventyr ud af 12. </p>
-                        <button onClick={() => { this.restartAdventure(); }}>prøv igen?</button>
+                        <button onClick={() => { this.restartAdventure(); }}>Prøv igen?</button>
                     </div>
                 </section>
                 <section className={`author ${this.state.adventureFinished}`} >
