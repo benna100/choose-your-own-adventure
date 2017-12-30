@@ -225,12 +225,11 @@ section.adventure {
     border-radius: 2px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     background-color: white;
-    line-height: 1.5em;
+    line-height: 1.6em;
     max-width: 700px;
     margin: 0 auto 60px;
     padding: 5% 5%;
     position: relative;
-
 
 
     @media only screen and (min-width: 500px) {
@@ -318,6 +317,8 @@ section.adventure {
     p {margin-bottom: 20px;}
 
     button {
+        color: #fbd14b;
+        background-color: white;
         padding: 20px;
         display: block;
         margin: 0 auto 20px;

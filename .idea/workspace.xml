@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b0b667d-35d2-4403-a8d7-cebcdf01587c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/0.bundle.c28ce4876ae6b41c7e48.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/bundle.c28ce4876ae6b41c7e48.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/js/app.jsx" afterPath="$PROJECT_DIR$/src/js/app.jsx" />
       <change beforePath="$PROJECT_DIR$/src/js/inline-sound.js" afterPath="$PROJECT_DIR$/src/js/inline-sound.js" />
+      <change beforePath="$PROJECT_DIR$/src/styles/main.scss" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/app.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+            <state relative-caret-position="167">
+              <caret line="225" column="31" lean-forward="false" selection-start-line="225" selection-start-column="31" selection-end-line="225" selection-end-column="31" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <marker date="1514642116911" expanded="true" signature="10266:10308" ph="..." />
@@ -34,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inline-sound.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="inline-sound.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/inline-sound.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="21" />
+            <state relative-caret-position="167">
+              <caret line="74" column="25" lean-forward="false" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -59,8 +55,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="333" column="29" lean-forward="false" selection-start-line="333" selection-start-column="29" selection-end-line="333" selection-end-column="29" />
+            <state relative-caret-position="-9">
+              <caret line="218" column="9" lean-forward="false" selection-start-line="218" selection-start-column="9" selection-end-line="218" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -90,7 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>du siger</find>
       <find>kapi</find>
       <find>soundClipElements</find>
       <find>det er kvin</find>
@@ -115,11 +110,12 @@
       <find>0.5</find>
       <find>trainStation</find>
       <find>conso</find>
-      <find>result</find>
       <find>ressul</find>
-      <find>prøv</find>
-      <find>restartAdventure</find>
       <find>disableSounds</find>
+      <find>restartAdventure</find>
+      <find>prøv</find>
+      <find>result</find>
+      <find>line-h</find>
     </findStrings>
     <replaceStrings>
       <replace>partId</replace>
@@ -157,9 +153,9 @@
         <option value="$PROJECT_DIR$/webpack.config.production.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/data/tidsmaskinen.json" />
+        <option value="$PROJECT_DIR$/src/js/app.jsx" />
         <option value="$PROJECT_DIR$/src/styles/main.scss" />
         <option value="$PROJECT_DIR$/src/js/inline-sound.js" />
-        <option value="$PROJECT_DIR$/src/js/app.jsx" />
       </list>
     </option>
   </component>
@@ -334,12 +330,12 @@
       <workItem from="1512506414991" duration="2255000" />
       <workItem from="1512579120418" duration="7937000" />
       <workItem from="1513108294925" duration="15277000" />
-      <workItem from="1513885672761" duration="18432000" />
+      <workItem from="1513885672761" duration="19637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114188000" />
+    <option name="totallyTimeSpent" value="115393000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -722,31 +718,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="225" column="31" lean-forward="false" selection-start-line="225" selection-start-column="31" selection-end-line="225" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1514642116911" expanded="true" signature="10266:10308" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="333" column="29" lean-forward="false" selection-start-line="333" selection-start-column="29" selection-end-line="333" selection-end-column="29" />
+        <state relative-caret-position="-9">
+          <caret line="218" column="9" lean-forward="false" selection-start-line="218" selection-start-column="9" selection-end-line="218" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/inline-sound.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="74" column="21" lean-forward="false" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="21" />
+        <state relative-caret-position="167">
+          <caret line="74" column="25" lean-forward="false" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/app.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1514642116911" expanded="true" signature="10266:10308" ph="..." />
           </folding>
         </state>
       </provider>

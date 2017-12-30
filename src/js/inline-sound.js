@@ -73,11 +73,13 @@ class InlineSound {
     }
 
     turnAllSoundsDown() {
-        for (const clipSrc in this.clips) {
-            if (this.clips.hasOwnProperty(clipSrc)) {
-                this.easeInClip(this.clips[clipSrc].clip, clipSrc, this.clips[clipSrc].volume, 0, 4000, 20);
+        setTimeout(() => {
+            for (const clipSrc in this.clips) {
+                if (this.clips.hasOwnProperty(clipSrc)) {
+                    this.easeInClip(this.clips[clipSrc].clip, clipSrc, this.clips[clipSrc].volume, 0, 4000, 20);
+                }
             }
-        }
+        }, 500);
     }
 
     disableSounds() {
@@ -88,6 +90,7 @@ class InlineSound {
 
 
     easeInClip(clip, clipSrc, startVolume, endVolume, duration, frequency) {
+        console.log(clipSrc, startVolume, endVolume);
         clearInterval(this.soundIntervals[clipSrc]);
 
         const timeInterval = duration / frequency;
@@ -100,6 +103,7 @@ class InlineSound {
                 volume += volumeIncrement;
                 if (volume < endVolume) {
                     this.clips[clipSrc].volume = volume;
+                    // console.log(volume);
                     clip.volume = volume;
                 } else {
                     clearInterval(this.soundIntervals[clipSrc]);
@@ -109,6 +113,8 @@ class InlineSound {
                 if (volume > endVolume) {
                     // while changing volume remember to update volume on object, so transitions are smooth.
                     this.clips[clipSrc].volume = volume;
+                    // console.log(volume);
+
                     clip.volume = volume;
                 } else {
                     // clip.pause();
