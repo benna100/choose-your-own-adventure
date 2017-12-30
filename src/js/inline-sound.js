@@ -1,7 +1,17 @@
 import { Clip } from 'phonograph';
 
+import trainStation from './../data/train-station.mp3';
+import future from './../data/future.mp3';
 
 const ScrollMagic = require('scrollmagic');
+
+
+const sounds = {
+    trainStation,
+    future,
+};
+
+console.log(sounds);
 
 // setup the instance, pass callback functions
 const controller = new ScrollMagic.Controller();
@@ -40,7 +50,7 @@ class InlineSound {
 
                 if (!(src in this.clips)) {
                     const clip = new Clip({
-                        url: `./data/${src}`,
+                        url: sounds[src],
                         volume,
                     });
 

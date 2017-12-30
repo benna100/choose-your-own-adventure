@@ -5,6 +5,7 @@ import InlineSound from './inline-sound';
 
 import '../styles/main.scss';
 
+
 const createReactClass = require('create-react-class');
 
 const inlineSound = new InlineSound();

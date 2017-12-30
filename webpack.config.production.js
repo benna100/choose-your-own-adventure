@@ -1,10 +1,10 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
-var CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
-var path = require('path');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
-var HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
-var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
+const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackInlineSourcePlugin = require('html-webpack-inline-source-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
     entry: {
@@ -57,6 +57,11 @@ module.exports = {
             test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
             exclude: /(node_modules|bower_components)/,
             loader: 'url-loader?limit=10000&mimetype=image/svg+xml',
+        },
+        {
+            test: /\.mp3$/,
+            exclude: /(node_modules|bower_components)/,
+            loader: 'file-loader',
         }],
     },
     plugins: [
@@ -89,7 +94,7 @@ module.exports = {
             // Copy directory contents to {output}/to/directory/
             { from: 'src/images', to: 'images' },
         ]),
-                /*
+        /*
                 new CommonsChunkPlugin({
                     name: 'vendor',
                     file: 'vendor.bundle.js',

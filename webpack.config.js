@@ -51,6 +51,11 @@ module.exports = {
             test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
             exclude: /(node_modules|bower_components)/,
             loader: 'url-loader?limit=10000&mimetype=image/svg+xml',
+        },
+        {
+            test: /\.mp3$/,
+            exclude: /(node_modules|bower_components)/,
+            loader: 'file-loader',
         }],
     },
     plugins: [
