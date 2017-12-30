@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import renderHTML from 'react-render-html';
 import InlineSound from './inline-sound';
+import pageTurn from './../data/page-turn.mp3';
 
 import '../styles/main.scss';
 
@@ -52,7 +53,7 @@ const Navigation = createReactClass({
             });
 
         if (inlineSound.soundOn === true) {
-            inlineSound.playSound('./data/page-turn.mp3', 300);
+            inlineSound.playSound(pageTurn, 300);
         }
     },
     render() {

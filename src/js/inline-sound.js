@@ -11,8 +11,6 @@ const sounds = {
     future,
 };
 
-console.log(sounds);
-
 // setup the instance, pass callback functions
 const controller = new ScrollMagic.Controller();
 
