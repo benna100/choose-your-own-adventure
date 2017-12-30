@@ -72,6 +72,13 @@ class InlineSound {
         });
     }
 
+    turnAllSoundsDown() {
+        for (const clipSrc in this.clips) {
+            if (this.clips.hasOwnProperty(clipSrc)) {
+                this.easeInClip(this.clips[clipSrc].clip, clipSrc, this.clips[clipSrc].volume, 0, 4000, 20);
+            }
+        }
+    }
 
     disableSounds() {
         for (const [soundId] of Object.entries(this.sounds)) {

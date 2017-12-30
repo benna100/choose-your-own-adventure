@@ -177,6 +177,7 @@ const App = createReactClass({
                 choices: this.props.story.parts['1'].choices,
             });
         }, 100);
+        inlineSound.turnAllSoundsDown();
     },
     renderStory() {
         const storyToRender = (this.state.storyParts.map((subStory, i) => (
