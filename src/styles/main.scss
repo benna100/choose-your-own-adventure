@@ -317,8 +317,26 @@ section.adventure {
     h1,
     p {margin-bottom: 20px;}
 
-    button { padding: 20px; }
+    button {
+        padding: 20px;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    @keyframes hovering {
+        0%   {transform: translateY(-3px);}
+        50%  {transform: translateY(3px);}
+        100% {transform: translateY(-3px);}
+    }
+
+    span {
+        display: block;
+        animation-duration: 1s;
+        animation-name: hovering;
+        animation-iteration-count: infinite;
+    }
 }
+
 
 section.author {
     border-radius: 2px;

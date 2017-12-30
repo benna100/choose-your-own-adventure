@@ -10,12 +10,11 @@ import '../styles/main.scss';
 const createReactClass = require('create-react-class');
 
 const inlineSound = new InlineSound();
-let initialLoad = true;
 inlineSound.soundOn = true;
 
 const storyUpdated = () => {
     if (inlineSound.soundOn === true) {
-        inlineSound.textHasChanged(document.querySelectorAll('.subStories p .sound'));
+        inlineSound.textHasChanged(document.querySelectorAll('.subStories p clip'));
     }
 };
 
@@ -186,13 +185,11 @@ const App = createReactClass({
                 <p className={subStory.textVisible} key={i}>{renderHTML(subStory.text)}</p>
             </div>)));
 
-        if (!initialLoad) {
+        if (this.state.introVisibility === 'hidden') {
             setTimeout(() => {
                 storyUpdated();
             });
         }
-
-        initialLoad = false;
 
         return storyToRender;
     },
@@ -226,6 +223,7 @@ const App = createReactClass({
                         <h1>Dit eventyr er færdigt</h1>
                         <p>Du oplevede 1 eventyr ud af 12. </p>
                         <button onClick={() => { this.restartAdventure(); }}>Prøv igen?</button>
+                        <span>👇</span>
                     </div>
                 </section>
                 <section className={`author ${this.state.adventureFinished}`} >

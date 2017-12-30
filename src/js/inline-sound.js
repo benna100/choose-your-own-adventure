@@ -34,17 +34,19 @@ class InlineSound {
     }
 
     textHasChanged() {
-        Array.prototype.slice.call(document.querySelectorAll('div.sound:not([data-processed])')).forEach((element) => {
+        Array.prototype.slice.call(document.querySelectorAll('clip:not([data-processed])')).forEach((element) => {
+            element.setAttribute('data-processed', true);
             const scene = new ScrollMagic.Scene({
                 triggerElement: element,
             }).addTo(controller);
+
             scene.triggerHook(0.9);
             scene.on('enter', (event) => {
                 const triggerElement = event.currentTarget.triggerElement();
+
                 const src = triggerElement.getAttribute('data-src');
                 const volume = parseFloat(triggerElement.getAttribute('data-volume'));
 
-                triggerElement.setAttribute('data-processed', true);
 
                 if (!(src in this.clips)) {
                     const clip = new Clip({
@@ -90,6 +92,7 @@ class InlineSound {
             if (volumeInterval > 0) {
                 volume += volumeIncrement;
                 if (volume < endVolume) {
+                    this.clips[clipSrc].volume = volume;
                     clip.volume = volume;
                 } else {
                     clearInterval(this.soundIntervals[clipSrc]);
@@ -97,9 +100,11 @@ class InlineSound {
             } else {
                 volume += volumeIncrement;
                 if (volume > endVolume) {
+                    // while changing volume remember to update volume on object, so transitions are smooth.
+                    this.clips[clipSrc].volume = volume;
                     clip.volume = volume;
                 } else {
-                    clip.pause();
+                    // clip.pause();
                     clearInterval(this.soundIntervals[clipSrc]);
                 }
             }
