@@ -52,6 +52,7 @@ class InlineSound {
                     const clip = new Clip({
                         url: sounds[src],
                         volume,
+                        loop: true,
                     });
 
                     clip.buffer()

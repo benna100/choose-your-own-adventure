@@ -420,12 +420,12 @@ section.newsletter {
     }
 
     input[type=email] {
-        border: solid 1px black;
+        border: solid 2px $button-background;
         padding: 10px;
         margin-bottom: 10px;
         width: 100%;
         max-width: 700px;
-        height: 62px;
+        height: 64px;
         box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
         border-radius: 4px;
 
