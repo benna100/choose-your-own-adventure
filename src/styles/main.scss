@@ -117,6 +117,8 @@ section.intro {
         visibility: hidden;
     }
 
+
+
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -126,6 +128,42 @@ section.intro {
         max-width: 400px;
         text-align: left;
         margin: 0 auto;
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            margin-bottom: 30px;
+            font-size: 4em;
+        }
+
+        svg {
+            width: 50%;
+            margin: 0 auto 10px;
+            display: block;
+
+            .hour-hand,
+            .minute-hand {
+                transition: opacity 0.3s;
+                transform-origin: left;
+            }
+            .hour-hand {
+                animation: rotate 50s infinite linear;
+            }
+
+            .minute-hand {
+                animation: rotate 5s infinite linear;
+            }
+
+            @keyframes backwardsRotate {
+                0% { transform: rotateZ(0deg); }
+                100% { transform: rotateZ(360deg); }
+            }
+
+            @keyframes rotate {
+                0% { transform: rotateZ(0deg); }
+                100% { transform: rotateZ(360deg); }
+            }
+
+        }
 
         @media only screen and (min-height: 500px) {
             position: absolute;
@@ -137,6 +175,30 @@ section.intro {
 
         @media only screen and (min-width: 500px) {
             justify-content: center;
+        }
+    }
+
+
+
+    &.clock-hidden {
+        .hour-hand,
+        .minute-hand {
+            opacity: 0;
+        }
+    }
+
+    &.reverse {
+        .hour-hand {
+            animation: rotate 5s infinite !important;
+        }
+
+        .minute-hand {
+            animation: rotate 0.5s infinite !important;
+        }
+
+        .hour-hand,
+        .minute-hand {
+            animation-direction: reverse !important;
         }
     }
 
@@ -436,6 +498,7 @@ section.newsletter {
             margin-bottom: 20px;
         }
     }
+
 
     div[aria-hidden=true] { display: none; }
     input[type=submit] {

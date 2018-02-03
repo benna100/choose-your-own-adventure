@@ -56,6 +56,10 @@ module.exports = {
             test: /\.mp3$/,
             exclude: /(node_modules|bower_components)/,
             loader: 'file-loader',
+        },
+        {
+            test: /\.svg$/,
+            loader: 'raw-loader',
         }],
     },
     plugins: [
