@@ -2,6 +2,7 @@ import { Clip } from 'phonograph';
 
 import trainStation from './../data/train-station.mp3';
 import future from './../data/future.mp3';
+import sirene from './../data/sirene.mp3';
 
 const ScrollMagic = require('scrollmagic');
 
@@ -9,6 +10,7 @@ const ScrollMagic = require('scrollmagic');
 const sounds = {
     trainStation,
     future,
+    sirene,
 };
 
 // setup the instance, pass callback functions
@@ -46,7 +48,6 @@ class InlineSound {
 
                 const src = triggerElement.getAttribute('data-src');
                 const volume = parseFloat(triggerElement.getAttribute('data-volume'));
-
 
                 if (!(src in this.clips)) {
                     const clip = new Clip({
@@ -100,8 +101,8 @@ class InlineSound {
         const volumeInterval = endVolume - startVolume;
         const volumeIncrement = volumeInterval / frequency;
         this.soundIntervals[clipSrc] = setInterval(() => {
+            volume += volumeIncrement;
             if (volumeInterval > 0) {
-                volume += volumeIncrement;
                 if (volume < endVolume) {
                     this.clips[clipSrc].volume = volume;
                     // console.log(volume);
@@ -110,7 +111,6 @@ class InlineSound {
                     clearInterval(this.soundIntervals[clipSrc]);
                 }
             } else {
-                volume += volumeIncrement;
                 if (volume > endVolume) {
                     // while changing volume remember to update volume on object, so transitions are smooth.
                     this.clips[clipSrc].volume = volume;

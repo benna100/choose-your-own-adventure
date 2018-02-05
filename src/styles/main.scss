@@ -118,7 +118,6 @@ section.intro {
     }
 
 
-
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -131,19 +130,21 @@ section.intro {
 
         h1 {
             font-family: 'Great Vibes', cursive;
-            margin-bottom: 30px;
+            line-height: 1.3em;
             font-size: 4em;
         }
 
         svg {
+            transition: transform 0.6s;
             width: 50%;
             margin: 0 auto 10px;
             display: block;
+            position: relative;
 
             .hour-hand,
             .minute-hand {
                 transition: opacity 0.3s;
-                transform-origin: left;
+                transform-origin: 320px 344px;
             }
             .hour-hand {
                 animation: rotate 50s infinite linear;
@@ -162,7 +163,6 @@ section.intro {
                 0% { transform: rotateZ(0deg); }
                 100% { transform: rotateZ(360deg); }
             }
-
         }
 
         @media only screen and (min-height: 500px) {
@@ -176,92 +176,142 @@ section.intro {
         @media only screen and (min-width: 500px) {
             justify-content: center;
         }
+
+        &.clock-hidden {
+            .hour-hand,
+            .minute-hand {
+                opacity: 0;
+            }
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+
+            &.warning {
+                text-decoration: underline;
+            }
+
+            &.title {
+                font-weight: bolder;
+            }
+
+            transition: transform 0.6s;
+        }
+
+        button.sound {
+            width: 80px;
+            height: 80px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            padding:5px;
+            cursor: pointer;
+            position: relative;
+            background-color: white;
+            background-size: 40px 40px;
+            background-image: url(../images/headphone.svg);
+            background-repeat: no-repeat;
+            background-position: 20px 5px;
+            flex-shrink: 0;
+            color: $button-background;
+            transition: transform 0.6s 0.6s;
+
+            &.off:before {
+                content: 'X';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #ff4e50;
+                font-size: 2.6em;
+            }
+
+            &:after {
+                content: attr(data-sound);
+                position: absolute;
+                bottom: 5px;
+                left: 50%;
+                width: 100px;
+                transform: translateX(-50%);
+            }
+        }
+
+        span.sound {
+            display: block;
+            height: auto;
+
+            &.on {
+                height: 0;
+                overflow: hidden;
+            }
+        }
+
+        button.begin {
+            transition: transform 0.6s;
+            flex-shrink: 0;
+            margin-top: 10px;
+            padding: 20px;
+        }
     }
 
+    @keyframes popout {
+        0% { transform: scale(1); }
+        30% { transform: scale(1.1); }
+        100% { transform: scale(0); }
+    }
 
+    @keyframes popoutLarge {
+        0% { transform: scale(1); }
+        30% { transform: scale(1.6); }
+        100% { transform: scale(0); }
+    }
 
-    &.clock-hidden {
-        .hour-hand,
-        .minute-hand {
-            opacity: 0;
-        }
+    @keyframes shake {
+        10%{transform: translate3d(-51%, -51%, 0);}
+        20% {transform: translate3d(-49%, -49%, 0);}
+        30% {transform: translate3d(-50%, -50%, 0);}
+        40% {transform: translate3d(-49%, -49%, 0);}
+        50% {transform: translate3d(-52%, -48%, 0);}
+        60% {transform: translate3d(-51%, -51%, 0);}
+        70% {transform: translate3d(-53%, -51%, 0);}
+        80% {transform: translate3d(-54%, -51%, 0);}
+        90% {transform: translate3d(-51%, -47%, 0);}
+        100% {transform: translate3d(-46%, -53%, 0);}
     }
 
     &.reverse {
-        .hour-hand {
-            animation: rotate 5s infinite !important;
+        animation: shake 1.3s 2.6s;
+
+        .wrapper {
+            .hour-hand {
+                animation: rotate 5s infinite linear;
+            }
+
+            .minute-hand {
+                animation: rotate 0.5s infinite linear;
+            }
+
+            .hour-hand,
+            .minute-hand {
+                animation-direction: reverse;
+            }
+
+            button.sound,
+            span.sound {
+                animation: popout 0.6s 1s forwards;
+            }
+
+            button.begin {
+                animation: popout 0.8s forwards;
+            }
+
+            h1 {
+                animation: popout 0.6s 1.6s forwards;
+            }
+
+            svg {
+                animation: popoutLarge 0.9s 2.2s forwards;
+            }
         }
-
-        .minute-hand {
-            animation: rotate 0.5s infinite !important;
-        }
-
-        .hour-hand,
-        .minute-hand {
-            animation-direction: reverse !important;
-        }
-    }
-
-    h1 {
-        &.warning {
-            text-decoration: underline;
-        }
-
-        &.title {
-            font-weight: bolder;
-        }
-    }
-
-    button.sound {
-        width: 80px;
-        height: 80px;
-        margin-top: 30px;
-        margin-bottom: 10px;
-        padding:5px;
-        cursor: pointer;
-        position: relative;
-        background-color: white;
-        background-size: 40px 40px;
-        background-image: url(../images/headphone.svg);
-        background-repeat: no-repeat;
-        background-position: 20px 5px;
-        flex-shrink: 0;
-        color: $button-background;
-
-        &.off:before {
-            content: 'X';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #ff4e50;
-            font-size: 2.6em;
-        }
-
-        &:after {
-            content: attr(data-sound);
-            position: absolute;
-            bottom: 5px;
-            left: 50%;
-            width: 100px;
-            transform: translateX(-50%);
-        }
-    }
-
-    span.sound {
-        display: block;
-        height: auto;
-
-        &.on {
-            height: 0;
-            overflow: hidden;
-        }
-    }
-
-    button.begin {
-        flex-shrink: 0;
-        margin-top: 10px;
-        padding: 20px;
     }
 }
 
@@ -279,6 +329,23 @@ section.intro {
     &.hidden {
         opacity: 0;
         visibility: hidden;
+    }
+
+    &.reverse {
+        animation: brighten 4s;
+    }
+
+    @keyframes brighten {
+        10% {opacity: 1;}
+        85% {
+            opacity: 1;
+            background-color: black;
+        }
+        100% {
+            opacity: 1;
+            background-color: white;
+        }
+
     }
 }
 
@@ -317,6 +384,7 @@ section.adventure {
             display: block;
             opacity: 0;
             font-family: 'PT Sans', sans-serif;
+            text-align: center;
 
             &.hidden {
                 opacity: 0;

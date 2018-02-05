@@ -168,7 +168,7 @@ const App = createReactClass({
             setTimeout(() => {
                 storyUpdated();
                 this.setState({ introVisibility: 'hidden' });
-            }, 1000);
+            }, 3600); // 3600
         }, 300);
     },
     restartAdventure() {
@@ -362,7 +362,7 @@ const App = createReactClass({
                         <button className="begin" onClick={() => { this.closeIntro(); }}>Start dit eventyr</button>
                     </div>
                 </section>
-                <div className={`overlay ${this.state.introVisibility}`} />
+                <div className={`overlay ${this.state.introVisibility} ${this.state.clockState}`} />
                 <section className="adventure">
                     <h1 className="title">
                         {this.props.story.title}
@@ -374,7 +374,7 @@ const App = createReactClass({
                     <Navigation updateContent={this.updateContent} choices={this.state.choices} />
                     <div className={`result ${this.state.adventureFinished}`}>
                         <h1>Dit eventyr er færdigt</h1>
-                        <p>Du oplevede 1 eventyr ud af 12. </p>
+                        <p>Dette var blot 1 ud af mange eventyr. </p>
                         <button onClick={() => { this.restartAdventure(); }}>Prøv igen?</button>
                         <span>👇</span>
                     </div>
