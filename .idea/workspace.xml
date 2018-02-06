@@ -3,13 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0b667d-35d2-4403-a8d7-cebcdf01587c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/0.bundle.66e5df9282e03b1906b8.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/bundle.66e5df9282e03b1906b8.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/0.bundle.791ca553497e9550b04b.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/42a0ba64b3314b2d377b1a652bbb2e84.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/bundle.791ca553497e9550b04b.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/images/headphone.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/images/samuel.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/images/samuel.svg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change beforePath="$PROJECT_DIR$/src/data/medevil.mp3" afterPath="$PROJECT_DIR$/src/data/market.mp3" />
+      <change beforePath="$PROJECT_DIR$/src/data/tavern.mp3" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/data/tidsmaskinen.json" afterPath="$PROJECT_DIR$/src/data/tidsmaskinen.json" />
+      <change beforePath="$PROJECT_DIR$/src/images/headphone.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/images/samuel.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/images/samuel.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
       <change beforePath="$PROJECT_DIR$/src/js/app.jsx" afterPath="$PROJECT_DIR$/src/js/app.jsx" />
       <change beforePath="$PROJECT_DIR$/src/js/inline-sound.js" afterPath="$PROJECT_DIR$/src/js/inline-sound.js" />
       <change beforePath="$PROJECT_DIR$/src/styles/main.scss" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.production.js" afterPath="$PROJECT_DIR$/webpack.config.production.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,15 +36,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="app.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/app.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="170" column="29" lean-forward="true" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
+            <state relative-caret-position="206">
+              <caret line="169" column="28" lean-forward="false" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1517863359124" expanded="true" signature="32296:32338" ph="..." />
+                <marker date="1517950508761" expanded="true" signature="10358:10400" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -39,8 +62,8 @@
       <file leaf-file-name="inline-sound.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/inline-sound.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+            <state relative-caret-position="408">
+              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -51,8 +74,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="16" column="70" lean-forward="false" selection-start-line="16" selection-start-column="70" selection-end-line="18" selection-end-column="155" />
+            <state relative-caret-position="288">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -61,35 +84,18 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="367" column="8" lean-forward="true" selection-start-line="367" selection-start-column="8" selection-end-line="367" selection-end-column="8" />
+            <state relative-caret-position="259">
+              <caret line="211" column="41" lean-forward="false" selection-start-line="211" selection-start-column="41" selection-end-line="211" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tidsmaskinen.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tidsmaskinen.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/tidsmaskinen.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="50" column="1698" lean-forward="false" selection-start-line="50" selection-start-column="1692" selection-end-line="50" selection-end-column="1698" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clock.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/images/svg/clock.svg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tidsmaskinen2.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/data/tidsmaskinen2.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1032">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="166">
+              <caret line="185" column="12" lean-forward="false" selection-start-line="185" selection-start-column="12" selection-end-line="185" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -99,22 +105,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>din mave</find>
-      <find>0.5</find>
-      <find>trainStation</find>
-      <find>conso</find>
-      <find>ressul</find>
-      <find>restartAdventure</find>
-      <find>result</find>
-      <find>line-h</find>
-      <find>disableSounds</find>
-      <find>prøv</find>
-      <find>wrapper</find>
-      <find>img</find>
-      <find>M311.44 150.69C311.44 145.61 315.55 141.5 320.63 141.49C324.06 141.49 325.14 141.49 328.56 141.49C333.64 141.49 337.76 145.6 337.76 150.68C337.77 188.84 337.81 294.13 337.83 332.29C337.83 337.37 333.71 341.49 328.64 341.49C325.21 341.49 324.13 341.49 320.71 341.49C315.63 341.5 311.51 337.38 311.51 332.3C311.5 294.14 311.46 188.85 311.44 150.69Z</find>
-      <find>aeGWH6l2q</find>
       <find>minute</find>
-      <find>#b5VoQNDCS</find>
       <find>clocks</find>
       <find>start</find>
       <find>https://raw.githubusercontent.com/benna100/birthday-weather/gh-pages/src/images/birthday-svg.PNG</find>
@@ -125,10 +116,25 @@
       <find>prøv i</find>
       <find>hour-hand</find>
       <find>Du vågner op</find>
-      <find>sirene</find>
       <find>future</find>
       <find>this.clips[clipSrc].volume = volume;</find>
+      <find>iconSVG</find>
+      <find>promise</find>
+      <find>#b5VoQNDCS</find>
+      <find>svg</find>
       <find>section.ad</find>
+      <find>headp</find>
+      <find>head</find>
+      <find>36</find>
+      <find>sirene</find>
+      <find>data-src='sirene'</find>
+      <find>sirener</find>
+      <find>Du står midt i en mudderpø</find>
+      <find>Munk løfter</find>
+      <find>Hvor vil du rejse hen?</find>
+      <find>de enorme porte.</find>
+      <find>easeInClip</find>
+      <find>choir</find>
     </findStrings>
     <replaceStrings>
       <replace>partId</replace>
@@ -159,18 +165,18 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/styles/index.scss" />
         <option value="$PROJECT_DIR$/src/images/samuel.svg" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.eslintrc.json" />
         <option value="$PROJECT_DIR$/src/images/headphone.svg" />
         <option value="$PROJECT_DIR$/src/data/tidsmaskinen2.json" />
-        <option value="$PROJECT_DIR$/webpack.config.production.js" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/images/svg/clock.svg" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/data/tidsmaskinen.json" />
-        <option value="$PROJECT_DIR$/src/js/inline-sound.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/styles/main.scss" />
+        <option value="$PROJECT_DIR$/webpack.config.production.js" />
         <option value="$PROJECT_DIR$/src/js/app.jsx" />
+        <option value="$PROJECT_DIR$/src/js/inline-sound.js" />
+        <option value="$PROJECT_DIR$/src/data/tidsmaskinen.json" />
       </list>
     </option>
   </component>
@@ -186,9 +192,10 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-8" />
-    <option name="width" value="1126" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="857" />
+    <option name="y" value="-24" />
+    <option name="width" value="976" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -239,11 +246,6 @@
             <path>
               <item name="choose-your-own-adventure" type="b2602c69:ProjectViewProjectNode" />
               <item name="choose-your-own-adventure" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="choose-your-own-adventure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="choose-your-own-adventure" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -251,19 +253,6 @@
               <item name="choose-your-own-adventure" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="data" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="choose-your-own-adventure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="choose-your-own-adventure" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="choose-your-own-adventure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="choose-your-own-adventure" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="svg" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="choose-your-own-adventure" type="b2602c69:ProjectViewProjectNode" />
@@ -293,6 +282,9 @@
     <property name="node.js.selected.package.eslint" value="F:\git-projekter\choose-your-own-adventure\node_modules\eslint" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="eslint.code.style.apply.dismiss" value="true" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.selected.package.standard" value="" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -357,12 +349,12 @@
       <workItem from="1512579120418" duration="7937000" />
       <workItem from="1513108294925" duration="15277000" />
       <workItem from="1513885672761" duration="23534000" />
-      <workItem from="1517679871996" duration="15724000" />
+      <workItem from="1517679871996" duration="22101000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135014000" />
+    <option name="totallyTimeSpent" value="141391000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -374,19 +366,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1126" height="1038" extended-state="1" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26666668" sideWeight="0.4931973" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1546724" sideWeight="0.4931973" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2576967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25144175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3204105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18635875" sideWeight="0.50680274" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.02736602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20980616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18635875" sideWeight="0.50680274" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -415,7 +406,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1517863359124" expanded="true" signature="32296:32338" ph="..." />
+            <marker date="1517950508761" expanded="true" signature="10358:10400" ph="..." />
           </folding>
         </state>
       </provider>
@@ -457,7 +448,7 @@
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1517863359124" expanded="true" signature="32296:32338" ph="..." />
+            <marker date="1517950508761" expanded="true" signature="10358:10400" ph="..." />
           </folding>
         </state>
       </provider>
@@ -520,7 +511,7 @@
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1517863359124" expanded="true" signature="32296:32338" ph="..." />
+            <marker date="1517950508761" expanded="true" signature="10358:10400" ph="..." />
           </folding>
         </state>
       </provider>
@@ -690,26 +681,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.production.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="61" column="33" lean-forward="false" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+        <state relative-caret-position="288">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -717,22 +692,6 @@
     <entry file="file://$PROJECT_DIR$/src/images/svg/clock.svg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="16" column="70" lean-forward="false" selection-start-line="16" selection-start-column="70" selection-end-line="18" selection-end-column="155" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/tidsmaskinen.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="50" column="1698" lean-forward="false" selection-start-line="50" selection-start-column="1692" selection-end-line="50" selection-end-column="1698" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/tidsmaskinen2.json">
@@ -743,32 +702,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/inline-sound.js">
+    <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="259">
+          <caret line="211" column="41" lean-forward="false" selection-start-line="211" selection-start-column="41" selection-end-line="211" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
+    <entry file="file://$PROJECT_DIR$/webpack.config.production.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="367" column="8" lean-forward="true" selection-start-line="367" selection-start-column="8" selection-end-line="367" selection-end-column="8" />
+        <state relative-caret-position="433">
+          <caret line="59" column="10" lean-forward="false" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="47" column="53" lean-forward="true" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/app.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="170" column="29" lean-forward="true" selection-start-line="170" selection-start-column="29" selection-end-line="170" selection-end-column="29" />
+        <state relative-caret-position="206">
+          <caret line="169" column="28" lean-forward="false" selection-start-line="169" selection-start-column="28" selection-end-line="169" selection-end-column="28" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1517863359124" expanded="true" signature="32296:32338" ph="..." />
+            <marker date="1517950508761" expanded="true" signature="10358:10400" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/inline-sound.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/tidsmaskinen.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="185" column="12" lean-forward="false" selection-start-line="185" selection-start-column="12" selection-end-line="185" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

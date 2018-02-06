@@ -49,7 +49,7 @@ module.exports = {
             loader: 'url-loader?limit=10000&mimetype=application/octet-stream',
         }, {
             test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-            exclude: /(node_modules|bower_components)/,
+            include: [path.resolve(__dirname, 'src/images/svg')],
             loader: 'url-loader?limit=10000&mimetype=image/svg+xml',
         },
         {
@@ -59,6 +59,7 @@ module.exports = {
         },
         {
             test: /\.svg$/,
+            include: [path.resolve(__dirname, 'src/images/inline-svg')],
             loader: 'raw-loader',
         }],
     },

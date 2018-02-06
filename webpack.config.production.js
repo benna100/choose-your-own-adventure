@@ -55,13 +55,18 @@ module.exports = {
             loader: 'url-loader?limit=10000&mimetype=application/octet-stream',
         }, {
             test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-            exclude: /(node_modules|bower_components)/,
+            include: [path.resolve(__dirname, 'src/images/svg')],
             loader: 'url-loader?limit=10000&mimetype=image/svg+xml',
         },
         {
             test: /\.mp3$/,
             exclude: /(node_modules|bower_components)/,
             loader: 'file-loader',
+        },
+        {
+            test: /\.svg$/,
+            include: [path.resolve(__dirname, 'src/images/inline-svg')],
+            loader: 'raw-loader',
         }],
     },
     plugins: [

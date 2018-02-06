@@ -3,6 +3,9 @@ import { Clip } from 'phonograph';
 import trainStation from './../data/train-station.mp3';
 import future from './../data/future.mp3';
 import sirene from './../data/sirene.mp3';
+import market from './../data/market.mp3';
+import inn from './../data/inn.mp3';
+import choir from './../data/choir.mp3';
 
 const ScrollMagic = require('scrollmagic');
 
@@ -11,6 +14,9 @@ const sounds = {
     trainStation,
     future,
     sirene,
+    market,
+    inn,
+    choir,
 };
 
 // setup the instance, pass callback functions
@@ -60,7 +66,7 @@ class InlineSound {
                         .then(() => {
                             clip.volume = 0;
                             clip.play();
-                            this.easeInClip(clip, src, 0, volume, 4000, 20);
+                            this.easeInClip(clip, src, 0, volume, 4000);
                         });
 
                     this.clips[src] = {
@@ -68,7 +74,7 @@ class InlineSound {
                         volume,
                     };
                 } else {
-                    this.easeInClip(this.clips[src].clip, src, this.clips[src].volume, volume, 4000, 20);
+                    this.easeInClip(this.clips[src].clip, src, this.clips[src].volume, volume, 4000);
                 }
             });
         });
@@ -78,7 +84,7 @@ class InlineSound {
         setTimeout(() => {
             for (const clipSrc in this.clips) {
                 if (this.clips.hasOwnProperty(clipSrc)) {
-                    this.easeInClip(this.clips[clipSrc].clip, clipSrc, this.clips[clipSrc].volume, 0, 4000, 20);
+                    this.easeInClip(this.clips[clipSrc].clip, clipSrc, this.clips[clipSrc].volume, 0, 4000);
                 }
             }
         }, 500);
@@ -91,7 +97,8 @@ class InlineSound {
     }
 
 
-    easeInClip(clip, clipSrc, startVolume, endVolume, duration, frequency) {
+    easeInClip(clip, clipSrc, startVolume, endVolume, duration) {
+        const frequency = 40;
         console.log(clipSrc, startVolume, endVolume);
         clearInterval(this.soundIntervals[clipSrc]);
 
