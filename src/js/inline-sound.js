@@ -6,7 +6,9 @@ import sirene from './../data/sirene.mp3';
 import market from './../data/market.mp3';
 import inn from './../data/inn.mp3';
 import choir from './../data/choir.mp3';
+import ending from './../data/story-ending.mp3';
 
+console.log(choir);
 const ScrollMagic = require('scrollmagic');
 
 
@@ -17,6 +19,7 @@ const sounds = {
     market,
     inn,
     choir,
+    ending,
 };
 
 // setup the instance, pass callback functions
