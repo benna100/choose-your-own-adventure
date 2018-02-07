@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0b667d-35d2-4403-a8d7-cebcdf01587c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/0.bundle.e4fc322dfcda99ac78b7.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/bundle.e4fc322dfcda99ac78b7.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/cecfab4ecebae42955061da3dce2a200.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/images/svg/clock.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change beforePath="$PROJECT_DIR$/dist/images/social.png" afterPath="$PROJECT_DIR$/dist/images/social.png" />
+      <change beforePath="$PROJECT_DIR$/src/images/social.png" afterPath="$PROJECT_DIR$/src/images/social.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -334,12 +331,12 @@
       <workItem from="1512579120418" duration="7937000" />
       <workItem from="1513108294925" duration="15277000" />
       <workItem from="1513885672761" duration="23534000" />
-      <workItem from="1517679871996" duration="24617000" />
+      <workItem from="1517679871996" duration="25231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143907000" />
+    <option name="totallyTimeSpent" value="144521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
