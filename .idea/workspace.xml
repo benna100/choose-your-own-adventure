@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b0b667d-35d2-4403-a8d7-cebcdf01587c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/0.bundle.8987ed9fd3eebcb7bb2d.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/0563a0bdb1f2fa88a7969815bb2b7a03.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/36b7a1b94c9cd4a0edaa1ad436b7ebf4.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/3ec6945f34d22d46dc1413f38931c171.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/80bff4cee70d932e7c164bd69b1060ab.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/90f355a516b0eadb6f923d43a161344b.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/9334543caefa6f576365a912cc865e9e.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/bundle.8987ed9fd3eebcb7bb2d.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/e54b29bf6b2b37c55a60b948c3684576.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/f8a3efe49d15b3a819f0f4ece6bbb044.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/images/inline-svg/clock.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/images/samuel.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/images/social.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/images/svg/headphone.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/images/svg/headphone.svg" afterPath="$PROJECT_DIR$/src/images/svg/headphone.svg" />
-      <change beforePath="$PROJECT_DIR$/src/js/app.jsx" afterPath="$PROJECT_DIR$/src/js/app.jsx" />
-      <change beforePath="$PROJECT_DIR$/src/js/inline-sound.js" afterPath="$PROJECT_DIR$/src/js/inline-sound.js" />
-      <change beforePath="$PROJECT_DIR$/src/styles/main.scss" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
-    </list>
+    <list default="true" id="6b0b667d-35d2-4403-a8d7-cebcdf01587c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -351,12 +330,12 @@
       <workItem from="1512579120418" duration="7937000" />
       <workItem from="1513108294925" duration="15277000" />
       <workItem from="1513885672761" duration="23534000" />
-      <workItem from="1517679871996" duration="32567000" />
+      <workItem from="1517679871996" duration="32598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151857000" />
+    <option name="totallyTimeSpent" value="151888000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -369,7 +348,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1546724" sideWeight="0.4931973" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -377,7 +355,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2576967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3204105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3204105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18635875" sideWeight="0.50680274" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20980616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
