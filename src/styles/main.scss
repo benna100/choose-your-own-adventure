@@ -552,7 +552,7 @@ section.newsletter {
     }
 
     .mc-field-group {
-        width: 100%;
+        flex-grow: 1;
     }
 
     input[type=email] {
