@@ -169,7 +169,7 @@ const App = createReactClass({
             setTimeout(() => {
                 storyUpdated();
                 this.setState({ introVisibility: 'hidden' });
-            }, 200); // 3600
+            }, 3600); // 3600
         }, 300);
     },
     restartAdventure() {
