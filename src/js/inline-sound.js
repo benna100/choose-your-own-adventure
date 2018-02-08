@@ -69,7 +69,7 @@ class InlineSound {
                         .then(() => {
                             clip.volume = 0;
                             clip.play();
-                            this.easeInClip(clip, src, 0, volume, 4000);
+                            this.easeInClip(clip, src, 0, volume);
                         });
 
                     this.clips[src] = {
@@ -77,7 +77,7 @@ class InlineSound {
                         volume,
                     };
                 } else {
-                    this.easeInClip(this.clips[src].clip, src, this.clips[src].volume, volume, 4000);
+                    this.easeInClip(this.clips[src].clip, src, this.clips[src].volume, volume);
                 }
             });
         });
@@ -87,7 +87,7 @@ class InlineSound {
         setTimeout(() => {
             for (const clipSrc in this.clips) {
                 if (this.clips.hasOwnProperty(clipSrc)) {
-                    this.easeInClip(this.clips[clipSrc].clip, clipSrc, this.clips[clipSrc].volume, 0, 4000);
+                    this.easeInClip(this.clips[clipSrc].clip, clipSrc, this.clips[clipSrc].volume, 0);
                 }
             }
         }, 500);
@@ -100,9 +100,9 @@ class InlineSound {
     }
 
 
-    easeInClip(clip, clipSrc, startVolume, endVolume, duration) {
+    easeInClip(clip, clipSrc, startVolume, endVolume) {
+        const duration = 4000;
         const frequency = 40;
-        console.log(clipSrc, startVolume, endVolume);
         clearInterval(this.soundIntervals[clipSrc]);
 
         const timeInterval = duration / frequency;
@@ -115,7 +115,6 @@ class InlineSound {
             if (volumeInterval > 0) {
                 if (volume < endVolume) {
                     this.clips[clipSrc].volume = volume;
-                    // console.log(volume);
                     clip.volume = volume;
                 } else {
                     clearInterval(this.soundIntervals[clipSrc]);
@@ -124,7 +123,6 @@ class InlineSound {
                 if (volume > endVolume) {
                     // while changing volume remember to update volume on object, so transitions are smooth.
                     this.clips[clipSrc].volume = volume;
-                    // console.log(volume);
 
                     clip.volume = volume;
                 } else {

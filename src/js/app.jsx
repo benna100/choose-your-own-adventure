@@ -78,6 +78,7 @@ const Navigation = createReactClass({
 const App = createReactClass({
     getInitialState() {
         const firstStory = this.props.story.parts['1'];
+        const soundButtonVisible = ('AudioContext' in window) ? '' : 'no-sound';
 
         return {
             storyParts: [{
@@ -93,6 +94,7 @@ const App = createReactClass({
             adventureFinished: 'hidden',
             introVisibility: 'visible',
             clockState: 'normal',
+            soundButtonVisibility: soundButtonVisible,
         };
     },
     showSelectedText(selectedSubstories) {
@@ -187,6 +189,15 @@ const App = createReactClass({
             });
         }, 100);
         inlineSound.turnAllSoundsDown();
+        setTimeout(() => {
+            inlineSound.clips.trainStation.clip
+                .buffer()
+                .then(() => {
+                    inlineSound.clips.trainStation.clip.volume = 0;
+                    inlineSound.clips.trainStation.clip.play();
+                    inlineSound.easeInClip(inlineSound.clips.trainStation.clip, 'trainStation', 0, 0.3);
+                });
+        }, 1000);
     },
     renderStory() {
         const storyToRender = (this.state.storyParts.map((subStory, i) => (
@@ -206,7 +217,7 @@ const App = createReactClass({
     render() {
         return (
             <div>
-                <section className={`intro ${this.state.clockState} ${this.state.introVisibility}`}>
+                <section className={`intro ${this.state.clockState} ${this.state.introVisibility} ${this.state.soundButtonVisibility}`}>
                     <div className="wrapper">
                         <h1>Tidsmaskinen</h1>
                         <SVGInline svg={iconSVG} />
@@ -235,12 +246,6 @@ const App = createReactClass({
                 <section className={`author ${this.state.adventureFinished}`} >
                     <img alt="Author" src="images/samuel.jpg" />
                     <p>Forfatteren Samuel D. Hughes er 28 år og bor i København, hvor han til daglig arbejder som lærer. </p>
-                    <clip data-src="trainStation" data-volume="0.0"></clip>
-                    <clip data-src="future" data-volume="0.0"></clip>
-                    <clip data-src="sirene" data-volume="0.0"></clip>
-                    <clip data-src="market" data-volume="0.0"></clip>
-                    <clip data-src="inn" data-volume="0.0"></clip>
-                    <clip data-src="choir" data-volume="0.0"></clip>
                 </section>
                 <section className={`newsletter ${this.state.adventureFinished}`}>
                     <h1>Lige en sidste ting!</h1>

@@ -1,5 +1,13 @@
+$secundary: #F4F7F7;
+
+
+$button-color: white;
+$primary-color: #34495E;
+
+
 body {
-    background: #f6f6ef;
+    background: $secundary;
+    color: #2f2f2f;
 }
 
 .clearfix:after {
@@ -10,9 +18,6 @@ body {
     clear: both;
     height: 0;
 }
-
-$button-color: white;
-$button-background: #fbd14b;
 
 * html .clearfix {
     zoom: 1;
@@ -67,12 +72,12 @@ input[type=submit]{
     padding: 10px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-    background-color: $button-background;
+    background-color: $primary-color;
     color: $button-color;
     transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 
     &:hover {
-        background-color: #ffd758;
+        background-color: #405972;
         transform: translateY(-1px);
         box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
     }
@@ -80,7 +85,7 @@ input[type=submit]{
     &:active {
         transform: translateY(1px);
         box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-        background-color: #ffd758;
+        background-color: #2c3e50;
     }
 }
 
@@ -116,6 +121,7 @@ section.intro {
         visibility: hidden;
     }
 
+    &.no-sound button.sound { display: none; }
 
     .wrapper {
         display: flex;
@@ -136,7 +142,7 @@ section.intro {
         svg {
             transition: transform 0.6s;
             width: 50%;
-            margin: 0 auto 10px;
+            margin: 0 auto 40px;
             display: block;
             position: relative;
 
@@ -200,7 +206,6 @@ section.intro {
         button.sound {
             width: 80px;
             height: 80px;
-            margin-top: 30px;
             margin-bottom: 10px;
             padding:5px;
             cursor: pointer;
@@ -211,7 +216,7 @@ section.intro {
             background-repeat: no-repeat;
             background-position: 20px 5px;
             flex-shrink: 0;
-            color: $button-background;
+            color: $primary-color;
             transition: transform 0.6s 0.6s;
 
             &.off:before {
@@ -245,7 +250,7 @@ section.intro {
         }
 
         button.begin {
-            transition: transform 0.6s;
+            transition: transform 0.6s, background-color 0.3s;
             flex-shrink: 0;
             margin-top: 10px;
             padding: 20px;
@@ -375,7 +380,6 @@ section.adventure {
 
     .subStories {
         margin: 20px 0 40px;
-
         font-family: 'PT Serif', serif;
 
         div.sound { float: left; }
@@ -435,6 +439,7 @@ section.adventure {
 
             &.hidden {
                 opacity: 0;
+                pointer-events: none;
                 transition: opacity 0.6s 0.25s;
             }
         }
@@ -450,8 +455,6 @@ section.adventure {
     p {margin-bottom: 20px;}
 
     button {
-        color: #fbd14b;
-        background-color: white;
         padding: 20px;
         display: block;
         margin: 0 auto 20px;
@@ -553,7 +556,7 @@ section.newsletter {
     }
 
     input[type=email] {
-        border: solid 2px $button-background;
+        border: solid 2px $primary-color;
         padding: 10px;
         margin-bottom: 10px;
         width: 100%;
@@ -575,6 +578,7 @@ section.newsletter {
     input[type=submit] {
         padding: 20px;
         width: 100%;
+        border: none;
 
         @media only screen and (min-width: 500px) {
             border-top-left-radius: 0;
