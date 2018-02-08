@@ -15,7 +15,7 @@ const inlineSound = new InlineSound();
 inlineSound.soundOn = true;
 
 const storyUpdated = () => {
-    if (inlineSound.soundOn === true) {
+    if (inlineSound.soundOn === true && 'AudioContext' in window) {
         inlineSound.textHasChanged(document.querySelectorAll('.subStories p clip'));
     }
 };
