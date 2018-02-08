@@ -8,7 +8,6 @@ import inn from './../data/inn.mp3';
 import choir from './../data/choir.mp3';
 import ending from './../data/story-ending.mp3';
 
-console.log(choir);
 const ScrollMagic = require('scrollmagic');
 
 
@@ -102,7 +101,7 @@ class InlineSound {
 
     easeInClip(clip, clipSrc, startVolume, endVolume) {
         const duration = 4000;
-        const frequency = 40;
+        const frequency = 8;
         clearInterval(this.soundIntervals[clipSrc]);
 
         const timeInterval = duration / frequency;
@@ -117,6 +116,7 @@ class InlineSound {
                     this.clips[clipSrc].volume = volume;
                     clip.volume = volume;
                 } else {
+                    clip.volume = endVolume;
                     clearInterval(this.soundIntervals[clipSrc]);
                 }
             } else {
@@ -127,6 +127,7 @@ class InlineSound {
                     clip.volume = volume;
                 } else {
                     // clip.pause();
+                    clip.volume = endVolume;
                     clearInterval(this.soundIntervals[clipSrc]);
                 }
             }
