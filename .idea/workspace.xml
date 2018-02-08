@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6b0b667d-35d2-4403-a8d7-cebcdf01587c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/dist/0.bundle.b4369fa4b3e114b3a766.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/dist/bundle.b4369fa4b3e114b3a766.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/0.bundle.11321ff679c84128a2f9.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/36b7a1b94c9cd4a0edaa1ad436b7ebf4.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/80bff4cee70d932e7c164bd69b1060ab.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/dist/bundle.11321ff679c84128a2f9.min.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/data/future.mp3" afterPath="$PROJECT_DIR$/src/data/future.mp3" />
+      <change beforePath="$PROJECT_DIR$/src/data/tidsmaskinen.json" afterPath="$PROJECT_DIR$/src/data/tidsmaskinen.json" />
+      <change beforePath="$PROJECT_DIR$/src/data/train-station.mp3" afterPath="$PROJECT_DIR$/src/data/train-station.mp3" />
       <change beforePath="$PROJECT_DIR$/src/js/app.jsx" afterPath="$PROJECT_DIR$/src/js/app.jsx" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +28,11 @@
       <file leaf-file-name="app.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/app.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="299">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1518125275235" expanded="true" signature="10912:10954" ph="..." />
+                <marker date="1518125646012" expanded="true" signature="10903:10945" ph="..." />
               </folding>
             </state>
           </provider>
@@ -68,8 +73,8 @@
       <file leaf-file-name="tidsmaskinen.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/tidsmaskinen.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+            <state relative-caret-position="166">
+              <caret line="93" column="48" lean-forward="false" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -79,7 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Du står midt i en mudderpø</find>
       <find>Munk løfter</find>
       <find>Hvor vil du rejse hen?</find>
       <find>de enorme porte.</find>
@@ -109,6 +113,7 @@
       <find>newsletter</find>
       <find>console.lo</find>
       <find>restartAdventure</find>
+      <find>dræd</find>
     </findStrings>
     <replaceStrings>
       <replace>partId</replace>
@@ -146,11 +151,11 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/webpack.config.production.js" />
-        <option value="$PROJECT_DIR$/src/data/tidsmaskinen.json" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/images/svg/headphone.svg" />
         <option value="$PROJECT_DIR$/src/styles/main.scss" />
         <option value="$PROJECT_DIR$/src/js/inline-sound.js" />
+        <option value="$PROJECT_DIR$/src/data/tidsmaskinen.json" />
         <option value="$PROJECT_DIR$/src/js/app.jsx" />
       </list>
     </option>
@@ -336,12 +341,12 @@
       <workItem from="1512579120418" duration="7937000" />
       <workItem from="1513108294925" duration="15277000" />
       <workItem from="1513885672761" duration="23534000" />
-      <workItem from="1517679871996" duration="33988000" />
+      <workItem from="1517679871996" duration="34403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153278000" />
+    <option name="totallyTimeSpent" value="153693000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,7 +359,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1546724" sideWeight="0.4931973" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -362,7 +366,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2576967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3204105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3204105" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18635875" sideWeight="0.50680274" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20980616" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -417,7 +421,7 @@
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1518125275235" expanded="true" signature="10912:10954" ph="..." />
+            <marker date="1518125646012" expanded="true" signature="10903:10945" ph="..." />
           </folding>
         </state>
       </provider>
@@ -480,7 +484,7 @@
           <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1518125275235" expanded="true" signature="10912:10954" ph="..." />
+            <marker date="1518125646012" expanded="true" signature="10903:10945" ph="..." />
           </folding>
         </state>
       </provider>
@@ -687,14 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/tidsmaskinen.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -734,13 +730,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/tidsmaskinen.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="93" column="48" lean-forward="false" selection-start-line="93" selection-start-column="48" selection-end-line="93" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/app.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="19" column="8" lean-forward="false" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="299">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1518125275235" expanded="true" signature="10912:10954" ph="..." />
+            <marker date="1518125646012" expanded="true" signature="10903:10945" ph="..." />
           </folding>
         </state>
       </provider>
