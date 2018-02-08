@@ -53,7 +53,7 @@ const Navigation = createReactClass({
                 this.props.updateContent(choice.partId, choice.choiceText);
             });
 
-        if (inlineSound.soundOn === true) {
+        if (inlineSound.soundOn === true && 'AudioContext' in window) {
             inlineSound.playSound(pageTurn, 300);
         }
     },
