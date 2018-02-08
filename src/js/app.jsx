@@ -235,6 +235,12 @@ const App = createReactClass({
                 <section className={`author ${this.state.adventureFinished}`} >
                     <img alt="Author" src="images/samuel.jpg" />
                     <p>Forfatteren Samuel D. Hughes er 28 år og bor i København, hvor han til daglig arbejder som lærer. </p>
+                    <clip data-src="trainStation" data-volume="0.0"></clip>
+                    <clip data-src="future" data-volume="0.0"></clip>
+                    <clip data-src="sirene" data-volume="0.0"></clip>
+                    <clip data-src="market" data-volume="0.0"></clip>
+                    <clip data-src="inn" data-volume="0.0"></clip>
+                    <clip data-src="choir" data-volume="0.0"></clip>
                 </section>
                 <section className={`newsletter ${this.state.adventureFinished}`}>
                     <h1>Lige en sidste ting!</h1>
@@ -259,7 +265,6 @@ const App = createReactClass({
                     </div>
                 </section>
             </div>
-
         );
     },
 });
