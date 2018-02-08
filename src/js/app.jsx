@@ -221,7 +221,7 @@ const App = createReactClass({
                         {this.props.story.title}
                     </h1>
                     <span>
-                        Af <a href="http://www.lol.dk" rel="author">{this.props.story.author}</a>
+                        Af <span>{this.props.story.author}</span>
                     </span>
                     <div className="subStories">{this.renderStory()}</div>
                     <Navigation updateContent={this.updateContent} choices={this.state.choices} />
