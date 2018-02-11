@@ -1,0 +1,78 @@
+@import "settings";
+
+section.newsletter {
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: white;
+    line-height: 1.5em;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    padding: 30px 5%;
+    display: block;
+
+    &.hidden { display: none;}
+
+    h1 {
+        font-family: 'PT Sans', sans-serif;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: none;
+    }
+    ::-webkit-input-placeholder,
+    ::-moz-placeholder,
+    :-ms-input-placeholder,
+    :-moz-placeholder {
+        font-size: 100%;
+    }
+
+    #mc_embed_signup_scroll {
+        display: flex;
+
+        @media only screen and (max-width: 500px) { flex-direction: column; }
+    }
+
+    .mc-field-group {
+        flex-grow: 1;
+    }
+
+    input[type=email] {
+        border: solid 2px $primary-color;
+        padding: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 700px;
+        height: 64px;
+        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+
+        @media only screen and (min-width: 500px) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-right: none;
+            margin-bottom: 20px;
+        }
+    }
+
+    div[aria-hidden=true] { display: none; }
+    input[type=submit] {
+        padding: 20px;
+        width: 100%;
+        border: none;
+        height: 64px;
+        -webkit-appearance: none;
+
+        @media only screen and (min-width: 500px) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            width: 200px;
+        }
+    }
+}

@@ -1,0 +1,225 @@
+@import "settings";
+
+section.intro {
+    text-align: center;
+    line-height: 1.5em;
+    position: fixed;
+    width: 98%;
+    height: 95%;
+    z-index: 2;
+    max-width: 500px;
+    max-height: 500px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-color: white;
+    border-radius: 4px;
+    transition: opacity 0.5s 0.3s, visibility 0s 0.5s;
+
+    @media only screen and (max-height: 500px) {
+        overflow-y: scroll;
+    }
+
+    &.hidden {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &.no-sound button.sound { display: none; }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5% 5%;
+        overflow-y: auto;
+        max-width: 400px;
+        text-align: left;
+        margin: 0 auto;
+
+        svg {
+            transition: transform 0.6s;
+            width: 50%;
+            margin: 0 auto 40px;
+            display: block;
+            position: relative;
+
+            .hour-hand,
+            .minute-hand {
+                transition: opacity 0.3s;
+                transform-origin: 320px 344px;
+            }
+            .hour-hand {
+                animation: rotate 50s infinite linear;
+            }
+
+            .minute-hand {
+                animation: rotate 5s infinite linear;
+            }
+
+            @keyframes backwardsRotate {
+                0% { transform: rotateZ(0deg); }
+                100% { transform: rotateZ(360deg); }
+            }
+
+            @keyframes rotate {
+                0% { transform: rotateZ(0deg); }
+                100% { transform: rotateZ(360deg); }
+            }
+        }
+
+        @media only screen and (min-height: 500px) {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 500px) {
+            justify-content: center;
+        }
+
+        &.clock-hidden {
+            .hour-hand,
+            .minute-hand {
+                opacity: 0;
+            }
+        }
+
+        h1 {
+            &.warning {
+                text-decoration: underline;
+            }
+
+            &.title {
+                font-weight: bolder;
+            }
+
+            transition: transform 0.6s;
+        }
+
+        button.sound {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            padding:5px;
+            cursor: pointer;
+            position: relative;
+            background-color: white;
+            background-size: 40px 40px;
+            background-image: url(../images/svg/headphone.svg);
+            background-repeat: no-repeat;
+            background-position: 20px 5px;
+            flex-shrink: 0;
+            color: $primary-color;
+            transition: transform 0.6s 0.6s;
+
+            &.off:before {
+                content: 'X';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #ff4e50;
+                font-size: 2.6em;
+            }
+
+            &:after {
+                content: attr(data-sound);
+                position: absolute;
+                bottom: 5px;
+                left: 50%;
+                width: 100px;
+                transform: translateX(-50%);
+            }
+        }
+
+        span.sound {
+            display: block;
+            height: auto;
+
+            &.on {
+                height: 0;
+                overflow: hidden;
+            }
+        }
+
+        button.begin {
+            transition: transform 0.6s, background-color 0.3s;
+            flex-shrink: 0;
+            margin-top: 10px;
+            padding: 20px;
+        }
+    }
+
+    @keyframes popout {
+        0% { transform: scale(1); }
+        30% { transform: scale(1.1); }
+        100% { transform: scale(0); }
+    }
+
+    @keyframes popoutLarge {
+        0% { transform: scale(1); }
+        30% { transform: scale(1.6); }
+        100% { transform: scale(0); }
+    }
+
+    @keyframes shake {
+        10%{transform: translate3d(-51%, -51%, 0);}
+        15%{transform: translate3d(-50%, -49%, 0);}
+        20% {transform: translate3d(-49%, -49%, 0);}
+        25% {transform: translate3d(-48%, -49%, 0);}
+        30% {transform: translate3d(-50%, -50%, 0);}
+        35% {transform: translate3d(-52%, -46%, 0);}
+        40% {transform: translate3d(-49%, -49%, 0);}
+        45% {transform: translate3d(-48%, -52%, 0);}
+        50% {transform: translate3d(-52%, -48%, 0);}
+        55% {transform: translate3d(-50%, -51%, 0);}
+        60% {transform: translate3d(-51%, -51%, 0);}
+        65% {transform: translate3d(-45%, -53%, 0);}
+        70% {transform: translate3d(-53%, -51%, 0);}
+        75% {transform: translate3d(-57%, -53%, 0);}
+        80% {transform: translate3d(-54%, -51%, 0);}
+        85% {transform: translate3d(-46%, -53%, 0);}
+        90% {transform: translate3d(-51%, -47%, 0);}
+        95% {transform: translate3d(-46%, -53%, 0);}
+        100% {transform: translate3d(-46%, -53%, 0);}
+    }
+
+    &.reverse {
+        animation: shake 1.3s 2.6s;
+
+        .wrapper {
+            .hour-hand {
+                animation: rotate 5s infinite linear;
+            }
+
+            .minute-hand {
+                animation: rotate 0.5s infinite linear;
+            }
+
+            .hour-hand,
+            .minute-hand {
+                animation-direction: reverse;
+            }
+
+            button.sound,
+            span.sound {
+                animation: popout 0.6s 1s forwards;
+            }
+
+            button.begin {
+                animation: popout 0.8s forwards;
+            }
+
+            h1 {
+                animation: popout 0.6s 1.6s forwards;
+            }
+
+            svg {
+                animation: popoutLarge 0.9s 2.2s forwards;
+            }
+        }
+    }
+}

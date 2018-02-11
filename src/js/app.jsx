@@ -228,7 +228,7 @@ const App = createReactClass({
                 </section>
                 <div className={`overlay ${this.state.introVisibility} ${this.state.clockState}`} />
                 <section className="adventure">
-                    <h1 className="title">
+                    <h1>
                         {this.props.story.title}
                     </h1>
                     <span>
@@ -278,13 +278,11 @@ const Loader = createReactClass({
     render() {
         return (
             <div className="loader">
-               Loading
+                Loading
             </div>
         );
     },
 });
-
-render(<Loader />, document.querySelector('main'));
 
 getStoryData()
     .then((story) => {

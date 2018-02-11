@@ -2,7 +2,6 @@ import { Clip } from 'phonograph';
 
 import trainStation from './../data/train-station.mp3';
 import future from './../data/future.mp3';
-import sirene from './../data/sirene.mp3';
 import market from './../data/market.mp3';
 import inn from './../data/inn.mp3';
 import choir from './../data/choir.mp3';
@@ -14,7 +13,6 @@ const ScrollMagic = require('scrollmagic');
 const sounds = {
     trainStation,
     future,
-    sirene,
     market,
     inn,
     choir,

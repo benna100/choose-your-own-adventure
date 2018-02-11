@@ -1,8 +1,9 @@
-$secundary: #F4F7F7;
+@import "intro";
+@import "adventure";
+@import "newsletter";
+@import "author";
+@import "settings";
 
-
-$button-color: white;
-$primary-color: #34495E;
 
 
 body {
@@ -54,8 +55,9 @@ hr {
 }
 
 h1 {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 2em;
+    font-family: 'Great Vibes', cursive;
+    line-height: 1.3em;
+    font-size: 4em;
 }
 
 h2 {
@@ -95,230 +97,6 @@ main {
 }
 
 
-
-section.intro {
-    text-align: center;
-    line-height: 1.5em;
-    position: fixed;
-    width: 98%;
-    height: 95%;
-    z-index: 2;
-    max-width: 500px;
-    max-height: 500px;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    background-color: white;
-    border-radius: 4px;
-    transition: opacity 0.5s 0.3s, visibility 0s 0.5s;
-
-    @media only screen and (max-height: 500px) {
-        overflow-y: scroll;
-    }
-
-    &.hidden {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    &.no-sound button.sound { display: none; }
-
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 5% 5%;
-        overflow-y: auto;
-        max-width: 400px;
-        text-align: left;
-        margin: 0 auto;
-
-        h1 {
-            font-family: 'Great Vibes', cursive;
-            line-height: 1.3em;
-            font-size: 4em;
-        }
-
-        svg {
-            transition: transform 0.6s;
-            width: 50%;
-            margin: 0 auto 40px;
-            display: block;
-            position: relative;
-
-            .hour-hand,
-            .minute-hand {
-                transition: opacity 0.3s;
-                transform-origin: 320px 344px;
-            }
-            .hour-hand {
-                animation: rotate 50s infinite linear;
-            }
-
-            .minute-hand {
-                animation: rotate 5s infinite linear;
-            }
-
-            @keyframes backwardsRotate {
-                0% { transform: rotateZ(0deg); }
-                100% { transform: rotateZ(360deg); }
-            }
-
-            @keyframes rotate {
-                0% { transform: rotateZ(0deg); }
-                100% { transform: rotateZ(360deg); }
-            }
-        }
-
-        @media only screen and (min-height: 500px) {
-            position: absolute;
-            transform: translate(-50%, -50%);
-            top: 50%;
-            left: 50%;
-            width: 100%;
-        }
-
-        @media only screen and (min-width: 500px) {
-            justify-content: center;
-        }
-
-        &.clock-hidden {
-            .hour-hand,
-            .minute-hand {
-                opacity: 0;
-            }
-        }
-
-        h1 {
-            font-family: 'Great Vibes', cursive;
-
-            &.warning {
-                text-decoration: underline;
-            }
-
-            &.title {
-                font-weight: bolder;
-            }
-
-            transition: transform 0.6s;
-        }
-
-        button.sound {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 10px;
-            padding:5px;
-            cursor: pointer;
-            position: relative;
-            background-color: white;
-            background-size: 40px 40px;
-            background-image: url(../images/svg/headphone.svg);
-            background-repeat: no-repeat;
-            background-position: 20px 5px;
-            flex-shrink: 0;
-            color: $primary-color;
-            transition: transform 0.6s 0.6s;
-
-            &.off:before {
-                content: 'X';
-                position: absolute;
-                top: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                color: #ff4e50;
-                font-size: 2.6em;
-            }
-
-            &:after {
-                content: attr(data-sound);
-                position: absolute;
-                bottom: 5px;
-                left: 50%;
-                width: 100px;
-                transform: translateX(-50%);
-            }
-        }
-
-        span.sound {
-            display: block;
-            height: auto;
-
-            &.on {
-                height: 0;
-                overflow: hidden;
-            }
-        }
-
-        button.begin {
-            transition: transform 0.6s, background-color 0.3s;
-            flex-shrink: 0;
-            margin-top: 10px;
-            padding: 20px;
-        }
-    }
-
-    @keyframes popout {
-        0% { transform: scale(1); }
-        30% { transform: scale(1.1); }
-        100% { transform: scale(0); }
-    }
-
-    @keyframes popoutLarge {
-        0% { transform: scale(1); }
-        30% { transform: scale(1.6); }
-        100% { transform: scale(0); }
-    }
-
-    @keyframes shake {
-        10%{transform: translate3d(-51%, -51%, 0);}
-        20% {transform: translate3d(-49%, -49%, 0);}
-        30% {transform: translate3d(-50%, -50%, 0);}
-        40% {transform: translate3d(-49%, -49%, 0);}
-        50% {transform: translate3d(-52%, -48%, 0);}
-        60% {transform: translate3d(-51%, -51%, 0);}
-        70% {transform: translate3d(-53%, -51%, 0);}
-        80% {transform: translate3d(-54%, -51%, 0);}
-        90% {transform: translate3d(-51%, -47%, 0);}
-        100% {transform: translate3d(-46%, -53%, 0);}
-    }
-
-    &.reverse {
-        animation: shake 1.3s 2.6s;
-
-        .wrapper {
-            .hour-hand {
-                animation: rotate 5s infinite linear;
-            }
-
-            .minute-hand {
-                animation: rotate 0.5s infinite linear;
-            }
-
-            .hour-hand,
-            .minute-hand {
-                animation-direction: reverse;
-            }
-
-            button.sound,
-            span.sound {
-                animation: popout 0.6s 1s forwards;
-            }
-
-            button.begin {
-                animation: popout 0.8s forwards;
-            }
-
-            h1 {
-                animation: popout 0.6s 1.6s forwards;
-            }
-
-            svg {
-                animation: popoutLarge 0.9s 2.2s forwards;
-            }
-        }
-    }
-}
-
 .overlay {
     height: 100%;
     width: 100%;
@@ -353,106 +131,20 @@ section.intro {
     }
 }
 
-section.adventure {
-    font-size: 1.2em;
-    border-radius: 2px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    background-color: white;
-    line-height: 1.6em;
-    max-width: 700px;
-    margin: 0 auto 60px;
-    padding: 5% 5%;
-    position: relative;
 
 
-    @media only screen and (min-width: 500px) {
-        padding: 50px 50px;
-    }
-
-    h1 {
-        font-size: 1.6em;
-        margin-bottom: 20px;
-    }
-
-    span span {
-        font-weight: bold;
-    }
-
-    .subStories {
-        margin: 20px 0 40px;
-        font-family: 'PT Serif', serif;
-
-        div.sound { float: left; }
-
-        span.choice {
-            font-weight: bold;
-            margin: 20px 0;
-            transition: opacity 1s 0.1s;
-            display: block;
-            opacity: 0;
-            font-family: 'PT Sans', sans-serif;
-            text-align: center;
-
-            &.hidden {
-                opacity: 0;
-            }
-
-            &.visible {
-                opacity: 1;
-            }
-        }
-
-        p {
-            white-space: pre-line;
-            transition: opacity 1s;
-            opacity: 0;
-
-            &.visible {
-                opacity: 1;
-            }
-
-            span {
-                display: block;
-                float: left;
-                width: 100px;
-                height: 112px;
-                text-align: center;
-                font-size: 4em;
-                vertical-align: middle;
-                line-height: 1.4em;
-                border: 1px solid black;
-                margin-right: 6px;
-                border-radius: 3px;
-            }
-        }
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-
-        button {
-            cursor: pointer;
-            -webkit-tap-highlight-color: transparent;
-            max-width: 200px;
-            width: 48%;
-
-            &.hidden {
-                opacity: 0;
-                pointer-events: none;
-                transition: opacity 0.6s 0.25s;
-            }
-        }
-    }
-}
-
-.result {
+section.adventure .result {
     text-align: center;
 
     &.hidden { display: none;}
 
     h1,
     p {margin-bottom: 20px;}
+
+    h1 {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 2rem;
+    }
 
     button {
         padding: 20px;
@@ -474,120 +166,6 @@ section.adventure {
     }
 }
 
-
-section.author {
-    border-radius: 2px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    background-color: white;
-    line-height: 1.5em;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 5% 5%;
-    position: relative;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    &.hidden { display: none;}
-
-    img {
-        width: 100%;
-        height: 100%;
-        border-radius: 100%;
-        max-width: 250px;
-        margin-bottom: 20px;
-        transition: transform 3s;
-
-        &:hover {
-            transform: rotate(360deg);
-        }
-    }
-
-    @media only screen and (min-width: 500px) {
-        flex-wrap: nowrap;
-        align-items: center;
-
-        img {
-          margin-right: 20px;
-        }
-    }
-}
-
-section.newsletter {
-    border-radius: 2px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    background-color: white;
-    line-height: 1.5em;
-    max-width: 700px;
-    margin: 0 auto 50px;
-    padding: 30px 5%;
-    display: block;
-
-    &.hidden { display: none;}
-
-    h1 {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    p {
-        margin-bottom: 15px;
-    }
-
-    label {
-      display: none;
-    }
-    ::-webkit-input-placeholder,
-    ::-moz-placeholder,
-    :-ms-input-placeholder,
-    :-moz-placeholder {
-        font-size: 100%;
-    }
-
-    #mc_embed_signup_scroll {
-        display: flex;
-
-        @media only screen and (max-width: 500px) { flex-direction: column; }
-    }
-
-    .mc-field-group {
-        flex-grow: 1;
-    }
-
-    input[type=email] {
-        border: solid 2px $primary-color;
-        padding: 10px;
-        margin-bottom: 10px;
-        width: 100%;
-        max-width: 700px;
-        height: 64px;
-        box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-        border-radius: 4px;
-
-        @media only screen and (min-width: 500px) {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-            border-right: none;
-            margin-bottom: 20px;
-        }
-    }
-
-    div[aria-hidden=true] { display: none; }
-    input[type=submit] {
-        padding: 20px;
-        width: 100%;
-        border: none;
-        height: 64px;
-        -webkit-appearance: none;
-
-        @media only screen and (min-width: 500px) {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-            width: 200px;
-        }
-    }
-}
 
 a.about {
     display: block;
