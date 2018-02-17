@@ -238,7 +238,7 @@ const App = createReactClass({
                     <Navigation updateContent={this.updateContent} choices={this.state.choices} />
                     <div className={`result ${this.state.adventureFinished}`}>
                         <h1>Dit eventyr er færdigt</h1>
-                        <p>Dette var blot 1 ud af mange eventyr. Se om du kan finde den rigtige vej! </p>
+                        <p>Dette var blot 1 ud af mange eventyr. <br />Se om du kan finde det vindende eventyr! </p>
                         <button onClick={() => { this.restartAdventure(); }}>Prøv igen?</button>
                         <span role="img" aria-label="hand pointing down">👇</span>
                     </div>
